@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	// LinkActivator
 	var linkActivator = new LinkActivator({
 		scrollContainer: '#scroll-container',
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		elems: '.anim-elem',
 		animator: 'animator',
 		offsetPercent: 80,
-		handler: function() {
+		handler: function () {
 			if (this.thsElem.hasClass('num') && this.thsElem.hasClass('animator') == false) {
 				var el = this.thsElem.find('.number');
 				for (var i = 0; i <= el.length; i++) {
@@ -30,7 +30,7 @@ $(document).ready(function() {
 					}
 				}
 				if (el.length == arrDataNum.length) {
-					el.each(function(i) {
+					el.each(function (i) {
 						var ths = $(this),
 							j = 0;
 						function come(elem) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
 								elemTop = elem.offset().top,
 								elemBottom = elemTop + elem.height();
 							if (elemBottom <= docViewBottom && elemTop >= docViewTop) {
-								var interval = setInterval(function() {
+								var interval = setInterval(function () {
 									j++;
 									if (j == arrDataNum[i]) {
 										clearInterval(interval);
@@ -61,7 +61,7 @@ $(document).ready(function() {
 
 	// Progress
 	var toolbar = $('.toolbar');
-	$('.screen-scroll').scroll(function() {
+	$('.screen-scroll').scroll(function () {
 		var scrollTop = $(this)[0].scrollTop,
 			scrollHeight = $(this)[0].scrollHeight,
 			height = $(window).height(),
@@ -79,10 +79,10 @@ $(document).ready(function() {
 		btn_close: '.close-modal',
 		from: '#Hidden__Container',
 		to: 'body',
-		after_open: function() {
+		after_open: function () {
 			console.log('hi');
 		},
-		after_close: function() {
+		after_close: function () {
 			console.log('hui');
 		},
 	});
@@ -194,7 +194,7 @@ $(document).ready(function() {
 	});
 
 	// Slider fotorama
-	$('#futurama').slider({
+	$('#main').slider({
 		slider: '.slider',
 		slide_class: '.slide-item',
 		nav: '.nav',
@@ -214,28 +214,28 @@ $(document).ready(function() {
 
 	var successMsg = $('.message-success'),
 		errorMsg = $('.message-error');
-	$('form').submit(function() {
+	$('form').submit(function () {
 		var th = $(this);
 		$.ajax({
 			url: 'mail',
 			type: 'GET',
 			data: th.serialize(),
 		})
-			.done(function(data) {
-				setTimeout(function() {
+			.done(function (data) {
+				setTimeout(function () {
 					successMsg.addClass('notification-visible');
 					th.trigger('reset');
 				}, 1000);
-				setTimeout(function() {
+				setTimeout(function () {
 					successMsg.removeClass('notification-visible');
 				}, 5000);
 			})
-			.fail(function() {
-				setTimeout(function() {
+			.fail(function () {
+				setTimeout(function () {
 					errorMsg.addClass('notification-visible');
 					th.trigger('reset');
 				}, 1000);
-				setTimeout(function() {
+				setTimeout(function () {
 					errorMsg.removeClass('notification-visible');
 				}, 5000);
 			});
@@ -247,10 +247,10 @@ $(document).ready(function() {
 		notification = $('.notification');
 	window.addEventListener(
 		'online',
-		function(e) {
+		function (e) {
 			$('.notification').removeClass('notification-visible');
 			online.addClass('notification-visible');
-			setTimeout(function() {
+			setTimeout(function () {
 				online.removeClass('notification-visible');
 			}, 5000);
 		},
@@ -258,10 +258,10 @@ $(document).ready(function() {
 	);
 	window.addEventListener(
 		'offline',
-		function(e) {
+		function (e) {
 			$('.notification').removeClass('notification-visible');
 			offline.addClass('notification-visible');
-			setTimeout(function() {
+			setTimeout(function () {
 				offline.removeClass('notification-visible');
 			}, 5000);
 		},
@@ -270,7 +270,7 @@ $(document).ready(function() {
 
 	$('.mask-phone').mask('+7 (999) 999-99-99');
 
-	$('.sect').mousemove(function(e) {
+	$('.sect').mousemove(function (e) {
 		var x = e.screenX / 40 + 50 + '%';
 		var y = e.screenY / 40 + '%';
 		$('.bg-overlay-d').css('background-position', x + ' ' + y);
@@ -280,12 +280,12 @@ $(document).ready(function() {
 		width = 0,
 		timeout = 2000,
 		inter = 50,
-		interval = setInterval(function() {
+		interval = setInterval(function () {
 			width += (inter / timeout) * 100;
 			preload.css('width', width + '%');
 		}, inter);
 
-	setTimeout(function() {
+	setTimeout(function () {
 		var preloader = $('.preloader');
 		preloader.fadeOut();
 		clearInterval(interval);
@@ -293,7 +293,7 @@ $(document).ready(function() {
 	}, timeout);
 });
 
-$(window).on('load', function() {
+$(window).on('load', function () {
 	var body = $('body');
 	body.addClass('ready');
 });

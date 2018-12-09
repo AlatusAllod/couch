@@ -4,10 +4,12 @@
 .slider
 	width: 100%
 	position: relative
+	height: 513px
 	.viewport
 		width: 100%
 		overflow: hidden
 		height: 100%
+		border-radius: $radius
 		.slide-line
 			height: 100%
 			display: flex
@@ -29,36 +31,26 @@
 		margin: auto
 		transition: 0.5s
 		z-index: 100
-		&:hover
-			transform: scale(1.2)
+		height: 70px
+		width: 25px
+		background-color: $l
+		img
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
 	.prev
-		height: 20px
-		width: 20px
 		cursor: pointer
-		left: -30px
-		&::after
-			content: ''
-			position: absolute
-			height: 20px
-			width: 20px
-			border:
-				bottom: 2px solid $d
-				left: 2px solid $d
-			transform: rotate(45deg)
+		left: 0
+		border-radius: 0px 6px 6px 0px
+		img
+			transform: rotate(180deg)
 	.next
-		height: 20px
-		width: 20px
 		cursor: pointer
-		right: -30px
-		&::after
-			content: ''
-			position: absolute
-			height: 20px
-			width: 20px
-			border:
-				top: 2px solid $d
-				right: 2px solid $d
-			transform: rotate(45deg)
+		right: 0
+		border-radius: 6px 0px 0px 6px
 	.dots
 		position: absolute
 		width: 100%
