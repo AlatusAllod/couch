@@ -7,16 +7,31 @@
 	top: 0
 	left: 0
 	transition: 0.5s
+	padding-left: 240px
 	.cont-fluid
 		height: 100%
+		margin: 0
+		margin-left: auto
+		width: auto
 	.menu
 		height: 100%
+		padding-right: 35px
 		.link
-			margin-left: $space
+			margin-left: 35px
 			&::after, &::before
 				background-color: $a
+		li:first-child
+			.link
+				margin-left: 0
 	.btn-d
 		margin-left: $space
+	.contact
+		padding: 0 35px
+		border-left: 1px solid $a
+		.link
+			font-weight: 500
+	.cart
+		cursor: pointer
 
 .active-toolbar
 	background-color: $l
