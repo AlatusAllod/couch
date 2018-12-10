@@ -225,6 +225,7 @@
 		margin-bottom: 30px
 #work
 	padding-top: 100px
+	padding-bottom: 80px
 	.h3
 		margin-bottom: 70px
 	.work-chose
@@ -234,6 +235,7 @@
 		margin-bottom: 30px
 	.slider
 		height: auto
+		position: relative
 	.slider-wrap
 		padding-left: 80px
 		padding-right: 160px
@@ -245,28 +247,51 @@
 			padding: 0
 			width: 100%
 		.slide-item
-			width: 100%
 			text-align: left
 		.slide-description
 			padding-right: 75px
+			padding-bottom: 75px
 			.h4
 				margin-bottom: 25px
 			p
 				margin-bottom: 25px
 		.nav
-			position: static
+			position: relative
 			width: 45px
 			height: 45px
 			border-radius: $radius
 			border: 1px solid $a
 			margin: 0
+			&:hover
+				transform: scale(1.2)
+			&:after
+				position: absolute
+				content: ""
+				border: 7.5px solid transparent
+				border-left: 7.5px solid $a
+				top: 0
+				bottom: 0
+				left: 7.5px
+				right: 0
+				margin: auto
+				height: 0
+				width: 0
+		.prev
+			margin-right: 20px
+			&:after
+				left: -7.5px
+				transform: rotate(180deg)
 		.work__more
 			border-color: $a
 			color: $a
 			padding: 10px 50px
 			font-size: 18px
+			margin-right: 20px
 		.work__buttons
-			padding-top: 50px
+			position: absolute
+			bottom: 20px
+			left: 0
+			background-color: $l
 		.slide-image
 			padding-left: 75px
 			border-radius: $radius
@@ -280,6 +305,41 @@
 	.tab-active
 		font-size: 36px
 		text-shadow: 0px 10px 30px rgba(203, 0, 0, 0.5)
+#about
+	padding-top: 100px
+	padding-bottom: 50px
+	.h3
+		margin-bottom: 100px
+	.about-container
+		padding-left: 80px
+		padding-right: 160px
+		margin-bottom: 80px
+		p
+			margin-bottom: 40px
+			&:last-child
+				margin-bottom: 0
+	.about-left
+		padding-right: 110px
+		border-right: 1px solid $a
+	.about-right
+		padding-left: 110px
+		border-left: 1px solid $a
+	.about-gallery
+		width: 100%
+		padding-left: 30px
+		padding-right: 110px
+	.about-item
+		padding: 50px
+	.about-image
+		height: 410px
+		margin-bottom: 20px
+		img
+			height: 100%
+			width: 100%
+			object-fit: cover
+	.about-description
+		font-size: 20px
+		font-weight: 500
 
 
 @media only screen and (max-width : 1440px)
