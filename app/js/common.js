@@ -178,7 +178,7 @@ $(document).ready(function () {
 		item: 1,
 		item_sliding: 1,
 		loop: true,
-		dots: true,
+		dots: false,
 		automove: false,
 		interval: 2000,
 		transition: '0.5s',

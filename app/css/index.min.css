@@ -7800,7 +7800,7 @@ readers do not read off random characters that represent icons */
 .slider-1 {
   width: 100%; }
   .slider-1 .viewport .slide-line .slide-item {
-    background-color: #ff00ff; }
+    background-color: #fff; }
 
 .slider-2 {
   width: 80%; }
@@ -8912,6 +8912,65 @@ div.jGrowl > .ui-state-highligh {
   padding-top: 100px; }
   #work .h3 {
     margin-bottom: 70px; }
+  #work .work-chose {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    font-size: 14px;
+    padding-left: 80px;
+    margin-bottom: 30px; }
+  #work .slider {
+    height: auto; }
+  #work .slider-wrap {
+    padding-left: 80px;
+    padding-right: 160px; }
+  #work .slider-tab-sect .tab-container {
+    height: 43px;
+    margin-bottom: 80px; }
+  #work .slider-tab-sect .cont-fluid {
+    padding: 0;
+    width: 100%; }
+  #work .slider-tab-sect .slide-item {
+    width: 100%;
+    text-align: left; }
+  #work .slider-tab-sect .slide-description {
+    padding-right: 75px; }
+    #work .slider-tab-sect .slide-description .h4 {
+      margin-bottom: 25px; }
+    #work .slider-tab-sect .slide-description p {
+      margin-bottom: 25px; }
+  #work .slider-tab-sect .nav {
+    position: static;
+    width: 45px;
+    height: 45px;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    border: 1px solid #CB0000;
+    margin: 0; }
+  #work .slider-tab-sect .work__more {
+    border-color: #CB0000;
+    color: #CB0000;
+    padding: 10px 50px;
+    font-size: 18px; }
+  #work .slider-tab-sect .work__buttons {
+    padding-top: 50px; }
+  #work .slider-tab-sect .slide-image {
+    padding-left: 75px;
+    -webkit-border-radius: 6px;
+            border-radius: 6px; }
+    #work .slider-tab-sect .slide-image img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  #work .tab {
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+    font-size: 24px;
+    font-weight: 600; }
+  #work .tab-active {
+    font-size: 36px;
+    text-shadow: 0px 10px 30px rgba(203, 0, 0, 0.5); }
 
 #politics {
   top: 0;
