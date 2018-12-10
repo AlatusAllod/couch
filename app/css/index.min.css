@@ -8867,29 +8867,37 @@ div.jGrowl > .ui-state-highligh {
     font-size: 18px;
     padding: 10px 60px; }
 
-#fabrics {
+#fabrics,
+#partners {
   padding-top: 100px;
   padding-bottom: 90px;
   padding-right: 80px; }
-  #fabrics .h3 {
+  #fabrics .h3,
+  #partners .h3 {
     margin-bottom: 55px; }
-  #fabrics .fabrics-container {
+  #fabrics .fabrics-container,
+  #partners .fabrics-container {
     width: 1200px;
     padding-bottom: 20px; }
-  #fabrics .fabrics-item {
+  #fabrics .fabrics-item,
+  #partners .fabrics-item {
     padding: 50px 10px; }
-  #fabrics .fabrics__img {
+  #fabrics .fabrics__img,
+  #partners .fabrics__img {
     cursor: pointer;
     -webkit-transition-duration: 0.5s;
          -o-transition-duration: 0.5s;
             transition-duration: 0.5s; }
-    #fabrics .fabrics__img:hover {
+    #fabrics .fabrics__img:hover,
+    #partners .fabrics__img:hover {
       -webkit-transform: scale(1.2);
           -ms-transform: scale(1.2);
               transform: scale(1.2); }
-    #fabrics .fabrics__img img {
+    #fabrics .fabrics__img img,
+    #partners .fabrics__img img {
       width: 100%; }
-  #fabrics .fabrics__catalog {
+  #fabrics .fabrics__catalog,
+  #partners .fabrics__catalog {
     font-size: 18px;
     padding: 10px 40px; }
 
