@@ -8770,7 +8770,8 @@ div.jGrowl > .ui-state-highligh {
   opacity: 0.4; }
 
 #popular {
-  padding-right: 80px; }
+  padding-right: 80px;
+  padding-bottom: 100px; }
   #popular .h3 {
     margin-bottom: 55px; }
   #popular .popular-container {
@@ -8854,6 +8855,31 @@ div.jGrowl > .ui-state-highligh {
   #popular .popular__catalog {
     font-size: 18px;
     padding: 10px 60px; }
+
+#fabrics {
+  padding-top: 100px;
+  padding-right: 80px; }
+  #fabrics .h3 {
+    margin-bottom: 55px; }
+  #fabrics .fabrics-container {
+    width: 1200px;
+    padding-bottom: 20px; }
+  #fabrics .fabrics-item {
+    padding: 50px 10px; }
+  #fabrics .fabrics__img {
+    cursor: pointer;
+    -webkit-transition-duration: 0.5s;
+         -o-transition-duration: 0.5s;
+            transition-duration: 0.5s; }
+    #fabrics .fabrics__img:hover {
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2); }
+    #fabrics .fabrics__img img {
+      width: 100%; }
+  #fabrics .fabrics__catalog {
+    font-size: 18px;
+    padding: 10px 40px; }
 
 #politics {
   top: 0;
