@@ -8774,7 +8774,8 @@ div.jGrowl > .ui-state-highligh {
   #popular .h3 {
     margin-bottom: 55px; }
   #popular .popular-container {
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 55px; }
   #popular .popular-item {
     padding: 25px 10px;
     cursor: pointer; }
@@ -8850,6 +8851,9 @@ div.jGrowl > .ui-state-highligh {
       position: absolute;
       content: "+";
       right: 25px; }
+  #popular .popular__catalog {
+    font-size: 18px;
+    padding: 10px 60px; }
 
 #politics {
   top: 0;
