@@ -8721,10 +8721,16 @@ div.jGrowl > .ui-state-highligh {
           align-items: center; }
 
 #main .slide-item {
+  height: 100%;
   padding: 0;
   opacity: 1; }
   #main .slide-item img {
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center bottom;
+       object-position: center bottom; }
 
 #main .thumb {
   position: relative;
@@ -8901,6 +8907,11 @@ div.jGrowl > .ui-state-highligh {
     padding: 50px 80px; }
   #advantages .advantages-img {
     margin-bottom: 30px; }
+
+#work {
+  padding-top: 100px; }
+  #work .h3 {
+    margin-bottom: 70px; }
 
 #politics {
   top: 0;
