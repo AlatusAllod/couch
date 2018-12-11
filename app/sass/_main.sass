@@ -10,15 +10,42 @@
 			padding: 15px 70px
 			font-size: 18px
 #call-sect
-	form
-		.btn-d-big
-			margin-top: $space / 2
-		textarea
-			display: block
+	padding-left: 80px
+	padding-right: 160px
+	.h3
+		margin-bottom: 40px
+	.form-group
+		padding: 20px 0
+	.form-title
+		position: absolute
+		top: -14px
+		left: 0
+		right: 0
+	.h4
+		padding: 0 20px
+		background-color: $l
+	input
+		border-radius: $radius
+		width: calc(50% - 10px)
+		&:focus
+			border-color: $a
+	button
+		width: calc(50% - 10px)
+		font-size: 18px
+	.form-wrapper
+		position: relative
+		padding: 70px 80px 50px 80px
+		border: 2px solid $a
+		width: 780px
+		margin-bottom: 40px
 	.contacts
-		padding-left: $space
-		.contact
-			margin-top: $space * 2
+		width: 780px
+	.contact
+		padding: 20px 10px
+		img
+			margin-right: 15px
+		.link
+			font-weight: 500
 
 .box
 	width: 40px
@@ -338,6 +365,7 @@
 			height: 100%
 			width: 100%
 			object-fit: cover
+			border-radius: $radius
 	.about-description
 		font-size: 20px
 		font-weight: 500

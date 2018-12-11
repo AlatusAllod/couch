@@ -554,7 +554,11 @@ textarea {
   overflow: hidden;
   overflow-y: auto;
   white-space: pre-wrap;
-  resize: none; }
+  resize: none;
+  font-family: "Montserrat"; }
+
+input {
+  font-family: "Montserrat"; }
 
 a {
   text-decoration: none;
@@ -8653,16 +8657,46 @@ div.jGrowl > .ui-state-highligh {
       padding: 15px 70px;
       font-size: 18px; }
 
-#call-sect form .btn-d-big {
-  margin-top: 10px; }
-
-#call-sect form textarea {
-  display: block; }
-
-#call-sect .contacts {
-  padding-left: 20px; }
-  #call-sect .contacts .contact {
-    margin-top: 40px; }
+#call-sect {
+  padding-left: 80px;
+  padding-right: 160px; }
+  #call-sect .h3 {
+    margin-bottom: 40px; }
+  #call-sect .form-group {
+    padding: 20px 0; }
+  #call-sect .form-title {
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0; }
+  #call-sect .h4 {
+    padding: 0 20px;
+    background-color: #fff; }
+  #call-sect input {
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px); }
+    #call-sect input:focus {
+      border-color: #CB0000; }
+  #call-sect button {
+    width: -webkit-calc(50% - 10px);
+    width: calc(50% - 10px);
+    font-size: 18px; }
+  #call-sect .form-wrapper {
+    position: relative;
+    padding: 70px 80px 50px 80px;
+    border: 2px solid #CB0000;
+    width: 780px;
+    margin-bottom: 40px; }
+  #call-sect .contacts {
+    width: 780px; }
+  #call-sect .contact {
+    padding: 20px 10px; }
+    #call-sect .contact img {
+      margin-right: 15px; }
+    #call-sect .contact .link {
+      font-weight: 500; }
 
 .box {
   width: 40px;
@@ -9048,7 +9082,9 @@ div.jGrowl > .ui-state-highligh {
       height: 100%;
       width: 100%;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      -webkit-border-radius: 6px;
+              border-radius: 6px; }
   #about .about-description {
     font-size: 20px;
     font-weight: 500; }
