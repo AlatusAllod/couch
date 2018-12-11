@@ -9177,6 +9177,32 @@ div.jGrowl > .ui-state-highligh {
       background-color: rgba(203, 0, 0, 0.86);
       padding: 8px 0; }
 
+#factories-header {
+  padding: 170px 160px 80px 80px; }
+  #factories-header .h3 {
+    margin-bottom: 90px; }
+  #factories-header .factories__description {
+    width: 780px; }
+
+#factories {
+  padding: 80px 80px 100px 40px; }
+  #factories .factories__item {
+    padding: 40px; }
+    #factories .factories__item .h4 {
+      width: 80px;
+      font-size: 100px;
+      font-weight: 500;
+      color: #CB0000;
+      line-height: 90px;
+      margin-right: 20px; }
+  #factories .factories__list .link {
+    font-size: 14px;
+    font-weight: 500; }
+  #factories .factories__list li {
+    margin-bottom: 5px; }
+    #factories .factories__list li:last-child {
+      margin-bottom: 0; }
+
 #politics {
   top: 0;
   left: 0;

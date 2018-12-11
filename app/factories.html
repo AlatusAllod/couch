@@ -2,27 +2,27 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>Title</title>
-  <meta name="description" content="">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon/fav-48x48.png" type="image/x-icon">
-  <link rel="icon" type="image/png" href="img/favicon/fav-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/png" href="img/favicon/fav-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="img/favicon/fav-96x96.png" sizes="96x96">
-  <link rel="apple-touch-icon" href="img/favicon/fav-57x57.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/fav-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/fav-114x114.png">
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#000">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#000">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-  <style>
-    body {
+	<meta charset="utf-8">
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/fav-48x48.png" type="image/x-icon">
+	<link rel="icon" type="image/png" href="img/favicon/fav-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="img/favicon/fav-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/fav-96x96.png" sizes="96x96">
+	<link rel="apple-touch-icon" href="img/favicon/fav-57x57.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/fav-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/fav-114x114.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<style>
+		body {
 			opacity: 0;
 			overflow-x: hidden;
 		}
@@ -34,463 +34,704 @@
 </head>
 
 <body>
-  <div class="preloader column">
-    Загрузка
-    <div class="preload">
-      <div class="inner-preload"></div>
-    </div>
-  </div>
-  <div id="mob-mnu">
-    <div class="topbar flex">
-      <a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
-    </div>
-    <form class="search-form">
-      <input type="text" placeholder="Поиск">
-      <img class="search-icon" src="img/search.svg">
-    </form>
-    <menu>
-      <menu class="submenu">
-        <li class="screen-link h4">
-          <a class="link" href="">ГАРНИТУРЫ</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Гостинные</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Спальни</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Детские</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Кабинет</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Мягкая мебель</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Прихожие</a>
-        </li>
-      </menu>
-      <menu class="submenu">
-        <li class="screen-link h4">
-          <a class="link" href="">МЕБЕЛЬ</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Диваны</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Шкафы</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Кресла</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Кровать</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Тумбочки</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Столики</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Деткие кровати</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Хранение</a>
-        </li>
-        <li class="screen-link">
-          <a class="link" href="">Освещение</a>
-        </li>
-      </menu>
-    </menu>
-  </div>
-  <div class="page">
-    <div id="hamburger" class="sm-visible">
-      <div class="inner-hamb"></div>
-    </div>
-    <div class="preloader"></div>
-    <div class="notification offline">
-      Соединение с интернетом прервано
-    </div>
-    <div class="notification online">
-      Соединение с инетренетом восстановлено
-    </div>
-    <div class="notification message-success">
-      Ваше сообщение успешно отправлено! Мы перезвоним Вам в ближайшее время.
-    </div>
-    <div class="notification message-error">
-      Сообщение не отправлено! Проверьте введенные данные и подключение к интернету.
-    </div>
-    <header class="toolbar flex align-center content-center">
-      <div class="cont-fluid align-center content-end">
-        <div class="menu flex align-center">
-          <menu class="flex align-center sm-hidden">
-            <li>
-              <a class="link" href="/catalog.html">Каталог</a>
-            </li>
-            <li>
-              <a class="link" href="#sect-2">О компании</a>
-            </li>
-            <li>
-              <a class="link" href="#sect-3">Партнёрство</a>
-            </li>
-            <li>
-              <a class="link" href="/factories.html">Фабрики</a>
-            </li>
-            <li>
-              <a class="link" href="#sect-5">Мебель на заказ</a>
-            </li>
-          </menu>
-        </div>
-        <div class="navbar flex align-center">
-          <div class="contact flex align-center">
-            <a href="tel:+7-800-444-55-77" class="link">+8 (800) 444-55-77</a>
-          </div>
-          <img src="img/cart.svg" class="cart" alt="Корзина" title="Корзина">
-        </div>
-      </div>
-    </header>
-    <div class="blocker"></div>
-    <div class="screen-scroll" id="scroll-container">
-      <section class="sect column" id="call-sect">
-        <form class="flex column align-center xl-12">
-          <label class="h3 text-center" for="name"><span class="text-a">Оставьте</span> заявку</label>
-          <div class="form-wrapper">
-            <div class="form-title flex content-center">
-              <h4 class="h4">И получите скидку 10% на любой заказ!</h4>
-            </div>
-            <div class="form-group flex content-sb">
-              <input type="text" name="name" placeholder="Имя:" required>
-              <input type="text" class="mask-phone" name="phone" id="call-phone" placeholder="Телефон:" required>
-            </div>
-            <div class="form-group flex content-sb">
-              <input type="email" name="email" id="email" placeholder="E-mail:">
-              <button class="btn-a">Отправить</button>
-            </div>
-          </div>
-        </form>
-        <div class="contacts flex flex-wrap">
-          <div class="contact flex align-center xl-8">
-            <img src="img/map.svg" alt="Адрес" title="Адрес">
-            <a href="" class="link" target="_blank">г. Самара, пр. Ленина 25А</a>
-          </div>
-          <div class="contact flex align-center xl-4">
-            <img src="img/phone-call.svg" alt="Телефон" title="Телефон">
-            <a href="tel:+7 (800) 444-55-77" class="link">+7 (800) 444-55-77</a>
-          </div>
-          <div class="contact flex align-center xl-8">
-            <img src="img/email.svg" alt="Почта" title="Почта">
-            <a href="mailto:info@divanorosso.ru" class="link">info@divanorosso.ru</a>
-          </div>
-          <div class="contact flex align-center xl-4">
-            <img src="img/instagram.svg" alt="Instagram" title="Instagram">
-            <a href="https://www.instagram.com/" class="link">Instagram</a>
-          </div>
-        </div>
-      </section>
-      <footer class="sect" id="footer">
-        <div class="footer-logo xl-3">
-          <a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
-          <p class="logo-copyright">2018 (с) Все права защищены.</p>
-        </div>
-        <menu class="xl-3">
-          <li class="screen-link h4">
-            <a class="link" href="">Покупателю</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="">Подбор мебели</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="">Доставка</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="">Оплата</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="">Гарантия</a>
-          </li>
-        </menu>
-        <menu class="xl-3">
-          <li class="screen-link h4">
-            <a class="link" href="">О компании</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="">Наши партнеры</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="">Мебель на заказ</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="">Дизайнерам</a>
-          </li>
-        </menu>
-        <menu class="xl-3">
-          <li class="screen-link h4">
-            <a class="link" href="/catalog.html">Каталог</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="#mebel">Мебель</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="#garniture">Гарнитуры</a>
-          </li>
-          <li class="screen-link">
-            <a class="link" href="/factories.html">Фабрики</a>
-          </li>
-        </menu>
-      </footer>
-    </div>
-  </div>
-  <div id="Hidden__Container">
-    <div class="modal flex column align-center content-center" id="callback">
-      <div class="close-modal appender" data-modal="callback"></div>
-      <form>
-        <label class="h3 text-d text-center" for="call-phone-popup">Оставьте свои данные и мы свяжемся с вами!</label>
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Ваше имя:">
-        </div>
-        <div class="form-group">
-          <input type="text" name="phone" id="call-phone-popup" class="mask-phone" placeholder="Ваш телефон:" required>
-        </div>
-        <input type="hidden" name="title" id="hidinput" value="">
-        <button class="btn-d-big">Отправить</button>
-        <div class="polit">Нажимая на «Подтвердить» вы даете согласие на
-          <br>
-          <a class="open-modal appender" href="#politics">обработку персональных данных</a>
-        </div>
-      </form>
-    </div>
-    <div class="modal flex column align-center content-center" id="callback-2">
-      <div class="close-modal appender" data-modal="callback-2"></div>
-      <form>
-        <label class="h3 text-d text-center" for="call-phone-popup">Оставьте свои данные и мы свяжемся с вами!</label>
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Ваше имя:">
-        </div>
-        <div class="form-group">
-          <input type="text" name="phone" id="call-phone-popup" class="mask-phone" placeholder="Ваш телефон:" required>
-        </div>
-        <input type="hidden" name="title" id="hidinput" value="">
-        <button class="btn-d-big">Отправить</button>
-        <div class="polit">Нажимая на «Подтвердить» вы даете согласие на
-          <br>
-          <a class="open-modal appender" href="#politics">обработку персональных данных</a>
-        </div>
-      </form>
-    </div>
-    <div class="modal flex column align-center content-center" id="callback-3">
-      <div class="close-modal appender" data-modal="callback-3"></div>
-      <form>
-        <label class="h3 text-d text-center" for="call-phone-popup">Оставьте свои данные и мы свяжемся с вами!</label>
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Ваше имя:">
-        </div>
-        <div class="form-group">
-          <input type="text" name="phone" id="call-phone-popup" class="mask-phone" placeholder="Ваш телефон:" required>
-        </div>
-        <input type="hidden" name="title" id="hidinput" value="">
-        <button class="btn-d-big">Отправить</button>
-        <div class="polit">Нажимая на «Подтвердить» вы даете согласие на
-          <br>
-          <a class="open-modal appender" href="#politics">обработку персональных данных</a>
-        </div>
-      </form>
-    </div>
-    <div class="modal flex column align-center content-center" id="callback-4">
-      <div class="close-modal appender" data-modal="callback-4"></div>
-      <form>
-        <label class="h3 text-d text-center" for="call-phone-popup">Оставьте свои данные и мы свяжемся с вами!</label>
-        <div class="form-group">
-          <input type="text" name="name" placeholder="Ваше имя:">
-        </div>
-        <div class="form-group">
-          <input type="text" name="phone" id="call-phone-popup" class="mask-phone" placeholder="Ваш телефон:" required>
-        </div>
-        <input type="hidden" name="title" id="hidinput" value="">
-        <button class="btn-d-big">Отправить</button>
-        <div class="polit">Нажимая на «Подтвердить» вы даете согласие на
-          <br>
-          <a class="open-modal appender" href="#politics">обработку персональных данных</a>
-        </div>
-      </form>
-    </div>
-    <div id="politics" class="modal">
-      <div class="close close-modal appender" data-modal="politics"></div>
-      <h2 class="h2">Политика конфиденциальности</h2>
-      <p>Одной из основополагающих ценностей является безопасность и обеспечение конфиденциальности предоставленных
-        Клиентами данных.
-        С целью полного и всестороннего понимания данного документа, просим Вас внимательно с ним ознакомиться.</p>
-      <ul>
-        <li>
-          <h3 class="h4">Определения и термины</h3>
-          <ul>
-            <li>Сайт – любой из сайтов, на котором размещена информация о предлагаемых Компанией товарах, маркетинговых
-              акциях и иной
-              информации в сети Интернет.</li>
-            <li>Клиент – физическое лицо, использующее сайт Компании.</li>
-            <li>Персональные данные - информация, относящаяся к определенному Клиенту, указанная в п. 3.1 настоящего
-              Положения.</li>
-            <li>Обработка персональных данных – любые операции, совершаемые с использованием средств автоматизации или
-              без
-              использования
-              таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение,
-              уточнение
-              (обновление,
-              изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание,
-              блокирование,
-              удаление, уничтожение персональных данных.</li>
-            <li>Cookies - фрагменты данных, отправляемых веб-сервером браузеру при посещении сайта Клиентом.</li>
-          </ul>
-        </li>
-        <li>
-          <h3 class="h4">Цели и принципы политики конфиденциальности и сбора персональных данных</h3>
-          <ul>
-            <li>Политика конфиденциальности действует в отношении любой указанной в разделе 3 информации, которую
-              Компания
-              может получить
-              о Клиенте во время использования сайта, программ и продуктов сайта.</li>
-            <li>Клиент предоставляет свои персональные данные с целью:
-              <ul>
-                <li>- создания учетной записи,</li>
-                <li>- предоставления технической поддержки, связанной с использованием сайта,</li>
-                <li>- оформления заказов, уведомления о состоянии заказов, обработки и получения платежей,</li>
-                <li>- получения новостей, информации о продуктах, мероприятиях, рекламных акциях или услугах,</li>
-                <li>- участия в рекламных акциях, опросах,</li>
-                <li>- использования иных имеющихся на сайте сервисов, включая форум, персональные блоги, сервис обмена
-                  личными
-                  сообщениями
-                  между зарегистрированными участниками, персонализированные комментарии и отзывы, но не ограничиваясь
-                  ими.</li>
-                <li>Предоставленные данные могут быть использованы в целях продвижения товаров от имени Компании или от
-                  имени
-                  партнеров
-                  Компании.
-                </li>
-              </ul>
-            </li>
-            <li>Обеспечение надежности хранения информации и прозрачности целей сбора персональных данных. Персональные
-              данные Клиентов
-              собираются, хранятся, обрабатываются, используются, передаются и удаляются (уничтожаются) в соответствии
-              с
-              законодательством
-              РФ, в т.ч. Федеральным законом 27.07.2006 № 152-ФЗ «О персональных данных», и настоящей Политикой
-              конфиденциальности.</li>
-          </ul>
-        </li>
-        <li>
-          <h3 class="h4">Информация, подлежащая обработке</h3>
-          <ul>
-            <li>
-              Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности,
-              предоставляются
-              Клиентом путём
-              заполнения регистрационной формы на сайте Компании и включают в себя следующую информацию:
-              <ul>
-                <li>ФИО Клиента;</li>
-                <li>контактный телефон Клиента;</li>
-                <li>адрес электронной почты (e-mail);</li>
-                <li>адрес доставки Товара;</li>
-                <li>историю заказов.</li>
-              </ul>
-            <li>
-              Компания также получает данные, которые автоматически передаются в процессе просмотра при посещении
-              сайта, в т.
-              ч.:
-              <ul>
-                <li>IP адрес;</li>
-                <li>информация из cookies;</li>
-                <li>информация о браузере (или иной программе, которая осуществляет доступ к показу рекламы);</li>
-                <li>время доступа;</li>
-                <li>реферер (адрес предыдущей страницы).</li>
-              </ul>
-            </li>
-        </li>
-      </ul>
-      </li>
-      <li>
-        <h3 class="h4">Обработка и использование персональных данных</h3>
-        <ul>
-          <li>Обработка персональных данных Клиента осуществляется без ограничения срока, любым законным способом, в
-            том
-            числе в
-            информационных системах персональных данных с использованием средств автоматизации или без использования
-            таких
-            средств.</li>
-          <li>Соглашаясь с настоящей Политикой конфиденциальности Клиент предоставляет Компании свое бессрочное
-            согласие на
-            обработку
-            указанных в разделе 3 персональных данных всеми указанными в настоящей Политике способами, а также передачу
-            указанных
-            данных партнерам Компании для целей исполнения принятых на себя обязательств.</li>
-          <li>Компания не вправе передавать информацию о Клиенте неаффилированным лицам или лицам, не связанным с
-            Компанией
-            договорными
-            отношениями.
-          </li>
-          <li>Передача информации аффилированным лицам и лицам, которые связаны с Компанией договорными отношениями
-            (курьерские службы,
-            организации почтовой связи и т.д.), осуществляется для исполнения заказа Клиента, а также для возможности
-            информирования
-            Клиента о проводимых акциях, предоставляемых услугах, проводимых мероприятиях.</li>
-          <li>Аффилированные лица и лица, связанные с Компанией договорными отношениями, принимают на себя
-            обязательства
-            обеспечивать
-            конфиденциальность информации и гарантировать ее защиту, а также обязуются использовать полученную
-            информацию
-            исключительно
-            для целей исполнения указанных действий или оказания услуг.</li>
-          <li>Компания принимает все необходимые меры для защиты персональных данных Клиента от неавторизированного
-            доступа,
-            изменения,
-            раскрытия или уничтожения.</li>
-        </ul>
-      </li>
-      <li>
-        <h3 class="h4">Права и обязанности Клиента</h3>
-        <ul>
-          <li>Клиент обязуется не сообщать каким-либо третьим лицам логин и пароль, используемые им для идентификации
-            на
-            сайте Компании.</li>
-          <li>Клиент обязуется соблюдать должную осмотрительность при хранении пароля, а также при его вводе.</li>
-          <li>Клиент вправе изменять свои личные данные, а также требовать удаление личных данных у Компании.</li>
-        </ul>
-      </li>
-      <li>
-        <h3 class="h4">Дополнительные условия</h3>
-        <ul>
-          <li>Соглашаясь с настоящей Политикой конфиденциальности, Клиент предоставляет свое бессрочное согласие на
-            получение информации
-            о состоянии заказов, учетной записи и прочих уведомлений технического характера, а также уведомлений
-            рекламного
-            характера,
-            в том числе о текущих маркетинговых акциях и актуальных предложениях Компании, с помощью различных средств,
-            включая
-            SMS и электронную почту, но не ограничиваясь ими. Клиент может в любое время отказаться от получения такой
-            информации
-            путем изменения данных учетной записи на сайте Компании.</li>
-          <li>Компания несет ответственность перед клиентом в случаях, предусмотренных действующим законодательством.</li>
-          <li>Компания освобождается от ответственности в случаях, когда информация о Клиенте: - стала публичным
-            достоянием
-            до её
-            утраты или разглашения - была получена от третьей стороны до момента её получения Компанией - была
-            разглашена с
-            согласия
-            Клиента.
-          </li>
-          <li>Компания вправе вносить изменения в политику конфиденциальности в одностороннем порядке. Изменения
-            вступают в
-            силу
-            с момента их опубликования на сайте Компании.</li>
-        </ul>
-      </li>
-      </ul>
-    </div>
-  </div>
-  <link rel="stylesheet" href="css/index.min.css">
-  <script src="js/scripts.min.js"></script>
-  <script src="js/common.js"></script>
+	<div class="preloader column">
+		Загрузка
+		<div class="preload">
+			<div class="inner-preload"></div>
+		</div>
+	</div>
+	<div id="mob-mnu">
+		<div class="topbar flex">
+			<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
+		</div>
+		<form class="search-form">
+			<input type="text" placeholder="Поиск">
+			<img class="search-icon" src="img/search.svg">
+		</form>
+		<menu>
+			<menu class="submenu">
+				<li class="screen-link h4">
+					<a class="link" href="">ГАРНИТУРЫ</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Гостинные</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Спальни</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Детские</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Кабинет</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Мягкая мебель</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Прихожие</a>
+				</li>
+			</menu>
+			<menu class="submenu">
+				<li class="screen-link h4">
+					<a class="link" href="">МЕБЕЛЬ</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Диваны</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Шкафы</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Кресла</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Кровать</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Тумбочки</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Столики</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Деткие кровати</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Хранение</a>
+				</li>
+				<li class="screen-link">
+					<a class="link" href="">Освещение</a>
+				</li>
+			</menu>
+		</menu>
+	</div>
+	<div class="page">
+		<div id="hamburger" class="sm-visible">
+			<div class="inner-hamb"></div>
+		</div>
+		<div class="preloader"></div>
+		<div class="notification offline">
+			Соединение с интернетом прервано
+		</div>
+		<div class="notification online">
+			Соединение с инетренетом восстановлено
+		</div>
+		<div class="notification message-success">
+			Ваше сообщение успешно отправлено! Мы перезвоним Вам в ближайшее время.
+		</div>
+		<div class="notification message-error">
+			Сообщение не отправлено! Проверьте введенные данные и подключение к интернету.
+		</div>
+		<header class="toolbar flex align-center content-center">
+			<div class="cont-fluid align-center content-end">
+				<div class="menu flex align-center">
+					<menu class="flex align-center sm-hidden">
+						<li>
+							<a class="link" href="/catalog.html">Каталог</a>
+						</li>
+						<li>
+							<a class="link" href="#sect-2">О компании</a>
+						</li>
+						<li>
+							<a class="link" href="#sect-3">Партнёрство</a>
+						</li>
+						<li>
+							<a class="link" href="/factories.html">Фабрики</a>
+						</li>
+						<li>
+							<a class="link" href="#sect-5">Мебель на заказ</a>
+						</li>
+					</menu>
+				</div>
+				<div class="navbar flex align-center">
+					<div class="contact flex align-center">
+						<a href="tel:+7-800-444-55-77" class="link">+8 (800) 444-55-77</a>
+					</div>
+					<img src="img/cart.svg" class="cart" alt="Корзина" title="Корзина">
+				</div>
+			</div>
+		</header>
+		<div class="blocker"></div>
+		<div class="screen-scroll" id="scroll-container">
+			<section class="sect column" id="factories-header">
+				<h3 class="h3"><span class="text-a">Мебельные</span> фабрики</h3>
+				<p class="factories__description">На нашем сайте представлен каталог мебельных фабрик со всего мира – Европы, Азии.
+					Самые популярные и актуальные коллекции мебели этих производителей Вы уже можете найти в нашем интернет-магазине.
+					Очень часто эта мебель доступна по нашей складской программе или ее можно быстро доставить под заказ.</p>
+			</section>
+			<section class="sect column" id="factories">
+				<div class="factories flex flex-wrap xl-12">
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">A</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Aran</a>
+							</li>
+							<li>
+								<a class="link" href="">Angelo Cappellini</a>
+							</li>
+							<li>
+								<a class="link" href="">Antonello Moravio</a>
+							</li>
+							<li>
+								<a class="link" href="">Aritali</a>
+							</li>
+							<li>
+								<a class="link" href="">Alf Italia</a>
+							</li>
+							<li>
+								<a class="link" href="">Antonello Italia</a>
+							</li>
+							<li>
+								<a class="link" href="">Arbi bathroom</a>
+							</li>
+							<li>
+								<a class="link" href="">Armani casa</a>
+							</li>
+							<li>
+								<a class="link" href="">Armani dada</a>
+							</li>
+							<li>
+								<a class="link" href="">Arte Veneziana</a>
+							</li>
+							<li>
+								<a class="link" href="">Arredo Classic</a>
+							</li>
+							<li>
+								<a class="link" href="">Aster cucine</a>
+							</li>
+							<li>
+								<a class="link" href="">Aurora cucine</a>
+							</li>
+							<li>
+								<a class="link" href="">Avenanti</a>
+							</li>
+						</ul>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">B</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Bakokko</a>
+							</li>
+							<li>
+								<a class="link" href="">Bamax</a>
+							</li>
+							<li>
+								<a class="link" href="">Bolzan</a>
+							</li>
+							<li>
+								<a class="link" href="">Bova</a>
+							</li>
+							<li>
+								<a class="link" href="">Baby exper</a>
+							</li>
+							<li>
+								<a class="link" href="">Berloni</a>
+							</li>
+							<li>
+								<a class="link" href="">Bizzotto</a>
+							</li>
+							<li>
+								<a class="link" href="">BM style</a>
+							</li>
+							<li>
+								<a class="link" href="">BoConcept</a>
+							</li>
+							<li>
+								<a class="link" href="">Bontempi casa</a>
+							</li>
+							<li>
+								<a class="link" href="">Bottega D’arte</a>
+							</li>
+							<li>
+								<a class="link" href="">Bruno Zampa</a>
+							</li>
+						</ul>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">C</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Claudio Saoncella</a>
+							</li>
+							<li>
+								<a class="link" href="">Casa 39</a>
+							</li>
+							<li>
+								<a class="link" href="">Camelgroup</a>
+							</li>
+							<li>
+								<a class="link" href="">Cappellini</a>
+							</li>
+							<li>
+								<a class="link" href="">Corte Zari</a>
+							</li>
+						</ul>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">D</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Dall agnese</a>
+							</li>
+							<li>
+								<a class="link" href="">Domingo Salotti</a>
+							</li>
+							<li>
+								<a class="link" href="">Ducale</a>
+							</li>
+							<li>
+								<a class="link" href="">DV HOME</a>
+							</li>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">F</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Francesco Pasi</a>
+							</li>
+							<li>
+								<a class="link" href="">Florence Art</a>
+							</li>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">G</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Giorgio Collection</a>
+							</li>
+							<li>
+								<a class="link" href="">Giusti Portos</a>
+							</li>
+							<li>
+								<a class="link" href="">Giorgio Сasa</a>
+							</li>
+							<li>
+								<a class="link" href="">GIULIO CASA</a>
+							</li>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">M</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">M.vilanova</a>
+							</li>
+							<li>
+								<a class="link" href="">Maronese</a>
+							</li>
+							<li>
+								<a class="link" href="">Modenese Gastone</a>
+							</li>
+							<li>
+								<a class="link" href="">Mobil Piu</a>
+							</li>
+							<li>
+								<a class="link" href="">Morello Gianpaolo</a>
+							</li>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">P</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Prama</a>
+							</li>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">R</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Rosetto Armobili</a>
+							</li>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">S</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">San michele</a>
+							</li>
+							<li>
+								<a class="link" href="">Savio Firmino</a>
+							</li>
+							<li>
+								<a class="link" href="">Sma</a>
+							</li>
+							<li>
+								<a class="link" href="">Signorini & Coco</a>
+							</li>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">T</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Tempor</a>
+							</li>
+							<li>
+								<a class="link" href="">Tonin casa</a>
+							</li>
+							<li>
+								<a class="link" href="">Turri</a>
+							</li>
+					</div>
+					<div class="factories__item xl-3 flex">
+						<h4 class="h4">V</h4>
+						<ul class="factories__list">
+							<li>
+								<a class="link" href="">Valdera Mobili</a>
+							</li>
+							<li>
+								<a class="link" href="">Venier</a>
+							</li>
+							<li>
+								<a class="link" href="">Volpi</a>
+							</li>
+							<li>
+								<a class="link" href="">Venezia</a>
+							</li>
+							<li>
+								<a class="link" href="">Verdi</a>
+							</li>
+					</div>
+				</div>
+			</section>
+			<section class="sect column" id="call-sect">
+				<form class="flex column align-center xl-12">
+					<label class="h3 text-center" for="name"><span class="text-a">Оставьте</span> заявку</label>
+					<div class="form-wrapper">
+						<div class="form-title flex content-center">
+							<h4 class="h4">И получите скидку 10% на любой заказ!</h4>
+						</div>
+						<div class="form-group flex content-sb">
+							<input type="text" name="name" placeholder="Имя:" required>
+							<input type="text" class="mask-phone" name="phone" id="call-phone" placeholder="Телефон:" required>
+						</div>
+						<div class="form-group flex content-sb">
+							<input type="email" name="email" id="email" placeholder="E-mail:">
+							<button class="btn-a">Отправить</button>
+						</div>
+					</div>
+				</form>
+				<div class="contacts flex flex-wrap">
+					<div class="contact flex align-center xl-8">
+						<img src="img/map.svg" alt="Адрес" title="Адрес">
+						<a href="" class="link" target="_blank">г. Самара, пр. Ленина 25А</a>
+					</div>
+					<div class="contact flex align-center xl-4">
+						<img src="img/phone-call.svg" alt="Телефон" title="Телефон">
+						<a href="tel:+7 (800) 444-55-77" class="link">+7 (800) 444-55-77</a>
+					</div>
+					<div class="contact flex align-center xl-8">
+						<img src="img/email.svg" alt="Почта" title="Почта">
+						<a href="mailto:info@divanorosso.ru" class="link">info@divanorosso.ru</a>
+					</div>
+					<div class="contact flex align-center xl-4">
+						<img src="img/instagram.svg" alt="Instagram" title="Instagram">
+						<a href="https://www.instagram.com/" class="link">Instagram</a>
+					</div>
+				</div>
+			</section>
+			<footer class="sect" id="footer">
+				<div class="footer-logo xl-3">
+					<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
+					<p class="logo-copyright">2018 (с) Все права защищены.</p>
+				</div>
+				<menu class="xl-3">
+					<li class="screen-link h4">
+						<a class="link" href="">Покупателю</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="">Подбор мебели</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="">Доставка</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="">Оплата</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="">Гарантия</a>
+					</li>
+				</menu>
+				<menu class="xl-3">
+					<li class="screen-link h4">
+						<a class="link" href="">О компании</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="">Наши партнеры</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="">Мебель на заказ</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="">Дизайнерам</a>
+					</li>
+				</menu>
+				<menu class="xl-3">
+					<li class="screen-link h4">
+						<a class="link" href="/catalog.html">Каталог</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="#mebel">Мебель</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="#garniture">Гарнитуры</a>
+					</li>
+					<li class="screen-link">
+						<a class="link" href="/factories.html">Фабрики</a>
+					</li>
+				</menu>
+			</footer>
+		</div>
+	</div>
+	<div id="Hidden__Container">
+		<div class="modal flex column align-center content-center" id="callback">
+			<div class="close-modal appender" data-modal="callback"></div>
+			<form>
+				<label class="h3 text-d text-center" for="call-phone-popup">Оставьте свои данные и мы свяжемся с вами!</label>
+				<div class="form-group">
+					<input type="text" name="name" placeholder="Ваше имя:">
+				</div>
+				<div class="form-group">
+					<input type="text" name="phone" id="call-phone-popup" class="mask-phone" placeholder="Ваш телефон:" required>
+				</div>
+				<input type="hidden" name="title" id="hidinput" value="">
+				<button class="btn-d-big">Отправить</button>
+				<div class="polit">Нажимая на «Подтвердить» вы даете согласие на
+					<br>
+					<a class="open-modal appender" href="#politics">обработку персональных данных</a>
+				</div>
+			</form>
+		</div>
+		<div class="modal flex column align-center content-center" id="callback-2">
+			<div class="close-modal appender" data-modal="callback-2"></div>
+			<form>
+				<label class="h3 text-d text-center" for="call-phone-popup">Оставьте свои данные и мы свяжемся с вами!</label>
+				<div class="form-group">
+					<input type="text" name="name" placeholder="Ваше имя:">
+				</div>
+				<div class="form-group">
+					<input type="text" name="phone" id="call-phone-popup" class="mask-phone" placeholder="Ваш телефон:" required>
+				</div>
+				<input type="hidden" name="title" id="hidinput" value="">
+				<button class="btn-d-big">Отправить</button>
+				<div class="polit">Нажимая на «Подтвердить» вы даете согласие на
+					<br>
+					<a class="open-modal appender" href="#politics">обработку персональных данных</a>
+				</div>
+			</form>
+		</div>
+		<div class="modal flex column align-center content-center" id="callback-3">
+			<div class="close-modal appender" data-modal="callback-3"></div>
+			<form>
+				<label class="h3 text-d text-center" for="call-phone-popup">Оставьте свои данные и мы свяжемся с вами!</label>
+				<div class="form-group">
+					<input type="text" name="name" placeholder="Ваше имя:">
+				</div>
+				<div class="form-group">
+					<input type="text" name="phone" id="call-phone-popup" class="mask-phone" placeholder="Ваш телефон:" required>
+				</div>
+				<input type="hidden" name="title" id="hidinput" value="">
+				<button class="btn-d-big">Отправить</button>
+				<div class="polit">Нажимая на «Подтвердить» вы даете согласие на
+					<br>
+					<a class="open-modal appender" href="#politics">обработку персональных данных</a>
+				</div>
+			</form>
+		</div>
+		<div class="modal flex column align-center content-center" id="callback-4">
+			<div class="close-modal appender" data-modal="callback-4"></div>
+			<form>
+				<label class="h3 text-d text-center" for="call-phone-popup">Оставьте свои данные и мы свяжемся с вами!</label>
+				<div class="form-group">
+					<input type="text" name="name" placeholder="Ваше имя:">
+				</div>
+				<div class="form-group">
+					<input type="text" name="phone" id="call-phone-popup" class="mask-phone" placeholder="Ваш телефон:" required>
+				</div>
+				<input type="hidden" name="title" id="hidinput" value="">
+				<button class="btn-d-big">Отправить</button>
+				<div class="polit">Нажимая на «Подтвердить» вы даете согласие на
+					<br>
+					<a class="open-modal appender" href="#politics">обработку персональных данных</a>
+				</div>
+			</form>
+		</div>
+		<div id="politics" class="modal">
+			<div class="close close-modal appender" data-modal="politics"></div>
+			<h2 class="h2">Политика конфиденциальности</h2>
+			<p>Одной из основополагающих ценностей является безопасность и обеспечение конфиденциальности предоставленных
+				Клиентами данных.
+				С целью полного и всестороннего понимания данного документа, просим Вас внимательно с ним ознакомиться.</p>
+			<ul>
+				<li>
+					<h3 class="h4">Определения и термины</h3>
+					<ul>
+						<li>Сайт – любой из сайтов, на котором размещена информация о предлагаемых Компанией товарах, маркетинговых
+							акциях и иной
+							информации в сети Интернет.</li>
+						<li>Клиент – физическое лицо, использующее сайт Компании.</li>
+						<li>Персональные данные - информация, относящаяся к определенному Клиенту, указанная в п. 3.1 настоящего
+							Положения.</li>
+						<li>Обработка персональных данных – любые операции, совершаемые с использованием средств автоматизации или
+							без
+							использования
+							таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение,
+							уточнение
+							(обновление,
+							изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание,
+							блокирование,
+							удаление, уничтожение персональных данных.</li>
+						<li>Cookies - фрагменты данных, отправляемых веб-сервером браузеру при посещении сайта Клиентом.</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class="h4">Цели и принципы политики конфиденциальности и сбора персональных данных</h3>
+					<ul>
+						<li>Политика конфиденциальности действует в отношении любой указанной в разделе 3 информации, которую
+							Компания
+							может получить
+							о Клиенте во время использования сайта, программ и продуктов сайта.</li>
+						<li>Клиент предоставляет свои персональные данные с целью:
+							<ul>
+								<li>- создания учетной записи,</li>
+								<li>- предоставления технической поддержки, связанной с использованием сайта,</li>
+								<li>- оформления заказов, уведомления о состоянии заказов, обработки и получения платежей,</li>
+								<li>- получения новостей, информации о продуктах, мероприятиях, рекламных акциях или услугах,</li>
+								<li>- участия в рекламных акциях, опросах,</li>
+								<li>- использования иных имеющихся на сайте сервисов, включая форум, персональные блоги, сервис обмена
+									личными
+									сообщениями
+									между зарегистрированными участниками, персонализированные комментарии и отзывы, но не ограничиваясь
+									ими.</li>
+								<li>Предоставленные данные могут быть использованы в целях продвижения товаров от имени Компании или от
+									имени
+									партнеров
+									Компании.
+								</li>
+							</ul>
+						</li>
+						<li>Обеспечение надежности хранения информации и прозрачности целей сбора персональных данных. Персональные
+							данные Клиентов
+							собираются, хранятся, обрабатываются, используются, передаются и удаляются (уничтожаются) в соответствии
+							с
+							законодательством
+							РФ, в т.ч. Федеральным законом 27.07.2006 № 152-ФЗ «О персональных данных», и настоящей Политикой
+							конфиденциальности.</li>
+					</ul>
+				</li>
+				<li>
+					<h3 class="h4">Информация, подлежащая обработке</h3>
+					<ul>
+						<li>
+							Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности,
+							предоставляются
+							Клиентом путём
+							заполнения регистрационной формы на сайте Компании и включают в себя следующую информацию:
+							<ul>
+								<li>ФИО Клиента;</li>
+								<li>контактный телефон Клиента;</li>
+								<li>адрес электронной почты (e-mail);</li>
+								<li>адрес доставки Товара;</li>
+								<li>историю заказов.</li>
+							</ul>
+						<li>
+							Компания также получает данные, которые автоматически передаются в процессе просмотра при посещении
+							сайта, в т.
+							ч.:
+							<ul>
+								<li>IP адрес;</li>
+								<li>информация из cookies;</li>
+								<li>информация о браузере (или иной программе, которая осуществляет доступ к показу рекламы);</li>
+								<li>время доступа;</li>
+								<li>реферер (адрес предыдущей страницы).</li>
+							</ul>
+						</li>
+				</li>
+			</ul>
+			</li>
+			<li>
+				<h3 class="h4">Обработка и использование персональных данных</h3>
+				<ul>
+					<li>Обработка персональных данных Клиента осуществляется без ограничения срока, любым законным способом, в
+						том
+						числе в
+						информационных системах персональных данных с использованием средств автоматизации или без использования
+						таких
+						средств.</li>
+					<li>Соглашаясь с настоящей Политикой конфиденциальности Клиент предоставляет Компании свое бессрочное
+						согласие на
+						обработку
+						указанных в разделе 3 персональных данных всеми указанными в настоящей Политике способами, а также передачу
+						указанных
+						данных партнерам Компании для целей исполнения принятых на себя обязательств.</li>
+					<li>Компания не вправе передавать информацию о Клиенте неаффилированным лицам или лицам, не связанным с
+						Компанией
+						договорными
+						отношениями.
+					</li>
+					<li>Передача информации аффилированным лицам и лицам, которые связаны с Компанией договорными отношениями
+						(курьерские службы,
+						организации почтовой связи и т.д.), осуществляется для исполнения заказа Клиента, а также для возможности
+						информирования
+						Клиента о проводимых акциях, предоставляемых услугах, проводимых мероприятиях.</li>
+					<li>Аффилированные лица и лица, связанные с Компанией договорными отношениями, принимают на себя
+						обязательства
+						обеспечивать
+						конфиденциальность информации и гарантировать ее защиту, а также обязуются использовать полученную
+						информацию
+						исключительно
+						для целей исполнения указанных действий или оказания услуг.</li>
+					<li>Компания принимает все необходимые меры для защиты персональных данных Клиента от неавторизированного
+						доступа,
+						изменения,
+						раскрытия или уничтожения.</li>
+				</ul>
+			</li>
+			<li>
+				<h3 class="h4">Права и обязанности Клиента</h3>
+				<ul>
+					<li>Клиент обязуется не сообщать каким-либо третьим лицам логин и пароль, используемые им для идентификации
+						на
+						сайте Компании.</li>
+					<li>Клиент обязуется соблюдать должную осмотрительность при хранении пароля, а также при его вводе.</li>
+					<li>Клиент вправе изменять свои личные данные, а также требовать удаление личных данных у Компании.</li>
+				</ul>
+			</li>
+			<li>
+				<h3 class="h4">Дополнительные условия</h3>
+				<ul>
+					<li>Соглашаясь с настоящей Политикой конфиденциальности, Клиент предоставляет свое бессрочное согласие на
+						получение информации
+						о состоянии заказов, учетной записи и прочих уведомлений технического характера, а также уведомлений
+						рекламного
+						характера,
+						в том числе о текущих маркетинговых акциях и актуальных предложениях Компании, с помощью различных средств,
+						включая
+						SMS и электронную почту, но не ограничиваясь ими. Клиент может в любое время отказаться от получения такой
+						информации
+						путем изменения данных учетной записи на сайте Компании.</li>
+					<li>Компания несет ответственность перед клиентом в случаях, предусмотренных действующим законодательством.</li>
+					<li>Компания освобождается от ответственности в случаях, когда информация о Клиенте: - стала публичным
+						достоянием
+						до её
+						утраты или разглашения - была получена от третьей стороны до момента её получения Компанией - была
+						разглашена с
+						согласия
+						Клиента.
+					</li>
+					<li>Компания вправе вносить изменения в политику конфиденциальности в одностороннем порядке. Изменения
+						вступают в
+						силу
+						с момента их опубликования на сайте Компании.</li>
+				</ul>
+			</li>
+			</ul>
+		</div>
+	</div>
+	<link rel="stylesheet" href="css/index.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
 </body>
 
 </html>
