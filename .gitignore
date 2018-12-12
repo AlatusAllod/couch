@@ -4,4 +4,4 @@ yarn.lock
 package-lock.json
 .vscode/
 .bowerrc
-**/.DS_Store
+.DS_Store
