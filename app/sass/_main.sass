@@ -97,11 +97,11 @@
 		height: 100%
 		padding: 0
 		opacity: 1
-		img
-			width: 100%
-			height: 100%
-			object-fit: cover
-			object-position: center bottom
+	.slide-image
+		height: 100%
+		width: 100%
+		background-size: cover
+		background-position: center bottom
 	.thumb
 		position: relative
 		width: 80px
@@ -143,79 +143,79 @@
 	padding-bottom: 100px
 	.h3
 		margin-bottom: 55px
-	.popular-container
-		width: 100%
-		padding-bottom: 55px
-	.popular-item
-		padding: 25px 10px
-		cursor: pointer
-		&:hover
-			.popular__cart
+.popular-container
+	width: 100%
+	padding-bottom: 55px
+.popular-item
+	padding: 25px 10px
+	cursor: pointer
+	&:hover
+		.popular__cart
+			opacity: 1
+		.popular__img
+			&:after
 				opacity: 1
-			.popular__img
-				&:after
-					opacity: 1
-			.popular__button
-				opacity: 1
-		&:nth-of-type(4n+1)
-			padding-left: 0
-		&:nth-of-type(4n)
-			padding-right: 0
-	.popular__img
-		margin-bottom: 10px
-		height: 240px
-		position: relative
-		&::after
-			position: absolute
-			height: 100%
-			width: 100%
-			top: 0
-			left: 0
-			content: ""
-			box-shadow: 0px 15px 30px rgba(203, 0, 0, 0.3)
-			opacity: 0
-			transition-duration: 0.5s
-		img
-			border-radius: $radius
-			width: 100%
-			height: 100%
-			object-fit: cover
-	.popular__button
-		opacity: 0
-		transition: 0.5s
+		.popular__button
+			opacity: 1
+	&:nth-of-type(4n+1)
+		padding-left: 0
+	&:nth-of-type(4n)
+		padding-right: 0
+.popular__img
+	margin-bottom: 10px
+	height: 240px
+	position: relative
+	&::after
 		position: absolute
-		left: 0
-		bottom: 0
+		height: 100%
 		width: 100%
-		font-size: 14px
-		border-radius: 0 0 $radius $radius
-	.popular__fabric
-		font-weight: 600
-		font-size: 14px
-		margin-bottom: 10px
-		span
-			font-weight: 500
-	.popular__description
-		font-size: 20px
-		margin-bottom: 10px
-	.popular__price
-		color: $a
-		font-weight: 20px
-	.popular__cost
-		margin-bottom: 0
-	.popular__cart
+		top: 0
+		left: 0
+		content: ""
+		box-shadow: 0px 15px 30px rgba(203, 0, 0, 0.3)
 		opacity: 0
 		transition-duration: 0.5s
-		position: relative
-		&::after
-			top: 0
-			bottom: 0
-			position: absolute
-			content: "+"
-			right: 25px
-	.popular__catalog
-		font-size: 18px
-		padding: 10px 60px
+	img
+		border-radius: $radius
+		width: 100%
+		height: 100%
+		object-fit: cover
+.popular__button
+	opacity: 0
+	transition: 0.5s
+	position: absolute
+	left: 0
+	bottom: 0
+	width: 100%
+	font-size: 14px
+	border-radius: 0 0 $radius $radius
+.popular__fabric
+	font-weight: 600
+	font-size: 14px
+	margin-bottom: 10px
+	span
+		font-weight: 500
+.popular__description
+	font-size: 20px
+	margin-bottom: 10px
+.popular__price
+	color: $a
+	font-weight: 20px
+.popular__cost
+	margin-bottom: 0
+.popular__cart
+	opacity: 0
+	transition-duration: 0.5s
+	position: relative
+	&::after
+		top: 0
+		bottom: 0
+		position: absolute
+		content: "+"
+		right: 25px
+.popular__catalog
+	font-size: 18px
+	padding: 10px 60px
 #fabrics,
 #partners
 	padding-top: 100px
