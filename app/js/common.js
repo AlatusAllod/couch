@@ -291,6 +291,11 @@ $(document).ready(function () {
 		clearInterval(interval);
 		preload.css('width', '100%');
 	}, timeout);
+
+	$('.mobile-filter .acc-head').click(function () {
+		$(this).next().slideToggle(200);
+		$(this).toggleClass('acc-active');
+	});
 });
 
 $(window).on('load', function () {

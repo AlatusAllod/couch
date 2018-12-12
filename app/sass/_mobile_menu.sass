@@ -54,6 +54,60 @@
 			width: 15px
 	.social
 		margin-top: $space / 2
+	.mobile-previous
+		margin-top: 35px
+		margin-left: 35px
+		margin-bottom: 70px
+		border-color: $a
+		color: $a
+		font-size: 14px
+		letter-spacing: 0.1em
+		padding: 10px 30px 10px 40px
+		position: relative
+		&::before
+			transition-duration: 0.5s
+			content: ''
+			position: absolute
+			border: 7px solid transparent
+			border-right: 7px solid $a
+			top: 0
+			bottom: 0
+			margin: auto 0
+			left: 10px
+			height: 0
+			width: 0
+		&:hover
+			background-color: $a
+			color: $l
+			&::before
+				border-right: 7px solid $l
+	.mobile-filter
+		padding-left: 35px
+		.acc-head
+			position: relative
+			cursor: pointer
+			margin-bottom: 20px
+			letter-spacing: 0.1em
+			font-weight: 500
+			&::after
+				content: ''
+				position: absolute
+				border: 7px solid transparent
+				border-top: 7px solid #C4C4C4
+				top: 7px
+				bottom: 0
+				margin: auto 0
+				right: -30px
+				height: 0
+				width: 0
+				transition-duration: 0.2s
+				transform-origin: 50% 3.5px
+		.acc-active
+			&::after
+				transform: rotate(180deg)
+		input
+			width: auto
+
 .mob-mnu-active
 	.page
 		transform: translateX(240px)

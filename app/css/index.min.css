@@ -8493,6 +8493,66 @@ textarea {
       width: 15px; }
   #mob-mnu .social {
     margin-top: 10px; }
+  #mob-mnu .mobile-previous {
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-bottom: 70px;
+    border-color: #CB0000;
+    color: #CB0000;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    padding: 10px 30px 10px 40px;
+    position: relative; }
+    #mob-mnu .mobile-previous::before {
+      -webkit-transition-duration: 0.5s;
+           -o-transition-duration: 0.5s;
+              transition-duration: 0.5s;
+      content: '';
+      position: absolute;
+      border: 7px solid transparent;
+      border-right: 7px solid #CB0000;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      left: 10px;
+      height: 0;
+      width: 0; }
+    #mob-mnu .mobile-previous:hover {
+      background-color: #CB0000;
+      color: #fff; }
+      #mob-mnu .mobile-previous:hover::before {
+        border-right: 7px solid #fff; }
+  #mob-mnu .mobile-filter {
+    padding-left: 35px; }
+    #mob-mnu .mobile-filter .acc-head {
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 20px;
+      letter-spacing: 0.1em;
+      font-weight: 500; }
+      #mob-mnu .mobile-filter .acc-head::after {
+        content: '';
+        position: absolute;
+        border: 7px solid transparent;
+        border-top: 7px solid #C4C4C4;
+        top: 7px;
+        bottom: 0;
+        margin: auto 0;
+        right: -30px;
+        height: 0;
+        width: 0;
+        -webkit-transition-duration: 0.2s;
+             -o-transition-duration: 0.2s;
+                transition-duration: 0.2s;
+        -webkit-transform-origin: 50% 3.5px;
+            -ms-transform-origin: 50% 3.5px;
+                transform-origin: 50% 3.5px; }
+    #mob-mnu .mobile-filter .acc-active::after {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    #mob-mnu .mobile-filter input {
+      width: auto; }
 
 .mob-mnu-active .page {
   -webkit-transform: translateX(240px);
@@ -9205,7 +9265,7 @@ div.jGrowl > .ui-state-highligh {
     background-position: bottom center; }
   #category-catalog .catalog__path {
     font-size: 14px;
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
   #category-catalog .catalog__description {
     line-height: 33px; }
 
