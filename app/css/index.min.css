@@ -8551,8 +8551,8 @@ textarea {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
-    #mob-mnu .mobile-filter input {
-      width: auto; }
+    #mob-mnu .mobile-filter input[type="checkbox"] {
+      display: none; }
 
 .mob-mnu-active .page {
   -webkit-transform: translateX(240px);
