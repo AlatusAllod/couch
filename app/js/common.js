@@ -296,6 +296,10 @@ $(document).ready(function () {
 		$(this).next().slideToggle(200);
 		$(this).toggleClass('acc-active');
 	});
+
+	$('.mobile-filter .acc-body label').click(function () {
+		$(this).toggleClass('checkbox-active');
+	});
 });
 
 $(window).on('load', function () {

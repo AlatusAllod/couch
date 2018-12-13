@@ -83,6 +83,7 @@
 				border-right: 7px solid $l
 	.mobile-filter
 		padding-left: 35px
+		padding-right: 20px
 		.acc-head
 			position: relative
 			cursor: pointer
@@ -107,6 +108,40 @@
 				transform: rotate(180deg)
 		input[type="checkbox"]
 			display: none
+		label
+			display: block
+			position: relative
+			padding-left: 25px
+			font-size: 14px
+			margin-bottom: 20px
+			&::before
+				position: absolute
+				content: ''
+				width: 16px
+				height: 16px
+				border: 1px solid #C4C4C4
+				border-radius: 4px
+				left: 0
+				top: 0
+				bottom: 0
+				margin: auto 0
+			&::after
+				position: absolute
+				content: ''
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				left: 3px
+				top: 0
+				bottom: 0
+				margin: auto 0
+				background-color: #C4C4C4
+				opacity: 0
+				transition-duration: 0.1s
+		.checkbox-active
+			&::after
+				opacity: 1
+
 
 .mob-mnu-active
 	.page
