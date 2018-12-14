@@ -300,6 +300,40 @@ $(document).ready(function () {
 	$('.mobile-filter .acc-body label').click(function () {
 		$(this).toggleClass('checkbox-active');
 	});
+
+	$(".cost-slider").slider({
+		range: true,
+		min: 7599,
+		max: 182000,
+		values: [7599, 182000],
+		slide: function (event, ui) {
+			$(".cost-min").val(ui.values[0]);
+			$(".cost-max").val(ui.values[1]);
+		}
+	});
+
+	$(".cost-min").focusout(function () {
+		if (+$(this).val() < +$(this).attr('min')) {
+			$(this).val($(this).attr('min'));
+		};
+		if (+$(this).val() > +$(".cost-max").val()) {
+			$(this).val($(".cost-max").val());
+		};
+		$(".cost-slider").slider("values", 0, $(this).val());
+	});
+
+	$(".cost-max").focusout(function () {
+		if (+$(this).val() > +$(this).attr('max')) {
+			$(this).val($(this).attr('max'));
+		};
+		if (+$(this).val() < +$(".cost-min").val()) {
+			$(this).val($(".cost-min").val());
+		};
+		$(".cost-slider").slider("values", 1, $(this).val());
+	});
+
+	$(".cost-min").val($(".cost-slider").slider("values", 0));
+	$(".cost-max").val($(".cost-slider").slider("values", 1));
 });
 
 $(window).on('load', function () {

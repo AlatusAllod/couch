@@ -108,13 +108,46 @@
 				transform: rotate(180deg)
 		.acc-body
 			margin-bottom: 60px
+			width: 100%
 			&:last-child
 				margin-bottom: 0
 			.link
+				cursor: pointer
 				align-self: center
 				font-size: 14px
+		.cost-slider
+			cursor: pointer
+		.ui-slider-handle
+			color: transparent
+			outline: none
+			cursor: pointer
+		input[type="number"]::-webkit-inner-spin-button
+			display: none
 		input[type="checkbox"]
 			display: none
+		.cost-range
+			margin-bottom: 20px
+			position: relative
+			width: 100%
+			&::after
+				position: absolute
+				content: ''
+				height: 1px
+				width: 12px
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0
+				margin: auto
+				background-color: $d
+			input
+				padding: 10px
+				font-size: 12px
+				font-weight: 500
+				border-color: #c4c4c4
+				border-radius: 4px
+				text-align: center
+				width: auto
 		label
 			display: block
 			position: relative

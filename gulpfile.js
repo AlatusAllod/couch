@@ -28,6 +28,7 @@ gulp.task('js', function () {
 				'app/libs/slider/new_slider_without_comment.js',
 				'app/libs/link-activator/index.js',
 				'app/libs/animator/index.js',
+				'app/libs/jqueryUI/index.js',
 				// 'app/js/common.js', // Всегда в конце
 			])
 			.pipe(concat('scripts.min.js'))

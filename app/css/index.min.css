@@ -1,3 +1,4 @@
+@import url("../sass/_plugins/_jquery-ui.css");
 @font-face {
   font-family: "Montserrat";
   font-weight: normal;
@@ -8553,16 +8554,50 @@ textarea {
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
     #mob-mnu .mobile-filter .acc-body {
-      margin-bottom: 60px; }
+      margin-bottom: 60px;
+      width: 100%; }
       #mob-mnu .mobile-filter .acc-body:last-child {
         margin-bottom: 0; }
       #mob-mnu .mobile-filter .acc-body .link {
+        cursor: pointer;
         -webkit-align-self: center;
             -ms-flex-item-align: center;
                 align-self: center;
         font-size: 14px; }
+    #mob-mnu .mobile-filter .cost-slider {
+      cursor: pointer; }
+    #mob-mnu .mobile-filter .ui-slider-handle {
+      color: transparent;
+      outline: none;
+      cursor: pointer; }
+    #mob-mnu .mobile-filter input[type="number"]::-webkit-inner-spin-button {
+      display: none; }
     #mob-mnu .mobile-filter input[type="checkbox"] {
       display: none; }
+    #mob-mnu .mobile-filter .cost-range {
+      margin-bottom: 20px;
+      position: relative;
+      width: 100%; }
+      #mob-mnu .mobile-filter .cost-range::after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 12px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #000; }
+      #mob-mnu .mobile-filter .cost-range input {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        border-color: #c4c4c4;
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        text-align: center;
+        width: auto; }
     #mob-mnu .mobile-filter label {
       display: block;
       position: relative;
