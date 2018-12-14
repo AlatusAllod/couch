@@ -8552,6 +8552,15 @@ textarea {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
+    #mob-mnu .mobile-filter .acc-body {
+      margin-bottom: 60px; }
+      #mob-mnu .mobile-filter .acc-body:last-child {
+        margin-bottom: 0; }
+      #mob-mnu .mobile-filter .acc-body .link {
+        -webkit-align-self: center;
+            -ms-flex-item-align: center;
+                align-self: center;
+        font-size: 14px; }
     #mob-mnu .mobile-filter input[type="checkbox"] {
       display: none; }
     #mob-mnu .mobile-filter label {

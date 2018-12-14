@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 	notify = require('gulp-notify'),
 	rsync = require('gulp-rsync');
 
-gulp.task('js', function() {
+gulp.task('js', function () {
 	return (
 		gulp
 			.src([
@@ -37,7 +37,7 @@ gulp.task('js', function() {
 	);
 });
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function () {
 	browserSync({
 		server: {
 			baseDir: 'app',
@@ -46,7 +46,7 @@ gulp.task('browser-sync', function() {
 	});
 });
 
-gulp.task('sass', function() {
+gulp.task('sass', function () {
 	return (
 		gulp
 			.src('app/sass/**/*.sass')
@@ -59,13 +59,13 @@ gulp.task('sass', function() {
 	);
 });
 
-gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
+gulp.task('watch', ['sass', 'js', 'browser-sync'], function () {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 
-gulp.task('imagemin', function() {
+gulp.task('imagemin', function () {
 	return (
 		gulp
 			.src('app/img/**/*')
@@ -75,7 +75,7 @@ gulp.task('imagemin', function() {
 	);
 });
 
-gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
+gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function () {
 	var buildFiles = gulp.src(['app/*.html', 'app/*.php', 'app/.htaccess']).pipe(gulp.dest('dist'));
 
 	var buildCss = gulp.src(['app/css/index.min.css']).pipe(gulp.dest('dist/css'));
@@ -85,7 +85,7 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 	var buildFonts = gulp.src(['app/fonts/**/*']).pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('deploy', function() {
+gulp.task('deploy', function () {
 	var conn = ftp.create({
 		host: 'host',
 		user: 'user',
@@ -101,7 +101,7 @@ gulp.task('deploy', function() {
 	);
 });
 
-gulp.task('rsync', function() {
+gulp.task('rsync', function () {
 	return gulp.src('dist/**').pipe(
 		rsync({
 			root: 'dist/',
@@ -116,15 +116,15 @@ gulp.task('rsync', function() {
 	);
 });
 
-gulp.task('removedist', function() {
+gulp.task('removedist', function () {
 	return del.sync('dist');
 });
-gulp.task('clearcache', function() {
+gulp.task('clearcache', function () {
 	return cache.clearAll();
 });
 
-gulp.task('location', function() {
-	return setTimeout(function() {
+gulp.task('location', function () {
+	return setTimeout(function () {
 		gutil.log('Your code is running at http://localhost:3000/.');
 	}, 2000);
 });
