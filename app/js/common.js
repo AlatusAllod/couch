@@ -301,7 +301,7 @@ $(document).ready(function () {
 		$(this).toggleClass('checkbox-active');
 	});
 
-	$(".cost-slider").slider({
+	$(".cost-slider").sliderui({
 		range: true,
 		min: 7599,
 		max: 182000,
@@ -319,7 +319,7 @@ $(document).ready(function () {
 		if (+$(this).val() > +$(".cost-max").val()) {
 			$(this).val($(".cost-max").val());
 		};
-		$(".cost-slider").slider("values", 0, $(this).val());
+		$(".cost-slider").sliderui("values", 0, $(this).val());
 	});
 
 	$(".cost-max").focusout(function () {
@@ -329,11 +329,11 @@ $(document).ready(function () {
 		if (+$(this).val() < +$(".cost-min").val()) {
 			$(this).val($(".cost-min").val());
 		};
-		$(".cost-slider").slider("values", 1, $(this).val());
+		$(".cost-slider").sliderui("values", 1, $(this).val());
 	});
 
-	$(".cost-min").val($(".cost-slider").slider("values", 0));
-	$(".cost-max").val($(".cost-slider").slider("values", 1));
+	$(".cost-min").val($(".cost-slider").sliderui("values", 0));
+	$(".cost-max").val($(".cost-slider").sliderui("values", 1));
 });
 
 $(window).on('load', function () {
