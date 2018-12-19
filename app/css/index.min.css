@@ -8565,7 +8565,21 @@ textarea {
                 align-self: center;
         font-size: 14px; }
     #mob-mnu .mobile-filter .cost-slider {
-      cursor: pointer; }
+      position: relative;
+      border: none;
+      height: 0;
+      -webkit-border-radius: 0;
+              border-radius: 0;
+      border-top: 1px solid #CB0000;
+      cursor: pointer;
+      width: -webkit-calc(100% - 15px);
+      width: calc(100% - 15px);
+      margin-bottom: 25px; }
+      #mob-mnu .mobile-filter .cost-slider:focus {
+        outline: none; }
+    #mob-mnu .mobile-filter .cost-description {
+      font-size: 9px;
+      color: #a5a5a5; }
     #mob-mnu .mobile-filter .ui-slider-handle {
       color: transparent;
       outline: none;
@@ -8575,7 +8589,7 @@ textarea {
     #mob-mnu .mobile-filter input[type="checkbox"] {
       display: none; }
     #mob-mnu .mobile-filter .cost-range {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       position: relative;
       width: 100%; }
       #mob-mnu .mobile-filter .cost-range::after {

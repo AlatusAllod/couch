@@ -97,8 +97,8 @@
 .ui-slider .ui-slider-handle {
 	position: absolute;
 	z-index: 2;
-	width: 1.2em;
-	height: 1.2em;
+	width: 15px;
+	height: 15px;
 	cursor: default;
 	-ms-touch-action: none;
 	touch-action: none;
@@ -110,7 +110,6 @@
 	display: block;
 	border: 0;
 	background-position: 0 0;
-	border-bottom: 1px solid #CB0000;
 }
 
 /* support: IE8 - See #6727 */
@@ -123,8 +122,7 @@
 	height: .8em;
 }
 .ui-slider-horizontal .ui-slider-handle {
-	top: -11px;
-	margin-left: -.6em;
+	top: -8px;
 }
 
 .ui-slider-horizontal .ui-slider-range {

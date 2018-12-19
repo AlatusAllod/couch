@@ -116,7 +116,19 @@
 				align-self: center
 				font-size: 14px
 		.cost-slider
+			position: relative
+			border: none
+			height: 0
+			border-radius: 0
+			border-top: 1px solid $a
 			cursor: pointer
+			width: calc(100% - 15px)
+			margin-bottom: 25px
+			&:focus
+				outline: none
+		.cost-description
+			font-size: 9px
+			color: #a5a5a5
 		.ui-slider-handle
 			color: transparent
 			outline: none
@@ -126,7 +138,7 @@
 		input[type="checkbox"]
 			display: none
 		.cost-range
-			margin-bottom: 20px
+			margin-bottom: 25px
 			position: relative
 			width: 100%
 			&::after
