@@ -9483,6 +9483,121 @@ div.jGrowl > .ui-state-highligh {
   #factory .factory-sect__inter .h3 {
     margin-bottom: 50px; }
 
+#collection .factory-sect__banner {
+  padding: 80px 80px 45px 0; }
+
+#collection .h3 {
+  text-align: center; }
+
+#collection .factory__img {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/factory-1.jpeg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg);
+  width: 100%;
+  height: 510px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: bottom center; }
+
+#collection .factory__title {
+  font-weight: 600;
+  margin-bottom: 40px; }
+
+#collection .factory__description {
+  line-height: 33px;
+  margin-bottom: 40px; }
+  #collection .factory__description .link {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer; }
+    #collection .factory__description .link::after, #collection .factory__description .link::before {
+      background-color: #fff; }
+
+#collection .factory__button {
+  padding: 15px 50px; }
+
+#collection .factory-sect__collections {
+  padding: 0 60px 0 0; }
+
+#collection .factory-category {
+  padding-bottom: 90px; }
+  #collection .factory-category .h3 {
+    margin-bottom: 50px;
+    padding-right: 20px; }
+
+#collection .factory-category__item {
+  position: relative;
+  height: 410px;
+  padding: 10px 20px 10px 0;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
+  #collection .factory-category__item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-border-radius: 6px;
+            border-radius: 6px; }
+  #collection .factory-category__item:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
+
+#collection .factory-category__title {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0px;
+  right: 20px; }
+  #collection .factory-category__title .h4 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(203, 0, 0, 0.86);
+    padding: 8px 0; }
+
+#collection .factory-sect__inter {
+  padding: 0 60px 110px 0; }
+  #collection .factory-sect__inter .h3 {
+    margin-bottom: 50px; }
+
+#collection .factory__form {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  padding-bottom: 20px; }
+
+#collection .factory__select {
+  padding: 15px 50px 15px 25px;
+  border: 1px solid #CB0000;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  color: #CB0000;
+  font-size: 18px;
+  cursor: pointer; }
+
+#collection .select-wrapper {
+  position: relative;
+  margin-right: 20px; }
+  #collection .select-wrapper:last-child {
+    margin-right: 0; }
+  #collection .select-wrapper::before {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+    border-top: 7px solid #CB0000;
+    top: 7px;
+    bottom: 0;
+    margin: auto 0;
+    right: 20px;
+    height: 0;
+    width: 0; }
+
 #politics {
   top: 0;
   left: 0;

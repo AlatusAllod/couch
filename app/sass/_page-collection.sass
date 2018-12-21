@@ -1,0 +1,88 @@
+#collection
+	.factory-sect__banner
+		padding: 80px 80px 45px 0
+	.h3
+		text-align: center
+	.factory__img
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg)
+		width: 100%
+		height: 510px
+		border-radius: $radius
+		background-size: cover
+		background-position: bottom center
+	.factory__title
+		font-weight: 600
+		margin-bottom: 40px
+	.factory__description
+		line-height: 33px
+		margin-bottom: 40px
+		.link
+			color: $l
+			font-weight: 600
+			cursor: pointer
+			&::after, &::before
+				background-color: $l
+	.factory__button
+		padding: 15px 50px
+	.factory-sect__collections
+		padding: 0 60px 0 0
+	.factory-category
+		padding-bottom: 90px
+		.h3
+			margin-bottom: 50px
+			padding-right: 20px
+	.factory-category__item
+		position: relative
+		height: 410px
+		padding: 10px 20px 10px 0
+		transition-duration: 0.5s
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: $radius
+		&:hover
+			transform: scale(1.05)
+	.factory-category__title
+		position: absolute
+		top: 10px
+		bottom: 10px
+		left: 0px
+		right: 20px
+		.h4
+			width: 100%
+			text-align: center
+			color: $l
+			background-color: rgba(203, 0, 0, 0.86)
+			padding: 8px 0
+	.factory-sect__inter
+		padding: 0 60px 110px 0
+		.h3
+			margin-bottom: 50px
+	.factory__form
+		align-self: flex-start
+		padding-bottom: 20px
+	.factory__select
+		padding: 15px 50px 15px 25px
+		border: 1px solid $a
+		border-radius: $radius
+		color: $a
+		font-size: 18px
+		cursor: pointer
+	.select-wrapper
+		position: relative
+		margin-right: 20px
+		&:last-child
+			margin-right: 0
+		&::before
+			cursor: pointer
+			content: ''
+			position: absolute
+			border: 7px solid transparent
+			border-top: 7px solid $a
+			top: 7px
+			bottom: 0
+			margin: auto 0
+			right: 20px
+			height: 0
+			width: 0
