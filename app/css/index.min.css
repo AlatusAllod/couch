@@ -8992,17 +8992,18 @@ div.jGrowl > .ui-state-highligh {
   opacity: 0.4; }
 
 #popular {
-  padding-right: 80px;
+  padding-right: 60px;
   padding-bottom: 100px; }
   #popular .h3 {
-    margin-bottom: 55px; }
+    margin-bottom: 55px;
+    padding-right: 20px; }
 
 .popular-container {
   width: 100%;
   padding-bottom: 55px; }
 
 .popular-item {
-  padding: 25px 10px;
+  padding: 25px 20px 25px 0;
   cursor: pointer; }
   .popular-item:hover .popular__cart {
     opacity: 1; }
@@ -9010,10 +9011,6 @@ div.jGrowl > .ui-state-highligh {
     opacity: 1; }
   .popular-item:hover .popular__button {
     opacity: 1; }
-  .popular-item:nth-of-type(4n+1) {
-    padding-left: 0; }
-  .popular-item:nth-of-type(4n) {
-    padding-right: 0; }
 
 .popular__img {
   margin-bottom: 10px;
@@ -9086,7 +9083,8 @@ div.jGrowl > .ui-state-highligh {
 
 .popular__catalog {
   font-size: 18px;
-  padding: 10px 60px; }
+  padding: 10px 60px;
+  margin-right: 20px; }
 
 #fabrics,
 #partners {
@@ -9357,9 +9355,10 @@ div.jGrowl > .ui-state-highligh {
       padding: 8px 0; }
 
 #category-catalog {
-  padding: 160px 80px 180px 0; }
+  padding: 160px 60px 180px 0; }
   #category-catalog .catalog__banner {
-    padding-bottom: 100px; }
+    padding-bottom: 100px;
+    padding-right: 20px; }
   #category-catalog .catalog__img {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/category-1.jpeg);
     background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/category-1.jpeg);
@@ -9375,6 +9374,8 @@ div.jGrowl > .ui-state-highligh {
   #category-catalog .catalog__path {
     font-size: 14px;
     margin-bottom: 5px; }
+    #category-catalog .catalog__path .link {
+      cursor: pointer; }
   #category-catalog .catalog__description {
     line-height: 33px; }
 
@@ -9403,6 +9404,84 @@ div.jGrowl > .ui-state-highligh {
     margin-bottom: 5px; }
     #factories .factories__list li:last-child {
       margin-bottom: 0; }
+
+#factory .factory-sect__banner {
+  padding: 80px 80px 180px 0; }
+
+#factory .h3 {
+  text-align: center; }
+
+#factory .factory__img {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/factory-1.jpeg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg);
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg);
+  width: 100%;
+  height: 510px;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: bottom center; }
+
+#factory .factory__title {
+  font-weight: 600;
+  margin-bottom: 50px; }
+
+#factory .factory__description {
+  line-height: 29px; }
+  #factory .factory__description .link {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer; }
+    #factory .factory__description .link::after, #factory .factory__description .link::before {
+      background-color: #fff; }
+
+#factory .factory-sect__collections {
+  padding: 0 60px 0 0; }
+
+#factory .factory-category {
+  padding-bottom: 90px; }
+  #factory .factory-category .h3 {
+    margin-bottom: 50px;
+    padding-right: 20px; }
+
+#factory .factory-category__item {
+  position: relative;
+  height: 410px;
+  padding: 10px 20px 10px 0;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s; }
+  #factory .factory-category__item img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-border-radius: 6px;
+            border-radius: 6px; }
+  #factory .factory-category__item:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
+
+#factory .factory-category__title {
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 0px;
+  right: 20px; }
+  #factory .factory-category__title .h4 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(203, 0, 0, 0.86);
+    padding: 8px 0; }
+
+#factory .factory-sect__inter {
+  padding: 100px 60px 140px 0; }
+  #factory .factory-sect__inter .h3 {
+    margin-bottom: 50px; }
 
 #politics {
   top: 0;

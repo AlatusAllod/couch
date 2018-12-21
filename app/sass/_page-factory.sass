@@ -1,0 +1,58 @@
+#factory
+	.factory-sect__banner
+		padding: 80px 80px 180px 0
+	.h3
+		text-align: center
+	.factory__img
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg)
+		width: 100%
+		height: 510px
+		border-radius: $radius
+		background-size: cover
+		background-position: bottom center
+	.factory__title
+		font-weight: 600
+		margin-bottom: 50px
+	.factory__description
+		line-height: 29px
+		.link
+			color: $l
+			font-weight: 600
+			cursor: pointer
+			&::after, &::before
+				background-color: $l
+	.factory-sect__collections
+		padding: 0 60px 0 0
+	.factory-category
+		padding-bottom: 90px
+		.h3
+			margin-bottom: 50px
+			padding-right: 20px
+	.factory-category__item
+		position: relative
+		height: 410px
+		padding: 10px 20px 10px 0
+		transition-duration: 0.5s
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			border-radius: $radius
+		&:hover
+			transform: scale(1.05)
+	.factory-category__title
+		position: absolute
+		top: 10px
+		bottom: 10px
+		left: 0px
+		right: 20px
+		.h4
+			width: 100%
+			text-align: center
+			color: $l
+			background-color: rgba(203, 0, 0, 0.86)
+			padding: 8px 0
+	.factory-sect__inter
+		padding: 100px 60px 140px 0
+		.h3
+			margin-bottom: 50px
