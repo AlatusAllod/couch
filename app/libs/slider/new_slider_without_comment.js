@@ -1,5 +1,5 @@
-(function($) {
-	$.fn.slider = function(options, method) {
+(function ($) {
+	$.fn.slider = function (options, method) {
 		let settings = $.extend(
 			{
 				item: 1,
@@ -18,8 +18,8 @@
 		);
 		const $this = this;
 		function Methods() {
-			this.init = function() {
-				return $this.each(function() {
+			this.init = function () {
+				return $this.each(function () {
 					let slider_wrap = $(this);
 					let _ = slider_wrap.find(settings.slider);
 					let slide = _.find(settings.slide_class);
@@ -85,7 +85,7 @@
 						settings.dots = false;
 					}
 					function resize() {
-						$(window).resize(function() {
+						$(window).resize(function () {
 							reset();
 							if (settings.response) {
 								response();
@@ -127,11 +127,11 @@
 							top: 0,
 							left: 0,
 						});
-						if (thumb_width > 80) {
-							tab.width(80);
+						if (thumb_width > 100) {
+							tab.width(100);
 						}
 						thumb_line
-							.width(thumb_width * thumb_length)
+							.width('100%')
 							.css({ transform: `translateX(${-thumb_line_translate * index}px)` });
 					}
 					function thumb_line_move() {
@@ -233,7 +233,7 @@
 						}
 					}
 					function navigate() {
-						nav.click(function() {
+						nav.click(function () {
 							direction = $(this).hasClass('prev') ? 'prev' : 'next';
 							if (direction == 'prev' && translate !== 0) {
 								index--;
@@ -255,12 +255,12 @@
 						let startX = 0;
 						let endX = 0;
 						let prev_translate;
-						viewport.on('touchstart', function(e) {
+						viewport.on('touchstart', function (e) {
 							prev_translate = translate;
 							startX = e.originalEvent.changedTouches[0].screenX;
 							bool = true;
 							slide_line.css({ transition: '0s' });
-							viewport.on('touchmove', function(e) {
+							viewport.on('touchmove', function (e) {
 								if (bool) {
 									x = e.originalEvent.changedTouches[0].screenX - startX;
 									let translateX = prev_translate + x;
@@ -268,7 +268,7 @@
 								}
 							});
 						});
-						viewport.on('touchend', function(e) {
+						viewport.on('touchend', function (e) {
 							endX = e.originalEvent.changedTouches[0].screenX;
 							slide_line.css({ transition: settings.transition });
 							direction = endX >= startX ? 'prev' : 'next';
@@ -310,7 +310,7 @@
 					}
 					function autoMove() {
 						settings.loop = true;
-						setInterval(function() {
+						setInterval(function () {
 							if (translate * -1 < slide_line.width() - slide.width() * settings.item) {
 								index++;
 								translate = index * slide.width() * settings.item_sliding * -1;
@@ -330,14 +330,14 @@
 						tab_container.find(`[data-tab="${index}"]`).addClass('tab-active');
 					}
 					function dotMove() {
-						_.find('.dot').click(function() {
+						_.find('.dot').click(function () {
 							index = $(this).data('dot');
 							translate = index * slide.width() * settings.item_sliding * -1;
 							move();
 						});
 					}
 					function tabMove() {
-						tab.click(function() {
+						tab.click(function () {
 							let prev_index = index;
 							index = $(this).data('tab');
 							prev_index > index ? (direction = 'prev') : (direction = 'next');

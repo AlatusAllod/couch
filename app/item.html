@@ -154,33 +154,108 @@
 		</header>
 		<div class="blocker"></div>
 		<div class="screen-scroll" id="scroll-container">
-			<section class="sect main-sect" id="main">
-				<div class="futurama-tabs flex column">
+			<section class="sect main-sect item-sect" id="main">
+				<div class="futurama-tabs flex column" id="item">
 					<div class="cont-fluid column content-sa align-center">
 						<div class="slider">
 							<div class="nav prev"><img src="img/arrow.svg"></div>
 							<div class="viewport">
 								<div class="slide-line">
 									<div class="slide-item">
-										<div class="slide-image" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/main-slide-1.jpeg);"></div>
+										<div class="slide-image" style="background-image: url(img/item-1.jpg);"></div>
 									</div>
 									<div class="slide-item">
-										<div class="slide-image" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/main-slide-2.jpeg);"></div>
+										<div class="slide-image" style="background-image: url(img/item-1.jpg);"></div>
+									</div>
+									<div class="slide-item">
+										<div class="slide-image" style="background-image: url(img/item-1.jpg);"></div>
+									</div>
+									<div class="slide-item">
+										<div class="slide-image" style="background-image: url(img/item-1.jpg);"></div>
+									</div>
+									<div class="slide-item">
+										<div class="slide-image" style="background-image: url(img/item-1.jpg);"></div>
+									</div>
+									<div class="slide-item">
+										<div class="slide-image" style="background-image: url(img/item-1.jpg);"></div>
 									</div>
 								</div>
 							</div>
 							<div class="nav next"><img src="img/arrow.svg"></div>
 						</div>
+						<div class="thumb-container">
+							<div class="thumb-line flex flex-wrap content-center">
+								<div class="thumb">
+									<img src="img/item-1.jpg">
+								</div>
+								<div class="thumb">
+									<img src="img/item-1.jpg">
+								</div>
+								<div class="thumb">
+									<img src="img/item-1.jpg">
+								</div>
+								<div class="thumb">
+									<img src="img/item-1.jpg">
+								</div>
+								<div class="thumb">
+									<img src="img/item-1.jpg">
+								</div>
+								<div class="thumb">
+									<img src="img/item-1.jpg">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="main-title">
-					<h1 class="h1">Роскошная мебель из Италии</h1>
-					<h2 class="h2">Скидка 10% на первый заказ</h2>
-					<button class="btn-l">Получить</button>
+				<div class="item-description flex column align-start content-start">
+					<h3 class="h3">Кресло <span class="text-a">Florence Art</span></h3>
+					<h4 class="h4">Фабрика: <span class="text-a">Florence Art</span></h4>
+					<h4 class="h4">Коллекция: <span class="text-a">Silvia</span></h4>
+					<div class="item-specs">
+						<p>Материал: массив, шпон</p>
+						<p>Цвет: бежевый</p>
+						<p>Размер: в36*ш25*д24*</p>
+						<p>Артикул: 362-253-24</p>
+					</div>
+					<p class="item-disclaimer">Просчет цен на мебель из Италии под заказ индивидуален для каждого клиента. Конечная
+						стоимость зависит от
+						комплектации, вида отделки и скидки по каждой отдельной фабрике.</p>
+					<h4 class="h4 item-cost">Цена от <span class="text-a">7990&#8381;</span></h4>
+					<div class="flex">
+						<button class="btn-l item-button">Получить скидку</button>
+						<button class="btn-l item-button">Уточнить цену</button>
+					</div>
+					<button class="btn-a">Добавить в корзину</button>
+				</div>
+			</section>
+			<section class="sect item-advances content-center">
+				<div class="item-plus flex column align-center xl-3">
+					<div class="flex content-center align-center item-plus__img">
+						<img src="img/invoice.svg">
+					</div>
+					<h4 class="h4">Гарантия</h4>
+				</div>
+				<div class="item-plus flex column align-center xl-3">
+					<div class="flex content-center align-center item-plus__img">
+						<img src="img/delivery.svg">
+					</div>
+					<h4 class="h4">Доставка</h4>
+				</div>
+				<div class="item-plus flex column align-center xl-3">
+					<div class="flex content-center align-center item-plus__img">
+						<img src="img/credit-card.svg">
+					</div>
+					<h4 class="h4">Оплата</h4>
+				</div>
+				<div class="item-plus flex column align-center xl-3">
+					<div class="flex content-center align-center item-plus__img">
+						<img src="img/search-2.svg">
+					</div>
+					<h4 class="h4">Подбор мебели</h4>
 				</div>
 			</section>
 			<section class="sect column" id="popular">
-				<h3 class="h3"><span class="text-a">Популярные</span> предложения</h3>
+				<h3 class="h3"><span class="text-a">Ваш</span> интерьер дополнят</h3>
 				<div class="popular-container flex flex-wrap">
 					<div class="popular-item flex column xl-3">
 						<div class="popular__img">
@@ -238,66 +313,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="popular-item flex column xl-3">
-						<div class="popular__img">
-							<img src="img/popular-1.jpeg">
-							<button class="btn-a popular__button">Подробнее</button>
-						</div>
-						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
-						<p class="popular__description">Гостинная в стиле модерн</p>
-						<div class="popular__price flex content-sb">
-							<p class="popular__cost">250 000 руб.</p>
-							<div class="popular__cart">
-								<img src="img/cart2.svg">
-							</div>
-						</div>
-					</div>
-					<div class="popular-item flex column xl-3">
-						<div class="popular__img">
-							<img src="img/popular-2.jpeg">
-							<button class="btn-a popular__button">Подробнее</button>
-						</div>
-						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
-						<p class="popular__description">Кресло для гостинной</p>
-						<div class="popular__price flex content-sb">
-							<p class="popular__cost">30 000 руб.</p>
-							<div class="popular__cart">
-								<img src="img/cart2.svg">
-							</div>
-						</div>
-					</div>
-					<div class="popular-item flex column xl-3">
-						<div class="popular__img">
-							<img src="img/popular-3.jpeg">
-							<button class="btn-a popular__button">Подробнее</button>
-						</div>
-						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
-						<p class="popular__description">Диван для гостинной</p>
-						<div class="popular__price flex content-sb">
-							<p class="popular__cost">50 000 руб.</p>
-							<div class="popular__cart">
-								<img src="img/cart2.svg">
-							</div>
-						</div>
-					</div>
-					<div class="popular-item flex column xl-3">
-						<div class="popular__img">
-							<img src="img/popular-4.jpeg">
-							<button class="btn-a popular__button">Подробнее</button>
-						</div>
-						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
-						<p class="popular__description">Стул с хлопковым покрытием</p>
-						<div class="popular__price flex content-sb">
-							<p class="popular__cost">25 000 руб.</p>
-							<div class="popular__cart">
-								<img src="img/cart2.svg">
-							</div>
-						</div>
-					</div>
 				</div>
-				<a href="catalog.html" class="btn-a popular__catalog">Перейти в каталог</a>
 			</section>
-			<section class="sect column" id="call-sect">
+			<section class="sect column item-call" id="call-sect">
 				<form class="flex column align-center xl-12">
 					<label class="h3 text-center" for="name"><span class="text-a">Оставьте</span> заявку</label>
 					<div class="form-wrapper">

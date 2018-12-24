@@ -70,10 +70,11 @@
 		width: 100%
 		padding: 0
 	.futurama-frame
+		display: none
 		position: absolute
 		top: 0
 		left: 0
-		width: 80px
+		width: 100px
 		height: 100%
 		z-index: 100
 		opacity: 0.4
@@ -104,12 +105,22 @@
 		background-position: center bottom
 	.thumb
 		position: relative
-		width: 80px
+		width: 100px
+		height: 100px
 		overflow: hidden
+		border-radius: $radius
+		margin: 0 auto
+		&:nth-of-type(7n+1)
+			margin-left: 0
+		&:nth-of-type(7n), &:last-of-type
+			margin-right: 0
 		img
+			object-fit: cover
+			height: 100%
 			width: 100%
 			transition: 0.5s
 		&::after
+			display: none
 			content: ''
 			position: absolute
 			top: 0

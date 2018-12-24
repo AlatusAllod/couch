@@ -8894,10 +8894,11 @@ div.jGrowl > .ui-state-highligh {
   padding: 0; }
 
 #main .futurama-frame {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 80px;
+  width: 100px;
   height: 100%;
   z-index: 100;
   opacity: 0.4;
@@ -8945,14 +8946,26 @@ div.jGrowl > .ui-state-highligh {
 
 #main .thumb {
   position: relative;
-  width: 80px;
-  overflow: hidden; }
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  margin: 0 auto; }
+  #main .thumb:nth-of-type(7n+1) {
+    margin-left: 0; }
+  #main .thumb:nth-of-type(7n), #main .thumb:last-of-type {
+    margin-right: 0; }
   #main .thumb img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
     width: 100%;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s; }
   #main .thumb::after {
+    display: none;
     content: '';
     position: absolute;
     top: 0;
@@ -9597,6 +9610,71 @@ div.jGrowl > .ui-state-highligh {
     right: 20px;
     height: 0;
     width: 0; }
+
+#item.futurama-tabs {
+  width: 50%;
+  padding-right: 50px; }
+
+#item .slider {
+  height: 545px;
+  margin-bottom: 25px; }
+
+.item-sect {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 140px;
+  padding-bottom: 90px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.item-description {
+  width: 50%;
+  padding-left: 50px; }
+  .item-description .h3 {
+    margin-bottom: 30px; }
+  .item-description .h4 {
+    margin-bottom: 30px;
+    font-weight: 500; }
+  .item-description p {
+    margin-bottom: 25px; }
+  .item-description .item-specs {
+    margin-bottom: 15px; }
+  .item-description .item-disclaimer {
+    margin-bottom: 40px; }
+  .item-description .item-cost {
+    font-size: 30px;
+    margin-bottom: 35px; }
+  .item-description .item-button {
+    border: 1px solid #CB0000;
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    color: #CB0000;
+    padding: 12px 25px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 18px; }
+    .item-description .item-button:last-child {
+      margin-right: 0; }
+    .item-description .item-button:hover {
+      background-color: #CB0000;
+      color: #fff; }
+  .item-description .btn-a {
+    font-size: 18px;
+    padding: 12px 40px; }
+
+.item-advances {
+  padding: 0 80px 100px 0; }
+  .item-advances .item-plus__img {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 20px; }
+
+#call-sect.item-call {
+  padding-top: 0; }
 
 #politics {
   top: 0;

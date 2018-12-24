@@ -1,5 +1,5 @@
-(function($) {
-	$.fn.slider = function(options, method) {
+(function ($) {
+	$.fn.slider = function (options, method) {
 		// Настройки по дефолту
 		let settings = $.extend(
 			{
@@ -19,8 +19,8 @@
 		);
 		const $this = this; // Переменная содержащая все слайдеры
 		function Methods() {
-			this.init = function() {
-				return $this.each(function() {
+			this.init = function () {
+				return $this.each(function () {
 					let slider_wrap = $(this);
 					let _ = slider_wrap.find(settings.slider); // Текущий слайдер
 					let slide = _.find(settings.slide_class); // Находим все слайды
@@ -106,7 +106,7 @@
 					// Функция вызываемая при ресайзе экрана для обновления состояния сладера
 					// Срабатывает если только настройка response !== false || undefined
 					function resize() {
-						$(window).resize(function() {
+						$(window).resize(function () {
 							// Функция для возврата настроек в исходное положение
 							reset();
 							// Функция для присвоения настроек в зависимости от ширины экрана
@@ -174,7 +174,7 @@
 					}
 					// Функция навигации по стрелочкам
 					function navigate() {
-						nav.click(function() {
+						nav.click(function () {
 							// Определяем наличие класса направления у текущей стрелки и устанавливаем направление движения
 							direction = $(this).hasClass('prev') ? 'prev' : 'next';
 							// Если направление движения prev и смещение линии слайдов не 0, то есть линия слайдов уже смещена
@@ -209,7 +209,7 @@
 						let endX = 0; // Переменная для определения конечной координаты движения
 						let prev_translate; // Переменная для хранения предыдущего смещения
 						// Событие прикосновения к экрану на эелементе viewport
-						viewport.on('touchstart', function(e) {
+						viewport.on('touchstart', function (e) {
 							// Присваиваем текущее смещение линии слайдов
 							prev_translate = translate;
 							// Определяем начальную координату
@@ -219,7 +219,7 @@
 							// Устанавливаем transition в 0
 							slide_line.css({ transition: '0s' });
 							// Вызываем событие движения по экрану
-							viewport.on('touchmove', function(e) {
+							viewport.on('touchmove', function (e) {
 								// Если смещение разрешено
 								if (bool) {
 									// Определяем координату x на протяжении смещения
@@ -232,7 +232,7 @@
 							});
 						});
 						// Вызываем событие окончания смещения
-						viewport.on('touchend', function(e) {
+						viewport.on('touchend', function (e) {
 							// Запрещаем смещение
 							bool = false;
 							// Определяем конечную координату
@@ -241,10 +241,10 @@
 							slide_line.css({ transition: settings.transition });
 							// Определяем направление смещения
 							direction = endX >= startX ? 'prev' : 'next';
-							// Не выполнять дальнейший код если разница между конечной и начальной координатой смещения менее 80 пикселей
+							// Не выполнять дальнейший код если разница между конечной и начальной координатой смещения менее 100 пикселей
 							if (
-								(direction == 'next' && endX - startX > -80) ||
-								(direction == 'prev' && endX - startX < 80)
+								(direction == 'next' && endX - startX > -100) ||
+								(direction == 'prev' && endX - startX < 100)
 							) {
 								// Восстановить смещение линии слайдов
 								slide_line.css({ transform: `translateX(${translate}px)` });
@@ -297,7 +297,7 @@
 						// Настройка loop выставляется в true потому что в конце слайда необходимо возвращаться в начало а иначе он просто встанет на месте
 						settings.loop = true;
 						// Устнавливаем интервал через который будет происходить смещение
-						setInterval(function() {
+						setInterval(function () {
 							// Если смещение меньше позиции последнего слайда
 							if (translate * -1 < slide_line.width() - slide.width() * settings.item) {
 								// Увеличиваем индекс на еденицу
@@ -330,7 +330,7 @@
 					}
 					// Функция для расчета смещения при нажатии на точку
 					function dotMove() {
-						_.find('.dot').click(function() {
+						_.find('.dot').click(function () {
 							// У текущей точки забираем значение атрибута data-dot и устанавливаем его в index
 							index = $(this).data('dot');
 							// Расчитываем смещение в зависимости от индекса
@@ -341,7 +341,7 @@
 					}
 					// Функция для расчета смещения при нажатии на таб
 					function tabMove() {
-						tab.click(function() {
+						tab.click(function () {
 							// У текущего таба забираем значение атрибута data-tab и устанавливаем его в index
 							index = $(this).data('tab');
 							// Расчитываем смещение в зависимости от индекса
