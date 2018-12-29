@@ -9625,6 +9625,27 @@ div.jGrowl > .ui-state-highligh {
   #partnership p {
     font-size: 24px;
     line-height: 44px; }
+  #partnership .top-description {
+    margin-bottom: 140px; }
+  #partnership .top-description__section p {
+    margin-bottom: 40px; }
+  #partnership .top-description__left {
+    margin-top: 100px;
+    padding-right: 80px; }
+    #partnership .top-description__left .top-description__p {
+      margin-bottom: 100px; }
+  #partnership .top-description__right {
+    padding-left: 80px; }
+    #partnership .top-description__right .top-description__img {
+      margin-bottom: 110px; }
+  #partnership .top-description__img {
+    -webkit-border-radius: 6px;
+            border-radius: 6px; }
+    #partnership .top-description__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
 
 #item.futurama-tabs {
   width: 50%;
