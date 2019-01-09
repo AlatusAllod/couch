@@ -8445,31 +8445,6 @@ textarea {
   background-color: #fff;
   overflow-y: auto;
   overflow-x: hidden; }
-  #mob-mnu .search-form {
-    position: relative;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    padding-left: 35px; }
-    #mob-mnu .search-form .search-icon {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      margin: auto 0;
-      right: 15px; }
-    #mob-mnu .search-form input {
-      padding: 8px 30px 8px 15px;
-      border-color: #C6C6C6;
-      letter-spacing: 0.1em; }
-      #mob-mnu .search-form input::-webkit-input-placeholder {
-        color: #C6C6C6; }
-      #mob-mnu .search-form input::-moz-placeholder {
-        color: #C6C6C6; }
-      #mob-mnu .search-form input:-ms-input-placeholder {
-        color: #C6C6C6; }
-      #mob-mnu .search-form input::-ms-input-placeholder {
-        color: #C6C6C6; }
-      #mob-mnu .search-form input::placeholder {
-        color: #C6C6C6; }
   #mob-mnu .h4 {
     border-bottom: 2px solid #CB0000;
     margin-bottom: 5px; }
@@ -9868,6 +9843,68 @@ div.jGrowl > .ui-state-highligh {
   #map iframe {
     width: 100%;
     height: 515px; }
+
+.search-form {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  padding-left: 35px; }
+  .search-form .search-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 15px; }
+  .search-form input {
+    padding: 8px 30px 8px 15px;
+    border-color: #C6C6C6;
+    letter-spacing: 0.1em; }
+    .search-form input::-webkit-input-placeholder {
+      color: #C6C6C6; }
+    .search-form input::-moz-placeholder {
+      color: #C6C6C6; }
+    .search-form input:-ms-input-placeholder {
+      color: #C6C6C6; }
+    .search-form input::-ms-input-placeholder {
+      color: #C6C6C6; }
+    .search-form input::placeholder {
+      color: #C6C6C6; }
+
+#search {
+  padding: 140px 60px 240px 20px; }
+  #search .h4 {
+    font-size: 26px;
+    color: #CB0000;
+    margin-bottom: 30px; }
+  #search .search-sect {
+    margin-bottom: 20px; }
+  #search .search-form {
+    width: 385px;
+    margin: 0;
+    padding: 0;
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    margin-bottom: 35px; }
+    #search .search-form input {
+      border-color: #CB0000; }
+      #search .search-form input::-webkit-input-placeholder {
+        color: #CB0000; }
+      #search .search-form input::-moz-placeholder {
+        color: #CB0000; }
+      #search .search-form input:-ms-input-placeholder {
+        color: #CB0000; }
+      #search .search-form input::-ms-input-placeholder {
+        color: #CB0000; }
+      #search .search-form input::placeholder {
+        color: #CB0000; }
+  #search .search-total {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    margin-bottom: 40px; }
+    #search .search-total .search-icon {
+      margin-right: 10px; }
 
 #politics {
   top: 0;
