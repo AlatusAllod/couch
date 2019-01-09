@@ -9627,8 +9627,10 @@ div.jGrowl > .ui-state-highligh {
     line-height: 44px; }
   #partnership .top-description {
     margin-bottom: 140px; }
-  #partnership .top-description__section p {
-    margin-bottom: 40px; }
+  #partnership .top-description__section {
+    margin-bottom: 150px; }
+    #partnership .top-description__section p {
+      margin-bottom: 40px; }
   #partnership .top-description__left {
     margin-top: 100px;
     padding-right: 80px; }
@@ -9646,6 +9648,31 @@ div.jGrowl > .ui-state-highligh {
       height: 100%;
       -o-object-fit: cover;
          object-fit: cover; }
+  #partnership .invite-list .h4 {
+    font-size: 32px;
+    color: #CB0000;
+    margin-bottom: 90px; }
+  #partnership .invite-list li {
+    position: relative;
+    font-size: 24px;
+    padding-left: 35px;
+    margin-bottom: 65px; }
+    #partnership .invite-list li::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      border: 12px solid transparent;
+      border-left: 12px solid #CB0000; }
+  #partnership .invite-list ul {
+    margin-bottom: 55px; }
+  #partnership .invite-list__img img {
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 #item.futurama-tabs {
   width: 50%;

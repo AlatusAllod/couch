@@ -10,6 +10,7 @@
 	.top-description
 		margin-bottom: 140px
 	.top-description__section
+		margin-bottom: 150px
 		p
 			margin-bottom: 40px
 	.top-description__left
@@ -27,3 +28,29 @@
 			width: 100%
 			height: 100%
 			object-fit: cover
+	.invite-list
+		.h4
+			font-size: 32px
+			color: $a
+			margin-bottom: 90px
+		li
+			position: relative
+			font-size: 24px
+			padding-left: 35px
+			margin-bottom: 65px
+			&::before
+				position: absolute
+				content: ''
+				left: 0
+				top: 0
+				border: 12px solid transparent
+				border-left: 12px solid $a
+		ul
+			margin-bottom: 55px
+	.invite-list__img
+		img
+			border-radius: $radius
+			height: 100%
+			width: 100%
+			object-fit: cover
+
