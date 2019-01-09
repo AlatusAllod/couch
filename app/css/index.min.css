@@ -8104,6 +8104,7 @@ body {
   display: inline-block;
   font-weight: normal;
   position: relative;
+  font-family: "Montserrat", sans-serif;
   white-space: nowrap; }
   .btn-a:hover, .btn-a:active, .btn-a:focus {
     color: #CB0000;
@@ -8132,6 +8133,7 @@ body {
   display: inline-block;
   font-weight: 300;
   position: relative;
+  font-family: "Montserrat", sans-serif;
   white-space: nowrap; }
   .btn-d:hover, .btn-d:active, .btn-d:focus {
     color: #000;
@@ -8160,6 +8162,7 @@ body {
   display: inline-block;
   font-weight: 300;
   position: relative;
+  font-family: "Montserrat", sans-serif;
   white-space: nowrap; }
   .btn-l:hover, .btn-l:active, .btn-l:focus {
     color: #fff;
@@ -8188,6 +8191,7 @@ body {
   display: inline-block;
   font-weight: 300;
   position: relative;
+  font-family: "Montserrat", sans-serif;
   white-space: nowrap; }
   .btn-a-big:hover, .btn-a-big:active, .btn-a-big:focus {
     color: #CB0000;
@@ -8216,6 +8220,7 @@ body {
   display: inline-block;
   font-weight: 300;
   position: relative;
+  font-family: "Montserrat", sans-serif;
   white-space: nowrap; }
   .btn-d-big:hover, .btn-d-big:active, .btn-d-big:focus {
     color: #000;
@@ -8244,6 +8249,7 @@ body {
   display: inline-block;
   font-weight: 300;
   position: relative;
+  font-family: "Montserrat", sans-serif;
   white-space: nowrap; }
   .btn-l-big:hover, .btn-l-big:active, .btn-l-big:focus {
     color: #fff;
@@ -8272,6 +8278,7 @@ input {
   display: inline-block;
   font-weight: 300;
   position: relative;
+  font-family: "Montserrat", sans-serif;
   width: 100%;
   text-align: left; }
   input:hover, input:active, input:focus {
@@ -8301,6 +8308,7 @@ textarea {
   display: inline-block;
   font-weight: 300;
   position: relative;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   width: 100%;
   text-align: left; }
@@ -9673,6 +9681,27 @@ div.jGrowl > .ui-state-highligh {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+#about {
+  padding: 160px 160px 60px 80px; }
+  #about .about-img {
+    padding-left: 40px; }
+    #about .about-img img {
+      width: 100%;
+      height: auto;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -webkit-border-radius: 6px;
+              border-radius: 6px; }
+  #about .about-description {
+    padding-right: 40px; }
+    #about .about-description p {
+      font-size: 18px;
+      line-height: 33px;
+      margin-bottom: 50px; }
+    #about .about-description button {
+      font-size: 18px;
+      padding: 13px 40px; }
 
 #item.futurama-tabs {
   width: 50%;
