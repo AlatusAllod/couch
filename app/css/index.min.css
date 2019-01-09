@@ -9703,6 +9703,47 @@ div.jGrowl > .ui-state-highligh {
       font-size: 18px;
       padding: 13px 40px; }
 
+#our-salon {
+  padding: 100px 100px 70px 20px; }
+  #our-salon .h3 {
+    padding: 0 60px;
+    margin-bottom: 75px; }
+  #our-salon .our-item {
+    padding: 45px 60px; }
+    #our-salon .our-item img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+#our-fabric {
+  padding: 115px 150px 140px 70px; }
+  #our-fabric .h3 {
+    padding: 0 10px;
+    margin-bottom: 90px; }
+  #our-fabric p {
+    font-size: 24px;
+    line-height: 44px;
+    margin-bottom: 60px; }
+  #our-fabric .our-fabric__description {
+    padding: 0 10px;
+    margin-bottom: 65px; }
+  #our-fabric .our-fabric__img {
+    padding: 0 10px;
+    margin-bottom: 30px; }
+    #our-fabric .our-fabric__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -webkit-border-radius: 6px;
+              border-radius: 6px; }
+  #our-fabric .our-fabric__galery {
+    margin-bottom: 40px; }
+  #our-fabric button {
+    font-size: 18px;
+    padding: 13px 40px; }
+
 #item.futurama-tabs {
   width: 50%;
   padding-right: 50px; }
