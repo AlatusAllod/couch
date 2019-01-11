@@ -1,4 +1,5 @@
 #mob-mnu
+	transition: 0.5s
 	position: fixed
 	top: 0
 	left: 0
@@ -192,6 +193,8 @@
 
 
 .mob-mnu-active
+	.active-menu
+		transform: translateX(240px)
 	.page
 		transform: translateX(240px)
 	.blocker
@@ -202,7 +205,9 @@
 @media only screen and (max-width : 1200px)
 	//
 @media only screen and (max-width : 992px)
-	//
+	#mob-mnu
+		left: -240px
+		transition: 0.5s
 @media only screen and (max-width : 768px)
 	//
 @media only screen and (max-width : 560px)

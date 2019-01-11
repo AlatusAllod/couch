@@ -8062,6 +8062,10 @@ body {
   body {
     font-size: 12px; } }
 
+@media only screen and (max-width: 992px) {
+  .page {
+    padding-left: 0; } }
+
 .h1 {
   font-size: 60px;
   font-weight: 600;
@@ -8412,23 +8416,9 @@ textarea {
 
 @media only screen and (max-width: 992px) {
   .toolbar {
-    width: 100%; }
-    .toolbar .cont-fluid {
-      width: 100%; }
-    .toolbar .menu {
-      width: 100%; }
-      .toolbar .menu menu {
-        width: 100%;
-        height: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-      .toolbar .menu li {
-        margin-bottom: 5px; }
-      .toolbar .menu .link {
-        margin-right: 0; } }
+    width: 100%;
+    padding: 10px 0;
+    height: 50px; } }
 
 @media only screen and (max-width: 768px) {
   .toolbar {
@@ -8465,6 +8455,9 @@ textarea {
   cursor: pointer; }
 
 #mob-mnu {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
   position: fixed;
   top: 0;
   left: 0;
@@ -8675,6 +8668,11 @@ textarea {
     #mob-mnu .mobile-filter .checkbox-active::after {
       opacity: 1; }
 
+.mob-mnu-active .active-menu {
+  -webkit-transform: translateX(240px);
+      -ms-transform: translateX(240px);
+          transform: translateX(240px); }
+
 .mob-mnu-active .page {
   -webkit-transform: translateX(240px);
       -ms-transform: translateX(240px);
@@ -8684,6 +8682,13 @@ textarea {
   z-index: 9998;
   opacity: 1; }
 
+@media only screen and (max-width: 992px) {
+  #mob-mnu {
+    left: -240px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; } }
+
 #hamburger {
   cursor: pointer;
   width: 25px;
@@ -8691,9 +8696,7 @@ textarea {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  position: fixed;
-  top: 20px;
-  right: 10px;
+  position: relative;
   z-index: 2001; }
   #hamburger::after, #hamburger::before {
     content: '';

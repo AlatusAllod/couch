@@ -107,9 +107,6 @@
 		</menu>
 	</div>
 	<div class="page">
-		<div id="hamburger" class="sm-visible">
-			<div class="inner-hamb"></div>
-		</div>
 		<div class="preloader"></div>
 		<div class="notification offline">
 			Соединение с интернетом прервано
@@ -124,9 +121,12 @@
 			Сообщение не отправлено! Проверьте введенные данные и подключение к интернету.
 		</div>
 		<header class="toolbar flex align-center content-center">
-			<div class="cont-fluid align-center content-end">
+			<div id="hamburger" class="md-visible">
+				<div class="inner-hamb"></div>
+			</div>
+			<div class="cont-fluid align-center content-end md-hidden">
 				<div class="menu flex align-center">
-					<menu class="flex flex-wrap align-center sm-hidden">
+					<menu class="flex flex-wrap align-center">
 						<li>
 							<a class="link" href="/catalog.html">Каталог</a>
 						</li>
