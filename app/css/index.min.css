@@ -8378,6 +8378,8 @@ textarea {
   transition: 0.5s;
   padding-left: 240px;
   background-color: #fff; }
+  .toolbar .mobile-header {
+    display: none; }
   .toolbar .cont-fluid {
     height: 100%;
     margin: 0;
@@ -8400,7 +8402,7 @@ textarea {
     .toolbar .contact .link {
       white-space: nowrap;
       font-weight: 500; }
-  .toolbar .cart {
+  .toolbar .cart, .toolbar .search {
     cursor: pointer; }
 
 .active-toolbar {
@@ -8418,18 +8420,35 @@ textarea {
   .toolbar {
     width: 100%;
     padding: 10px 0;
-    height: 50px; } }
+    height: 50px; }
+    .toolbar .mobile-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0;
+      width: 100%; }
+      .toolbar .mobile-header .logo {
+        height: auto;
+        line-height: 1; }
+      .toolbar .mobile-header .search {
+        margin-right: 20px; } }
 
 @media only screen and (max-width: 768px) {
   .toolbar {
     height: 60px; }
-    .toolbar .cont-fluid {
-      -webkit-box-pack: start;
-      -webkit-justify-content: flex-start;
-          -ms-flex-pack: start;
-              justify-content: flex-start; }
-    .toolbar .logo {
-      margin-right: 20px; } }
+    .toolbar .mobile-header {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0 20px; }
+      .toolbar .mobile-header .logo {
+        font-size: 18px; } }
+
+@media only screen and (max-width: 560px) {
+  .toolbar .mobile-header .logo {
+    font-size: 14px; } }
 
 .progress {
   position: fixed;

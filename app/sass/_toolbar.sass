@@ -9,6 +9,8 @@
 	transition: 0.5s
 	padding-left: 240px
 	background-color: $l
+	.mobile-header
+		display: none
 	.cont-fluid
 		height: 100%
 		margin: 0
@@ -32,12 +34,11 @@
 		.link
 			white-space: nowrap
 			font-weight: 500
-	.cart
+	.cart, .search
 		cursor: pointer
 
 .active-toolbar
 	background-color: $l
-
 @media only screen and (max-width : 1440px)
 	//
 @media only screen and (max-width : 1200px)
@@ -53,15 +54,28 @@
 		width: 100%
 		padding: 10px 0
 		height: 50px
+		.mobile-header
+			display: flex
+			margin: 0
+			width: 100%
+			.logo
+				height: auto
+				line-height: 1
+			.search
+				margin-right: 20px
 @media only screen and (max-width : 768px)
 	.toolbar
 		height: 60px
-		.cont-fluid
-			justify-content: flex-start
-		.logo
-			margin-right: $space
+		.mobile-header
+			justify-content: space-between
+			padding: 0 20px
+			.logo
+				font-size: 18px
 @media only screen and (max-width : 560px)
-	//
+	.toolbar
+		.mobile-header
+			.logo
+				font-size: 14px
 @media only screen and (max-width : 480px)
 	//
 @media only screen and (max-width : 320px)
