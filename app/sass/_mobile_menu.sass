@@ -3,7 +3,7 @@
 	position: fixed
 	top: 0
 	left: 0
-	width: 240px
+	width: 300px
 	height: 100%
 	z-index: 1000
 	background-color: $l
@@ -32,10 +32,11 @@
 		border-top: 1px solid $d
 		padding: $space / 2 0
 	.contact
-		margin: $space / 4 0
-		font-size: 14px
+		padding: 0 35px
+		font-size: 16px
+		margin-bottom: 20px
 		img
-			width: 15px
+			width: 25px
 	.social
 		margin-top: $space / 2
 	.mobile-previous
@@ -194,9 +195,9 @@
 
 .mob-mnu-active
 	.active-menu
-		transform: translateX(240px)
+		transform: translateX(300px)
 	.page
-		transform: translateX(240px)
+		transform: translateX(300px)
 	.blocker
 		z-index: 9998
 		opacity: 1	
@@ -206,12 +207,30 @@
 	//
 @media only screen and (max-width : 992px)
 	#mob-mnu
-		left: -240px
+		left: -300px
 		transition: 0.5s
+		.mobile-side
+			menu
+				padding-top: 50px
+				margin-bottom: 80px
+				.screen-link
+					font-weight: 500
+					font-size: 24px
 @media only screen and (max-width : 768px)
 	//
 @media only screen and (max-width : 560px)
-	//
+	#mob-mnu
+		width: 240px
+		left: -240px
+		.mobile-side
+			menu
+				.screen-link
+					font-size: 20px
+	.mob-mnu-active
+		.active-menu
+			transform: translateX(240px)
+		.page
+			transform: translateX(240px)
 @media only screen and (max-width : 480px)
 	//
 @media only screen and (max-width : 320px)
