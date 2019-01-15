@@ -7,7 +7,7 @@
 	top: 0
 	left: 0
 	transition: 0.5s
-	padding-left: 240px
+	padding-left: 300px
 	background-color: $l
 	.mobile-header
 		display: none
@@ -16,6 +16,7 @@
 		margin: 0
 		margin-left: auto
 		width: auto
+		padding-left: 0
 	.menu
 		height: 100%
 		padding-right: 35px
@@ -40,20 +41,25 @@
 .active-toolbar
 	background-color: $l
 @media only screen and (max-width : 1440px)
-	//
+	.toolbar
+		.menu
+			.link
+				margin-right: 20px
 @media only screen and (max-width : 1200px)
 	.toolbar
 		.contact
-			padding: 0 20px
+			padding: 0 10px
 		.menu
-			padding-right: 20px
+			padding-right: 10px
 			.link
-				margin-right: 20px
+				margin-right: 10px
 @media only screen and (max-width : 992px)
 	.toolbar
 		width: 100%
 		padding: 10px 0
 		height: 50px
+		.cont-fluid
+			padding-left: 20px
 		.mobile-header
 			display: flex
 			margin: 0

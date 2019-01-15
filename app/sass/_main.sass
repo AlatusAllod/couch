@@ -1,10 +1,11 @@
 .main-sect
-	padding: 80px 80px 100px 0
+	padding: 80px 80px 80px 0
+	margin-bottom: 20px
 	position: relative
 	.main-title
 		position: absolute
 		left: 160px
-		top: 230px
+		right: 240px
 		.btn-l
 			border: none
 			padding: 15px 70px
@@ -424,15 +425,38 @@
 
 
 @media only screen and (max-width : 1440px)
-	//
+	.main-sect
+		margin-bottom: 0
+		padding-bottom: 40px
+		.main-title
+			left: 80px
+			right: 160px
 @media only screen and (max-width : 1200px)
-	//
+	.main-sect
+		.main-title
+			.btn-l
+				padding: 10px 50px
+				font-size: 16px
 @media only screen and (max-width : 992px)
-	//
+	.main-sect
+		padding: 60px 0
+		.main-title
+			right: 80px
+	.slider
+		.nav
+			display: none
+		.viewport
+			border-radius: 0
 @media only screen and (max-width : 768px)
-	//
+	.main-sect
+		.main-title
+			left: 40px
+			right: 40px
 @media only screen and (max-width : 560px)
-	//
+	.main-sect
+		.main-title
+			left: 20px
+			right: 20px
 @media only screen and (max-width : 480px)
 	//
 @media only screen and (max-width : 320px)
