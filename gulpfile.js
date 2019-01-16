@@ -23,7 +23,7 @@ gulp.task('js', function () {
 				// 'app/libs/fullpage/index.js',
 				'app/libs/mobile-menu/index.js',
 				'app/libs/modal/index.js',
-				'app/libs/slider/index.js',
+				// 'app/libs/slider/index.js',
 				// 'app/libs/slider/new_slider.js',
 				'app/libs/slider/new_slider_without_comment.js',
 				'app/libs/link-activator/index.js',

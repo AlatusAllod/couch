@@ -104,7 +104,7 @@
 					}
 					function build() {
 						slide.width(Math.floor(slider_width / settings.item));
-						slide_line.width(slide.width() * slide_length);
+						slide_line.width(slider_width / settings.item * slide_length);
 						slide_line.css({ transform: 'translateX(0px)', transition: settings.transition });
 						if (settings.dots) {
 							dotBuild();
@@ -187,29 +187,29 @@
 							case 'prev':
 								let elem_index_visible_pos =
 									index * thumb_width - (thumb_line_translate - visible_thumb_width);
-								console.log(elem_index_visible_pos);
+								// console.log(elem_index_visible_pos);
 								if (futurama_frame_translate === thumb_line_translate) {
 									futurama_frame_translate = frame_last_pos + remnant;
 									thumb_line_translate = -thumb_line.width() + visible_thumb_width + remnant;
-									console.log('1');
+									// console.log('1');
 								} else if (futurama_frame_translate === thumb_width && thumb_line_translate !== 0) {
 									thumb_line_translate += thumb_width;
-									console.log('2');
+									// console.log('2');
 								} else if (
 									futurama_frame_translate + thumb_width ===
 									Math.floor(tab_container.width())
 								) {
 									futurama_frame_translate -= remnant;
 									thumb_line_translate += thumb_width - remnant;
-									console.log('3');
+									// console.log('3');
 								} else if (futurama_frame_translate !== thumb_width && thumb_line_translate !== 0) {
 									futurama_frame_translate -= thumb_width;
-									console.log('4');
+									// console.log('4');
 								} else if (index * thumb_width) {
-									console.log('4/1');
+									// console.log('4/1');
 								} else {
 									futurama_frame_translate -= thumb_width;
-									console.log('5');
+									// console.log('5');
 								}
 								thumb_line.css({ transform: `translateX(${thumb_line_translate}px)` });
 								futurama_frame.css({ transform: `translateX(${futurama_frame_translate}px)` });
@@ -342,7 +342,7 @@
 							index = $(this).data('tab');
 							prev_index > index ? (direction = 'prev') : (direction = 'next');
 							translate = index * slide.width() * settings.item_sliding * -1;
-							console.log(direction);
+							// console.log(direction);
 							move();
 						});
 					}
