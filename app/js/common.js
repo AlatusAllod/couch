@@ -225,40 +225,17 @@ $(window).on('load', function () {
 		slider: '.slider',
 		slide_class: '.slide-item',
 		nav: '.nav',
-		item: 2,
-		item_sliding: 2,
+		item: 1,
+		item_sliding: 1,
 		loop: true,
-		dots: true,
+		dots: false,
 		automove: false,
 		interval: 2000,
 		transition: '0.5s',
 		tabs: false,
 		tab_container: '.tab_container',
 		tab_class: '.tab',
-		response: {
-			'0': {
-				item: 1,
-				item_sliding: 1,
-				dots: false,
-				loop: true,
-			},
-			'480': {
-				item: 2,
-				item_sliding: 1,
-				dots: false,
-			},
-			'768': {
-				item: 2,
-				item_sliding: 2,
-				loop: false,
-			},
-			'992': {
-				item: 3,
-				item_sliding: 1,
-				dots: true,
-				loop: true,
-			},
-		},
+		response: true
 	});
 
 	// Slider with tabs
@@ -276,12 +253,7 @@ $(window).on('load', function () {
 		tabs: true,
 		tab_container: '.tab-container',
 		tab_class: '.tab',
-		response: {
-			'0': {
-				item: 1,
-				item_sliding: 1,
-			},
-		},
+		response: true
 	});
 
 	// Slider fotorama
