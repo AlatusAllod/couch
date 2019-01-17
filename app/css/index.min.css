@@ -9421,17 +9421,17 @@ div.jGrowl > .ui-state-highligh {
 #footer {
   border-top: 2px solid #CB0000;
   padding-left: 80px;
-  padding-right: 300px;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  padding-right: 160px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  #footer .footer-wrapper {
+    width: 100%;
+    max-width: 1080px; }
   #footer .logo {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    height: auto; }
   #footer .logo-copyright {
     font-size: 11px; }
   #footer .screen-link {
@@ -9505,7 +9505,10 @@ div.jGrowl > .ui-state-highligh {
   #call-sect .contacts,
   #call-sect .form-wrapper {
     max-width: 780px;
-    width: 100%; } }
+    width: 100%; }
+  #footer {
+    padding-right: 80px;
+    padding-left: 0; } }
 
 @media only screen and (max-width: 1200px) {
   .main-sect .main-title .btn-l {
@@ -9590,7 +9593,10 @@ div.jGrowl > .ui-state-highligh {
   #how_purcache {
     padding-right: 0; }
   #call-sect {
-    padding-right: 40px; } }
+    padding-right: 40px; }
+  #footer {
+    padding-right: 40px;
+    padding-left: 40px; } }
 
 @media only screen and (max-width: 768px) {
   .main-sect .main-title {
@@ -9637,7 +9643,8 @@ div.jGrowl > .ui-state-highligh {
       color: #fff;
       background-color: #CB0000; }
   #call-sect {
-    padding-top: 0; }
+    padding-top: 0;
+    padding-bottom: 60px; }
     #call-sect .h3 {
       margin-bottom: 20px; }
     #call-sect .h4 {
@@ -9657,7 +9664,24 @@ div.jGrowl > .ui-state-highligh {
     #call-sect button,
     #call-sect input {
       width: 100%;
-      margin: 20px 0; } }
+      margin: 20px 0; }
+    #call-sect .contact {
+      padding: 20px 0; }
+    #call-sect .h4 {
+      text-align: center;
+      padding: 0; }
+  #footer .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #footer .footer-wrapper > * {
+      margin-bottom: 30px; }
+      #footer .footer-wrapper > *:last-child {
+        margin-bottom: 0; }
+  #footer .logo {
+    margin-bottom: 5px; } }
 
 @media only screen and (max-width: 560px) {
   .main-sect .main-title {
@@ -9739,7 +9763,12 @@ div.jGrowl > .ui-state-highligh {
     padding-left: 20px;
     padding-right: 20px; }
   #how_purcache .how__number {
-    left: 20px; } }
+    left: 20px; }
+  #call-sect {
+    padding-left: 20px;
+    padding-right: 20px; }
+    #call-sect .h4 {
+      font-size: 14px; } }
 
 #catalog-categories {
   padding: 150px 110px 80px 130px; }
