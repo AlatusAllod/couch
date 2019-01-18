@@ -1,12 +1,13 @@
 #category-catalog
 	padding: 160px 60px 180px 0
 	.catalog__banner
-		padding-bottom: 100px
+		padding-bottom: 35px
 		padding-right: 20px
 	.catalog__img
 		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/category-1.jpeg)
 		width: 100%
-		height: 145px
+		height: auto
+		min-height: 145px
 		border-radius: $radius
 		background-size: cover
 		background-position: bottom center
@@ -17,3 +18,37 @@
 			cursor: pointer
 	.catalog__description
 		line-height: 33px
+		font-size: 18px
+		padding: 20px
+@media only screen and (max-width : 1440px)
+	#category-catalog
+		padding-top: 120px
+		padding-bottom: 80px
+		.catalog__description
+			font-size: 16px
+@media only screen and (max-width : 992px)
+	#category-catalog
+		padding-top: 60px
+		padding-right: 0
+		.catalog__banner
+			padding-right: 0
+		.catalog__description
+			padding: 20px 40px
+		.catalog__path
+			padding-left: 40px
+			margin-bottom: 10px
+		.catalog__img
+			border-radius: 0
+		.popular-container
+			padding-left: 40px
+			padding-right: 20px
+@media only screen and (max-width : 560px)
+	#category-catalog
+		padding-bottom: 0
+		.popular-container
+			padding-left: 20px
+			padding-right: 0
+		.catalog__description
+			padding: 20px
+		.catalog__path
+			padding-left: 20px

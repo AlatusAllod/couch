@@ -106,9 +106,6 @@
 		</div>
 	</div>
 	<div class="page">
-		<div id="hamburger" class="sm-visible">
-			<div class="inner-hamb"></div>
-		</div>
 		<div class="preloader"></div>
 		<div class="notification offline">
 			Соединение с интернетом прервано
@@ -123,9 +120,9 @@
 			Сообщение не отправлено! Проверьте введенные данные и подключение к интернету.
 		</div>
 		<header class="toolbar flex align-center content-center">
-			<div class="cont-fluid align-center content-end">
+			<div class="cont-fluid align-center content-end md-hidden">
 				<div class="menu flex align-center">
-					<menu class="flex align-center sm-hidden">
+					<menu class="flex flex-wrap align-center">
 						<li>
 							<a class="link" href="/catalog.html">Каталог</a>
 						</li>
@@ -150,6 +147,16 @@
 					<img src="img/cart.svg" class="cart" alt="Корзина" title="Корзина">
 				</div>
 			</div>
+			<div class="cont-fluid align-center content-sb mobile-header">
+				<div id="hamburger">
+					<div class="inner-hamb"></div>
+				</div>
+				<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
+				<div class="mobile-icons flex align-center">
+					<img src="img/red-search.svg" class="search">
+					<img src="img/cart.svg" class="cart" alt="Корзина" title="Корзина">
+				</div>
+			</div>
 		</header>
 		<div class="blocker"></div>
 		<div class="screen-scroll" id="scroll-container">
@@ -166,9 +173,9 @@
 					</div>
 				</div>
 				<div class="popular-container flex flex-wrap">
-					<div class="popular-item flex column xl-3">
+					<div class="popular-item flex column xl-3 lg-4 sm-6 xsm-12">
 						<div class="popular__img">
-							<img src="img/popular-1.jpeg">
+							<img src="img/popular.jpg">
 							<button class="btn-a popular__button">Подробнее</button>
 						</div>
 						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
@@ -180,9 +187,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="popular-item flex column xl-3">
+					<div class="popular-item flex column xl-3 lg-4 sm-6 xsm-12">
 						<div class="popular__img">
-							<img src="img/popular-2.jpeg">
+							<img src="img/popular.jpg">
 							<button class="btn-a popular__button">Подробнее</button>
 						</div>
 						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
@@ -194,9 +201,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="popular-item flex column xl-3">
+					<div class="popular-item flex column xl-3 lg-4 sm-6 xsm-12">
 						<div class="popular__img">
-							<img src="img/popular-3.jpeg">
+							<img src="img/popular.jpg">
 							<button class="btn-a popular__button">Подробнее</button>
 						</div>
 						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
@@ -208,9 +215,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="popular-item flex column xl-3">
+					<div class="popular-item flex column xl-3 lg-4 sm-6 xsm-12">
 						<div class="popular__img">
-							<img src="img/popular-4.jpeg">
+							<img src="img/popular.jpg">
 							<button class="btn-a popular__button">Подробнее</button>
 						</div>
 						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
@@ -222,9 +229,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="popular-item flex column xl-3">
+					<div class="popular-item flex column xl-3 lg-4 sm-6 xsm-12">
 						<div class="popular__img">
-							<img src="img/popular-1.jpeg">
+							<img src="img/popular.jpg">
 							<button class="btn-a popular__button">Подробнее</button>
 						</div>
 						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
@@ -236,9 +243,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="popular-item flex column xl-3">
+					<div class="popular-item flex column xl-3 lg-4 sm-6 xsm-12">
 						<div class="popular__img">
-							<img src="img/popular-2.jpeg">
+							<img src="img/popular.jpg">
 							<button class="btn-a popular__button">Подробнее</button>
 						</div>
 						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
@@ -250,9 +257,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="popular-item flex column xl-3">
+					<div class="popular-item flex column xl-3 lg-4 sm-6 xsm-12">
 						<div class="popular__img">
-							<img src="img/popular-3.jpeg">
+							<img src="img/popular.jpg">
 							<button class="btn-a popular__button">Подробнее</button>
 						</div>
 						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
@@ -264,9 +271,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="popular-item flex column xl-3">
+					<div class="popular-item flex column xl-3 lg-4 sm-6 xsm-12">
 						<div class="popular__img">
-							<img src="img/popular-4.jpeg">
+							<img src="img/popular.jpg">
 							<button class="btn-a popular__button">Подробнее</button>
 						</div>
 						<p class="popular__fabric">Giorgiocasa <span class="text-g">Talento</span></p>
@@ -279,7 +286,7 @@
 						</div>
 					</div>
 				</div>
-				<a href="catalog.html" class="btn-a popular__catalog">Перейти в каталог</a>
+				<a href="catalog.html" class="btn-a popular__catalog xsm-hidden">Перейти в каталог</a>
 			</section>
 			<section class="sect column" id="call-sect">
 				<form class="flex column align-center xl-12">
@@ -299,74 +306,76 @@
 					</div>
 				</form>
 				<div class="contacts flex flex-wrap">
-					<div class="contact flex align-center xl-8">
+					<div class="contact flex align-center xl-8 lg-6 sm-12">
 						<img src="img/map.svg" alt="Адрес" title="Адрес">
 						<a href="" class="link" target="_blank">г. Самара, пр. Ленина 25А</a>
 					</div>
-					<div class="contact flex align-center xl-4">
+					<div class="contact flex align-center xl-4 lg-6 sm-12">
 						<img src="img/phone-call.svg" alt="Телефон" title="Телефон">
 						<a href="tel:+7 (800) 444-55-77" class="link">+7 (800) 444-55-77</a>
 					</div>
-					<div class="contact flex align-center xl-8">
+					<div class="contact flex align-center xl-8 lg-6 sm-12">
 						<img src="img/email.svg" alt="Почта" title="Почта">
 						<a href="mailto:info@divanorosso.ru" class="link">info@divanorosso.ru</a>
 					</div>
-					<div class="contact flex align-center xl-4">
+					<div class="contact flex align-center xl-4 lg-6 sm-12">
 						<img src="img/instagram.svg" alt="Instagram" title="Instagram">
 						<a href="https://www.instagram.com/" class="link">Instagram</a>
 					</div>
 				</div>
 			</section>
 			<footer class="sect" id="footer">
-				<div class="footer-logo xl-3">
-					<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
-					<p class="logo-copyright">2018 (с) Все права защищены.</p>
+				<div class="footer-wrapper flex content-sb">
+					<div class="footer-logo">
+						<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
+						<p class="logo-copyright">2018 (с) Все права защищены.</p>
+					</div>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="">Покупателю</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Подбор мебели</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Доставка</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Оплата</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Гарантия</a>
+						</li>
+					</menu>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="">О компании</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Наши партнеры</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Мебель на заказ</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Дизайнерам</a>
+						</li>
+					</menu>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="/catalog.html">Каталог</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/catalog.html#mebel">Мебель</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/catalog.html#garniture">Гарнитуры</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/factories.html">Фабрики</a>
+						</li>
+					</menu>
 				</div>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="">Покупателю</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Подбор мебели</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Доставка</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Оплата</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Гарантия</a>
-					</li>
-				</menu>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="">О компании</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Наши партнеры</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Мебель на заказ</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Дизайнерам</a>
-					</li>
-				</menu>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="/catalog.html">Каталог</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="#mebel">Мебель</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="#garniture">Гарнитуры</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="/factories.html">Фабрики</a>
-					</li>
-				</menu>
 			</footer>
 		</div>
 	</div>

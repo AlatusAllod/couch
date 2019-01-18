@@ -9869,7 +9869,7 @@ div.jGrowl > .ui-state-highligh {
 #category-catalog {
   padding: 160px 60px 180px 0; }
   #category-catalog .catalog__banner {
-    padding-bottom: 100px;
+    padding-bottom: 35px;
     padding-right: 20px; }
   #category-catalog .catalog__img {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../img/category-1.jpeg);
@@ -9877,7 +9877,8 @@ div.jGrowl > .ui-state-highligh {
     background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/category-1.jpeg);
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/category-1.jpeg);
     width: 100%;
-    height: 145px;
+    height: auto;
+    min-height: 145px;
     -webkit-border-radius: 6px;
             border-radius: 6px;
     -webkit-background-size: cover;
@@ -9889,7 +9890,45 @@ div.jGrowl > .ui-state-highligh {
     #category-catalog .catalog__path .link {
       cursor: pointer; }
   #category-catalog .catalog__description {
-    line-height: 33px; }
+    line-height: 33px;
+    font-size: 18px;
+    padding: 20px; }
+
+@media only screen and (max-width: 1440px) {
+  #category-catalog {
+    padding-top: 120px;
+    padding-bottom: 80px; }
+    #category-catalog .catalog__description {
+      font-size: 16px; } }
+
+@media only screen and (max-width: 992px) {
+  #category-catalog {
+    padding-top: 60px;
+    padding-right: 0; }
+    #category-catalog .catalog__banner {
+      padding-right: 0; }
+    #category-catalog .catalog__description {
+      padding: 20px 40px; }
+    #category-catalog .catalog__path {
+      padding-left: 40px;
+      margin-bottom: 10px; }
+    #category-catalog .catalog__img {
+      -webkit-border-radius: 0;
+              border-radius: 0; }
+    #category-catalog .popular-container {
+      padding-left: 40px;
+      padding-right: 20px; } }
+
+@media only screen and (max-width: 560px) {
+  #category-catalog {
+    padding-bottom: 0; }
+    #category-catalog .popular-container {
+      padding-left: 20px;
+      padding-right: 0; }
+    #category-catalog .catalog__description {
+      padding: 20px; }
+    #category-catalog .catalog__path {
+      padding-left: 20px; } }
 
 #factories-header {
   padding: 170px 160px 80px 80px; }
