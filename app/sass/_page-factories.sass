@@ -3,9 +3,11 @@
 	.h3
 		margin-bottom: 90px
 	.factories__description
-		width: 780px
+		width: auto
+		max-width: 780px
+		font-size: 18px
 #factories
-	padding: 80px 80px 100px 40px
+	padding: 80px 120px 100px 40px
 	.factories__item
 		padding: 40px
 		.h4
@@ -23,3 +25,38 @@
 			margin-bottom: 5px
 			&:last-child
 				margin-bottom: 0
+@media only screen and (max-width : 1440px)
+	#factories-header
+		padding-top: 120px
+		padding-bottom: 0
+		.h3
+			margin-bottom: 40px
+		.factories__description
+			max-width: 100%
+	#factories
+		padding-bottom: 40px
+		padding-top: 40px
+		.factories
+			padding: 20px
+		.factories__item 
+			padding: 20px
+			.h4
+				font-size: 60px
+				width: 50px
+				line-height: 60px
+@media only screen and (max-width : 992px)
+	#factories-header
+		padding-top: 80px
+		padding-left: 40px
+		padding-right: 40px
+	#factories
+		padding-left: 0
+		padding-right: 0
+@media only screen and (max-width : 560px)
+	#factories-header
+		padding-left: 20px
+		padding-right: 20px
+	#factories
+		.factories
+			padding-left: 0
+			padding-right: 0
