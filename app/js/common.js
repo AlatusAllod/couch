@@ -87,35 +87,35 @@ $(document).ready(function () {
 		},
 	});
 
-	var successMsg = $('.message-success'),
-		errorMsg = $('.message-error');
-	$('form').submit(function () {
-		var th = $(this);
-		$.ajax({
-			url: 'mail',
-			type: 'GET',
-			data: th.serialize(),
-		})
-			.done(function (data) {
-				setTimeout(function () {
-					successMsg.addClass('notification-visible');
-					th.trigger('reset');
-				}, 1000);
-				setTimeout(function () {
-					successMsg.removeClass('notification-visible');
-				}, 5000);
-			})
-			.fail(function () {
-				setTimeout(function () {
-					errorMsg.addClass('notification-visible');
-					th.trigger('reset');
-				}, 1000);
-				setTimeout(function () {
-					errorMsg.removeClass('notification-visible');
-				}, 5000);
-			});
-		return false;
-	});
+	// var successMsg = $('.message-success'),
+	// 	errorMsg = $('.message-error');
+	// $('form').submit(function () {
+	// 	var th = $(this);
+	// 	$.ajax({
+	// 		url: 'mail',
+	// 		type: 'GET',
+	// 		data: th.serialize(),
+	// 	})
+	// 		.done(function (data) {
+	// 			setTimeout(function () {
+	// 				successMsg.addClass('notification-visible');
+	// 				th.trigger('reset');
+	// 			}, 1000);
+	// 			setTimeout(function () {
+	// 				successMsg.removeClass('notification-visible');
+	// 			}, 5000);
+	// 		})
+	// 		.fail(function () {
+	// 			setTimeout(function () {
+	// 				errorMsg.addClass('notification-visible');
+	// 				th.trigger('reset');
+	// 			}, 1000);
+	// 			setTimeout(function () {
+	// 				errorMsg.removeClass('notification-visible');
+	// 			}, 5000);
+	// 		});
+	// 	return false;
+	// });
 
 	var offline = $('.offline'),
 		online = $('.online'),

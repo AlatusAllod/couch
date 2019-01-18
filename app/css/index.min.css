@@ -8477,7 +8477,10 @@ textarea {
         text-align: center;
         left: 0;
         right: 0;
-        position: absolute; }
+        position: absolute;
+        pointer-events: none; }
+        .toolbar .mobile-header .logo a {
+          pointer-events: all; }
       .toolbar .mobile-header .search {
         margin-right: 20px; } }
 
@@ -9454,6 +9457,8 @@ div.jGrowl > .ui-state-highligh {
     .main-sect .main-title {
       left: 80px;
       right: 160px; }
+  .popular__img {
+    height: 180px; }
   #popular {
     padding-bottom: 40px; }
   #fabrics,
@@ -9518,6 +9523,8 @@ div.jGrowl > .ui-state-highligh {
   .main-sect .main-title .btn-l {
     padding: 10px 50px;
     font-size: 16px; }
+  .popular__img {
+    height: 120px; }
   #fabrics .fabrics-container,
   #partners .fabrics-container {
     width: 600px; }
@@ -9560,7 +9567,7 @@ div.jGrowl > .ui-state-highligh {
 
 @media only screen and (max-width: 992px) {
   .main-sect {
-    padding: 60px 0; }
+    padding: 50px 0 60px 0; }
     .main-sect .nav {
       display: none; }
     .main-sect .main-title {
@@ -9568,6 +9575,8 @@ div.jGrowl > .ui-state-highligh {
   .slider .viewport {
     -webkit-border-radius: 0;
             border-radius: 0; }
+  .popular__img {
+    height: 200px; }
   #popular {
     padding-right: 0;
     padding-left: 20px; }
@@ -9772,7 +9781,10 @@ div.jGrowl > .ui-state-highligh {
     padding-left: 20px;
     padding-right: 20px; }
     #call-sect .h4 {
-      font-size: 14px; } }
+      font-size: 14px; }
+  #footer {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 #catalog-categories {
   padding: 150px 110px 80px 30px; }
@@ -10007,7 +10019,9 @@ div.jGrowl > .ui-state-highligh {
   background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg);
   width: 100%;
-  height: 510px;
+  height: 100%;
+  padding: 60px;
+  min-height: 510px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
   -webkit-background-size: cover;
@@ -10016,10 +10030,13 @@ div.jGrowl > .ui-state-highligh {
 
 #factory .factory__title {
   font-weight: 600;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  max-width: 1300px; }
 
 #factory .factory__description {
-  line-height: 29px; }
+  max-width: 1300px;
+  line-height: 29px;
+  font-size: 18px; }
   #factory .factory__description .link {
     color: #fff;
     font-weight: 600;
@@ -10038,7 +10055,8 @@ div.jGrowl > .ui-state-highligh {
 
 #factory .factory-category__item {
   position: relative;
-  height: 410px;
+  height: auto;
+  max-height: 400px;
   padding: 10px 20px 10px 0;
   -webkit-transition-duration: 0.5s;
        -o-transition-duration: 0.5s;
@@ -10071,7 +10089,61 @@ div.jGrowl > .ui-state-highligh {
 #factory .factory-sect__inter {
   padding: 100px 60px 140px 0; }
   #factory .factory-sect__inter .h3 {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    padding-right: 20px; }
+
+@media only screen and (max-width: 1440px) {
+  #factory .factory-sect__banner {
+    padding-bottom: 80px; }
+  #factory .factory__title {
+    margin-bottom: 30px; }
+  #factory .factory-category {
+    padding-bottom: 70px; }
+  #factory .factory-category__title .h4 {
+    font-size: 20px; }
+  #factory .factory-sect__inter {
+    padding-top: 0;
+    padding-bottom: 40px; } }
+
+@media only screen and (max-width: 992px) {
+  #factory .factory-sect__banner {
+    padding-top: 50px;
+    padding-right: 0; }
+  #factory .factory__img {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+    padding: 40px; }
+  #factory .factory-sect__collections {
+    padding-right: 20px;
+    padding-left: 40px; }
+  #factory .factory-sect__inter {
+    padding-right: 20px;
+    padding-left: 40px; } }
+
+@media only screen and (max-width: 768px) {
+  #factory .factory-category__title .h4 {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 560px) {
+  #factory .factory__title {
+    -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+    line-height: 2;
+    margin-bottom: 10px; }
+  #factory .factory__img {
+    padding: 40px 20px; }
+  #factory .factory-sect__collections {
+    padding-right: 0;
+    padding-left: 20px; }
+  #factory .factory-sect__inter {
+    padding-right: 0;
+    padding-left: 20px; }
+  #factory .factory__description {
+    font-size: 14px; }
+  #factory .factory-category__title .h4 {
+    font-size: 12px;
+    padding: 5px 0; } }
 
 #collection .factory-sect__banner {
   padding: 80px 80px 45px 0; }

@@ -6,15 +6,20 @@
 	.factory__img
 		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/factory-1.jpeg)
 		width: 100%
-		height: 510px
+		height: 100%
+		padding: 60px
+		min-height: 510px
 		border-radius: $radius
 		background-size: cover
 		background-position: bottom center
 	.factory__title
 		font-weight: 600
 		margin-bottom: 50px
+		max-width: 1300px
 	.factory__description
+		max-width: 1300px
 		line-height: 29px
+		font-size: 18px
 		.link
 			color: $l
 			font-weight: 600
@@ -30,7 +35,8 @@
 			padding-right: 20px
 	.factory-category__item
 		position: relative
-		height: 410px
+		height: auto 
+		max-height: 400px
 		padding: 10px 20px 10px 0
 		transition-duration: 0.5s
 		img
@@ -56,3 +62,57 @@
 		padding: 100px 60px 140px 0
 		.h3
 			margin-bottom: 50px
+			padding-right: 20px
+@media only screen and (max-width : 1440px)
+	#factory
+		.factory-sect__banner
+			padding-bottom: 80px
+		.factory__title
+			margin-bottom: 30px
+		.factory-category
+			padding-bottom: 70px
+		.factory-category__title 
+			.h4
+				font-size: 20px
+		.factory-sect__inter
+			padding-top: 0
+			padding-bottom: 40px
+@media only screen and (max-width : 992px)
+	#factory
+		.factory-sect__banner
+			padding-top: 50px
+			padding-right: 0
+		.factory__img
+			border-radius: 0
+			padding: 40px
+		.factory-sect__collections
+			padding-right: 20px
+			padding-left: 40px
+		.factory-sect__inter
+			padding-right: 20px
+			padding-left: 40px
+@media only screen and (max-width : 768px)
+	#factory
+		.factory-category__title 
+			.h4
+				font-size: 18px
+@media only screen and (max-width : 560px)
+	#factory
+		.factory__title
+			align-self: flex-start
+			line-height: 2
+			margin-bottom: 10px
+		.factory__img
+			padding: 40px 20px
+		.factory-sect__collections
+			padding-right: 0
+			padding-left: 20px
+		.factory-sect__inter
+			padding-right: 0
+			padding-left: 20px
+		.factory__description
+			font-size: 14px
+		.factory-category__title 
+			.h4
+				font-size: 12px
+				padding: 5px 0
