@@ -274,6 +274,24 @@ $(window).on('load', function () {
 		futurama: true,
 		response: true,
 	});
+
+	$('#main2').slider({
+		slider: '.slider',
+		slide_class: '.slide-item',
+		nav: '.nav',
+		item: 1,
+		item_sliding: 1,
+		loop: true,
+		dots: true,
+		automove: false,
+		interval: 2000,
+		transition: '0.5s',
+		tabs: true,
+		tab_container: '.thumb-container',
+		tab_class: '.thumb',
+		futurama: true,
+		response: true,
+	});
 	initWorkSliderTabs();
 
 	var body = $('body');

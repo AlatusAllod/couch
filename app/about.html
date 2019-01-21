@@ -107,9 +107,6 @@
 		</menu>
 	</div>
 	<div class="page">
-		<div id="hamburger" class="sm-visible">
-			<div class="inner-hamb"></div>
-		</div>
 		<div class="preloader"></div>
 		<div class="notification offline">
 			Соединение с интернетом прервано
@@ -124,9 +121,9 @@
 			Сообщение не отправлено! Проверьте введенные данные и подключение к интернету.
 		</div>
 		<header class="toolbar flex align-center content-center">
-			<div class="cont-fluid align-center content-end">
+			<div class="cont-fluid align-center content-end md-hidden">
 				<div class="menu flex align-center">
-					<menu class="flex align-center sm-hidden">
+					<menu class="flex flex-wrap align-center">
 						<li>
 							<a class="link" href="/catalog.html">Каталог</a>
 						</li>
@@ -151,27 +148,39 @@
 					<img src="img/cart.svg" class="cart" alt="Корзина" title="Корзина">
 				</div>
 			</div>
+			<div class="cont-fluid align-center content-sb mobile-header">
+				<div id="hamburger">
+					<div class="inner-hamb"></div>
+				</div>
+				<div class="logo">
+					<a href="/">DIVANO<span class="text-a">ROSSO</span></a>
+				</div>
+				<div class="mobile-icons flex align-center">
+					<img src="img/red-search.svg" class="search">
+					<img src="img/cart.svg" class="cart" alt="Корзина" title="Корзина">
+				</div>
+			</div>
 		</header>
 		<div class="blocker"></div>
 		<div class="screen-scroll" id="scroll-container">
 			<section class="sect column" id="about">
 				<h3 class="h3"><span class="text-a">О</span> компании</h3>
-				<div class="flex xl-12">
-					<div class="flex about-description content-center align-start column xl-6">
+				<div class="flex about-sect xl-12">
+					<div class="flex about-description content-center align-start column xl-6 sm-12">
 						<p>Наша центральная экспозиция располагается в городе Самара, но мы всегда готовы осуществить доставку до Вашего
 							региона любой заинтересовавшей Вас мебели.</p>
 						<p>В этом Вам поможет наш интернет-магазин с обширным каталогом мебели от производителей и фабрик со всего мира.
 							С его помощью вы можете купить и заказать мебель онлайн быстро, удобно и по привлекательной цене.</p>
 						<button class="btn-a">Перейти к каталогу</button>
 					</div>
-					<div class="about-img xl-6">
+					<div class="about-img xl-6 sm-12">
 						<img src="../img/about.jpg">
 					</div>
 				</div>
 			</section>
 			<section class="sect column" id="our-salon">
 				<h3 class="h3"><span class="text-a">Наш</span> салон</h3>
-				<div class="flex flex-wrap xl-12 our-container">
+				<div class="flex flex-wrap xl-12 sm-hidden our-container">
 					<div class="our-item xl-4">
 						<img src="../img/about-page-1.jpg">
 					</div>
@@ -191,6 +200,26 @@
 						<img src="../img/about-page-6.jpg">
 					</div>
 				</div>
+				<div class="hidden sm-visible" id="main">
+					<div class="futurama-tabs flex column">
+						<div class="cont-fluid column content-sa align-center">
+							<div class="slider">
+								<div class="nav prev"><img src="img/arrow.svg"></div>
+								<div class="viewport">
+									<div class="slide-line">
+										<div class="slide-item">
+											<div class="slide-image" style="background-image: url(img/about-page-1.jpg);"></div>
+										</div>
+										<div class="slide-item">
+											<div class="slide-image" style="background-image: url(img/about-page-2.jpg);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="nav next"><img src="img/arrow.svg"></div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section class="sect column" id="our-fabric">
 				<h3 class="h3"><span class="text-a">Своё</span> производство</h3>
@@ -201,21 +230,41 @@
 					<p>За длительное время работы компании, наши клиенты убедились в качестве предоставляемых нами услуг в
 						профессиональном и ответственном подходе к работе.</p>
 				</div>
-				<div class="our-fabric__img xl-12">
+				<div class="our-fabric__img xl-12 sm-hidden">
 					<img src="../img/our-fabric-1.jpg">
 				</div>
-				<div class="flex our-fabric__galery xl-12">
-					<div class="our-fabric__img xl-3">
+				<div class="flex our-fabric__galery flex-wrap xl-12 sm-hidden">
+					<div class="our-fabric__img xl-3 sm-6">
 						<img src="../img/our-fabric-2.jpg">
 					</div>
-					<div class="our-fabric__img xl-3">
+					<div class="our-fabric__img xl-3 sm-6">
 						<img src="../img/our-fabric-3.jpg">
 					</div>
-					<div class="our-fabric__img xl-3">
+					<div class="our-fabric__img xl-3 sm-6">
 						<img src="../img/our-fabric-4.jpg">
 					</div>
-					<div class="our-fabric__img xl-3">
+					<div class="our-fabric__img xl-3 sm-6">
 						<img src="../img/our-fabric-5.jpg">
+					</div>
+				</div>
+				<div class="hidden sm-visible" id="main2">
+					<div class="futurama-tabs flex column">
+						<div class="cont-fluid column content-sa align-center">
+							<div class="slider">
+								<div class="nav prev"><img src="img/arrow.svg"></div>
+								<div class="viewport">
+									<div class="slide-line">
+										<div class="slide-item">
+											<div class="slide-image" style="background-image: url(img/about-page-1.jpg);"></div>
+										</div>
+										<div class="slide-item">
+											<div class="slide-image" style="background-image: url(img/about-page-2.jpg);"></div>
+										</div>
+									</div>
+								</div>
+								<div class="nav next"><img src="img/arrow.svg"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<button class="btn-a">Перейти в галерею</button>
@@ -238,74 +287,76 @@
 					</div>
 				</form>
 				<div class="contacts flex flex-wrap">
-					<div class="contact flex align-center xl-8">
+					<div class="contact flex align-center xl-8 lg-6 sm-12">
 						<img src="img/map.svg" alt="Адрес" title="Адрес">
 						<a href="" class="link" target="_blank">г. Самара, пр. Ленина 25А</a>
 					</div>
-					<div class="contact flex align-center xl-4">
+					<div class="contact flex align-center xl-4 lg-6 sm-12">
 						<img src="img/phone-call.svg" alt="Телефон" title="Телефон">
 						<a href="tel:+7 (800) 444-55-77" class="link">+7 (800) 444-55-77</a>
 					</div>
-					<div class="contact flex align-center xl-8">
+					<div class="contact flex align-center xl-8 lg-6 sm-12">
 						<img src="img/email.svg" alt="Почта" title="Почта">
 						<a href="mailto:info@divanorosso.ru" class="link">info@divanorosso.ru</a>
 					</div>
-					<div class="contact flex align-center xl-4">
+					<div class="contact flex align-center xl-4 lg-6 sm-12">
 						<img src="img/instagram.svg" alt="Instagram" title="Instagram">
 						<a href="https://www.instagram.com/" class="link">Instagram</a>
 					</div>
 				</div>
 			</section>
 			<footer class="sect" id="footer">
-				<div class="footer-logo xl-3">
-					<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
-					<p class="logo-copyright">2018 (с) Все права защищены.</p>
+				<div class="footer-wrapper flex content-sb">
+					<div class="footer-logo">
+						<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
+						<p class="logo-copyright">2018 (с) Все права защищены.</p>
+					</div>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="">Покупателю</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Подбор мебели</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Доставка</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Оплата</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Гарантия</a>
+						</li>
+					</menu>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="">О компании</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Наши партнеры</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Мебель на заказ</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Дизайнерам</a>
+						</li>
+					</menu>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="/catalog.html">Каталог</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/catalog.html#mebel">Мебель</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/catalog.html#garniture">Гарнитуры</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/factories.html">Фабрики</a>
+						</li>
+					</menu>
 				</div>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="">Покупателю</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Подбор мебели</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Доставка</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Оплата</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Гарантия</a>
-					</li>
-				</menu>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="">О компании</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Наши партнеры</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Мебель на заказ</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Дизайнерам</a>
-					</li>
-				</menu>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="/catalog.html">Каталог</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="/catalog.html#mebel">Мебель</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="/catalog.html#garniture">Гарнитуры</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="/factories.html">Фабрики</a>
-					</li>
-				</menu>
 			</footer>
 		</div>
 	</div>
