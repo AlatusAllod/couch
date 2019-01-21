@@ -106,14 +106,13 @@
 		background-size: cover
 	.thumb
 		position: relative
-		width: 100px
-		height: 100px
+		max-width: 100px
+		max-height: 100px
 		overflow: hidden
 		border-radius: $radius
-		margin: 0 auto
-		&:nth-of-type(7n+1)
-			margin-left: 0
-		&:nth-of-type(7n), &:last-of-type
+		margin-right: 20px
+		margin-bottom: 20px
+		&:last-of-type
 			margin-right: 0
 		img
 			object-fit: cover
@@ -510,6 +509,12 @@
 		padding-right: 80px
 		padding-left: 0
 @media only screen and (max-width : 1200px)
+	#main
+		.thumb
+			max-width: 50px
+			max-height: 50px
+			margin-right: 10px
+			margin-bottom: 10px
 	.main-sect
 		.main-title
 			.btn-l
