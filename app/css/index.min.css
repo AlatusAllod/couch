@@ -10798,13 +10798,46 @@ div.jGrowl > .ui-state-highligh {
   #contacts .h3 {
     margin-bottom: 90px; }
   #contacts p {
-    line-height: 33px; }
+    line-height: 33px;
+    font-size: 18px; }
 
 #map {
   padding: 10px 160px 110px 80px; }
   #map iframe {
     width: 100%;
     height: 515px; }
+
+@media only screen and (max-width: 1440px) {
+  #contacts {
+    padding-left: 80px;
+    padding-right: 160px; } }
+
+@media only screen and (max-width: 1200px) {
+  #contacts {
+    padding: 120px 120px 60px 40px; }
+    #contacts .h3 {
+      margin-bottom: 50px; }
+  #map {
+    padding-left: 40px;
+    padding-right: 120px; } }
+
+@media only screen and (max-width: 992px) {
+  #contacts {
+    padding-right: 40px; }
+    #contacts p {
+      font-size: 16px; }
+  #map {
+    padding-right: 40px; } }
+
+@media only screen and (max-width: 560px) {
+  #contacts {
+    padding-left: 20px;
+    padding-right: 20px; }
+    #contacts p {
+      font-size: 14px; }
+  #map {
+    padding-left: 20px;
+    padding-right: 20px; } }
 
 .search-form {
   position: relative;
@@ -10864,9 +10897,29 @@ div.jGrowl > .ui-state-highligh {
     -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
             align-self: flex-start;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    font-size: 16px; }
     #search .search-total .search-icon {
       margin-right: 10px; }
+
+@media only screen and (max-width: 1440px) {
+  #search {
+    padding-bottom: 0; } }
+
+@media only screen and (max-width: 992px) {
+  #search {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px; } }
+
+@media only screen and (max-width: 560px) {
+  #search {
+    padding-left: 20px;
+    padding-right: 20px; }
+    #search .search-total {
+      font-size: 14px; }
+    #search .search-form {
+      width: 100%; } }
 
 #politics {
   top: 0;
