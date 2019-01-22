@@ -10365,7 +10365,7 @@ div.jGrowl > .ui-state-highligh {
             align-self: center; }
   #partnership p {
     font-size: 24px;
-    line-height: 44px; }
+    line-height: 2; }
   #partnership .top-description {
     margin-bottom: 140px; }
   #partnership .top-description__section {
@@ -10396,13 +10396,14 @@ div.jGrowl > .ui-state-highligh {
   #partnership .invite-list li {
     position: relative;
     font-size: 24px;
+    line-height: 2;
     padding-left: 35px;
     margin-bottom: 65px; }
     #partnership .invite-list li::before {
       position: absolute;
       content: '';
       left: 0;
-      top: 0;
+      top: 12px;
       border: 12px solid transparent;
       border-left: 12px solid #CB0000; }
   #partnership .invite-list ul {
@@ -10414,6 +10415,123 @@ div.jGrowl > .ui-state-highligh {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+@media only screen and (max-width: 1440px) {
+  #partnership {
+    padding-top: 140px;
+    padding-bottom: 60px; }
+    #partnership .h3 {
+      margin-bottom: 80px; }
+    #partnership .top-description {
+      margin-bottom: 80px;
+      font-size: 22px; }
+    #partnership .top-description__left {
+      margin-top: 40px;
+      padding-right: 40px; }
+      #partnership .top-description__left .top-description__p {
+        margin-bottom: 40px; }
+    #partnership .top-description__right {
+      padding-left: 40px; }
+      #partnership .top-description__right .top-description__img {
+        margin-bottom: 90px; }
+    #partnership .top-description__section {
+      margin-bottom: 80px; }
+      #partnership .top-description__section p {
+        font-size: 22px; }
+    #partnership .invite-list .h4 {
+      margin-bottom: 65px; }
+    #partnership .invite-list ul {
+      margin-bottom: 0; }
+    #partnership .invite-list li {
+      font-size: 22px; }
+      #partnership .invite-list li::before {
+        top: 10px; } }
+
+@media only screen and (max-width: 1200px) {
+  #partnership {
+    padding-left: 40px;
+    padding-right: 120px; }
+    #partnership .top-description {
+      font-size: 20px; }
+    #partnership .top-description__left {
+      padding-right: 20px; }
+    #partnership .top-description__right {
+      padding-left: 20px; }
+    #partnership .top-description__section p {
+      font-size: 20px; }
+    #partnership .invite-list .h4 {
+      font-size: 30px; }
+    #partnership .invite-list li {
+      font-size: 20px; }
+      #partnership .invite-list li::before {
+        top: 8px; } }
+
+@media only screen and (max-width: 992px) {
+  #partnership {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px; }
+    #partnership .h3 {
+      margin-bottom: 40px; }
+    #partnership .top-description {
+      font-size: 18px; }
+    #partnership .top-description__section p {
+      font-size: 18px; }
+    #partnership .invite-list li {
+      font-size: 18px; }
+      #partnership .invite-list li::before {
+        top: 6px; } }
+
+@media only screen and (max-width: 768px) {
+  #partnership {
+    padding-bottom: 20px; }
+    #partnership .top-description {
+      font-size: 16px;
+      margin-bottom: 40px; }
+    #partnership .top-description__section {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      margin-bottom: 40px; }
+      #partnership .top-description__section p {
+        font-size: 16px; }
+    #partnership .top-description__left {
+      padding-right: 0;
+      margin-top: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
+      #partnership .top-description__left .top-description__p {
+        margin-top: 40px;
+        margin-bottom: 0; }
+    #partnership .top-description__right {
+      padding-left: 0; }
+      #partnership .top-description__right .top-description__img {
+        margin-bottom: 40px; }
+    #partnership .invite-list li {
+      font-size: 16px;
+      margin-bottom: 40px; }
+      #partnership .invite-list li::before {
+        top: 4px; } }
+
+@media only screen and (max-width: 560px) {
+  #partnership {
+    padding-left: 20px;
+    padding-right: 20px; }
+    #partnership .invite-list .h4 {
+      font-size: 24px; }
+    #partnership .invite-list li {
+      font-size: 14px; }
+      #partnership .invite-list li::before {
+        top: 0; }
+    #partnership .top-description__section p {
+      font-size: 14px; }
+    #partnership .top-description {
+      font-size: 14px; } }
 
 #about {
   padding: 160px 160px 60px 80px; }

@@ -6,7 +6,7 @@
 		align-self: center
 	p
 		font-size: 24px
-		line-height: 44px
+		line-height: 2
 	.top-description
 		margin-bottom: 140px
 	.top-description__section
@@ -36,13 +36,14 @@
 		li
 			position: relative
 			font-size: 24px
+			line-height: 2
 			padding-left: 35px
 			margin-bottom: 65px
 			&::before
 				position: absolute
 				content: ''
 				left: 0
-				top: 0
+				top: 12px
 				border: 12px solid transparent
 				border-left: 12px solid $a
 		ul
@@ -53,4 +54,115 @@
 			height: 100%
 			width: 100%
 			object-fit: cover
-
+@media only screen and (max-width : 1440px)
+	#partnership
+		padding-top: 140px
+		padding-bottom: 60px
+		.h3
+			margin-bottom: 80px
+		.top-description
+			margin-bottom: 80px
+			font-size: 22px
+		.top-description__left
+			margin-top: 40px
+			padding-right: 40px
+			.top-description__p
+				margin-bottom: 40px
+		.top-description__right
+			padding-left: 40px
+			.top-description__img
+				margin-bottom: 90px
+		.top-description__section
+			margin-bottom: 80px
+			p
+				font-size: 22px
+		.invite-list
+			.h4
+				margin-bottom: 65px
+			ul
+				margin-bottom: 0
+			li
+				font-size: 22px
+				&::before
+					top: 10px
+@media only screen and (max-width : 1200px)
+	#partnership
+		padding-left: 40px
+		padding-right: 120px
+		.top-description
+			font-size: 20px
+		.top-description__left
+			padding-right: 20px
+		.top-description__right
+			padding-left: 20px
+		.top-description__section
+			p
+				font-size: 20px
+		.invite-list
+			.h4
+				font-size: 30px
+			li
+				font-size: 20px
+				&::before
+					top: 8px
+@media only screen and (max-width : 992px)
+	#partnership
+		padding-top: 100px
+		padding-left: 40px
+		padding-right: 40px
+		.h3
+			margin-bottom: 40px
+		.top-description
+			font-size: 18px
+		.top-description__section
+			p
+				font-size: 18px
+		.invite-list
+			li
+				font-size: 18px
+				&::before
+					top: 6px
+@media only screen and (max-width : 768px)
+	#partnership
+		padding-bottom: 20px
+		.top-description
+			font-size: 16px
+			margin-bottom: 40px
+		.top-description__section
+			flex-direction: column-reverse
+			margin-bottom: 40px
+			p
+				font-size: 16px
+		.top-description__left
+			padding-right: 0
+			margin-top: 0
+			flex-direction: column-reverse
+			.top-description__p
+				margin-top: 40px
+				margin-bottom: 0
+		.top-description__right
+			padding-left: 0
+			.top-description__img
+				margin-bottom: 40px
+		.invite-list
+			li
+				font-size: 16px
+				margin-bottom: 40px
+				&::before
+					top: 4px
+@media only screen and (max-width : 560px)
+	#partnership
+		padding-left: 20px
+		padding-right: 20px
+		.invite-list
+			.h4
+				font-size: 24px
+			li
+				font-size: 14px
+				&::before
+					top: 0
+		.top-description__section
+			p
+				font-size: 14px
+		.top-description
+			font-size: 14px
