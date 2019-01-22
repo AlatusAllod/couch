@@ -107,9 +107,6 @@
 		</menu>
 	</div>
 	<div class="page">
-		<div id="hamburger" class="sm-visible">
-			<div class="inner-hamb"></div>
-		</div>
 		<div class="preloader"></div>
 		<div class="notification offline">
 			Соединение с интернетом прервано
@@ -124,9 +121,9 @@
 			Сообщение не отправлено! Проверьте введенные данные и подключение к интернету.
 		</div>
 		<header class="toolbar flex align-center content-center">
-			<div class="cont-fluid align-center content-end">
+			<div class="cont-fluid align-center content-end md-hidden">
 				<div class="menu flex align-center">
-					<menu class="flex align-center sm-hidden">
+					<menu class="flex flex-wrap align-center">
 						<li>
 							<a class="link" href="/catalog.html">Каталог</a>
 						</li>
@@ -151,21 +148,33 @@
 					<img src="img/cart.svg" class="cart" alt="Корзина" title="Корзина">
 				</div>
 			</div>
+			<div class="cont-fluid align-center content-sb mobile-header">
+				<div id="hamburger">
+					<div class="inner-hamb"></div>
+				</div>
+				<div class="logo">
+					<a href="/">DIVANO<span class="text-a">ROSSO</span></a>
+				</div>
+				<div class="mobile-icons flex align-center">
+					<img src="img/red-search.svg" class="search">
+					<img src="img/cart.svg" class="cart" alt="Корзина" title="Корзина">
+				</div>
+			</div>
 		</header>
 		<div class="blocker"></div>
 		<div class="screen-scroll" id="scroll-container">
 			<section class="sect column" id="services">
 				<h3 class="h3">Сервис</h3>
 				<p class="choose-tip">Выберите пункт</p>
-				<menu class="flex align-center content-sb xl-12">
-					<a class="active">Доставка</a>
-					<a>Оплата</a>
-					<a>Подбор мебели</a>
-					<a>Гарантия качества</a>
-					<a>Помощь дизайнера</a>
+				<menu class="flex flex-wrap content-sb xl-12">
+					<a class="active lg-6 xsm-12">Доставка</a>
+					<a class="lg-6 xsm-12">Оплата</a>
+					<a class="lg-6 xsm-12">Подбор мебели</a>
+					<a class="lg-6 xsm-12">Гарантия качества</a>
+					<a class="lg-6 xsm-12">Помощь дизайнера</a>
 				</menu>
 				<div class="flex service-item xl-12">
-					<div class="flex services-description content-center align-start column xl-6">
+					<div class="flex services-description content-center align-start column xl-6 md-12">
 						<h4 class="h4">Сроки доставки</h4>
 						<p>— Срок производства и поставки итальянской мебели в Самару, составляет от 45 до 120 рабочих дней в зависимости
 							от выбранной Вами фабрики.</p>
@@ -173,12 +182,12 @@
 						<p>— При заказе мебели из наличия (со склада в Москве) срок ее доставки и сборки, не превышает 10 рабочих дней,
 							так же возможен вариант срочной доставки.</p>
 					</div>
-					<div class="services-img xl-6">
+					<div class="services-img xl-6 md-12">
 						<img src="../img/services-1.jpg">
 					</div>
 				</div>
 				<div class="flex service-item xl-12">
-					<div class="flex services-description content-center align-start column xl-6">
+					<div class="flex services-description content-center align-start column xl-6 md-12">
 						<h4 class="h4">Стоимость доставки</h4>
 						<p>— Стоимость доставки по г. Самара - бесплатно</p>
 						<p>— Стоимость доставки по Самарской области и в страны СНГ - от 25 руб/км </p>
@@ -188,12 +197,12 @@
 						<p>— Возможен самовывоз с нашего склада (только после внесения 100 % предоплаты) Адрес пункта самовывоза: г.
 							Самара, ул. Чернореченская, 50</p>
 					</div>
-					<div class="services-img xl-6">
+					<div class="services-img xl-6 md-12">
 						<img src="../img/services-2.jpg">
 					</div>
 				</div>
 				<div class="flex service-item xl-12">
-					<div class="flex services-description content-center align-start column xl-6">
+					<div class="flex services-description content-center align-start column xl-6 md-12">
 						<h4 class="h4">Сборка</h4>
 						<p>— Стоимость сборки рассчитывается индивидуально и зависит от собираемых позиций. Расчет сборки производится
 							при оформлении заказа по каждому конкретному предмету мебели, подлежащему сборке.</p>
@@ -202,7 +211,7 @@
 						<p>— В стоимость сборки не включаются дополнительные работы, такие как подрезка мебели, плинтусов и т.д. Такие
 							услуги, по согласованию со сборщиками, оплачиваются отдельно.</p>
 					</div>
-					<div class="services-img xl-6">
+					<div class="services-img xl-6 md-12">
 						<img src="../img/services-3.jpg">
 					</div>
 				</div>
@@ -225,74 +234,76 @@
 					</div>
 				</form>
 				<div class="contacts flex flex-wrap">
-					<div class="contact flex align-center xl-8">
+					<div class="contact flex align-center xl-8 lg-6 sm-12">
 						<img src="img/map.svg" alt="Адрес" title="Адрес">
 						<a href="" class="link" target="_blank">г. Самара, пр. Ленина 25А</a>
 					</div>
-					<div class="contact flex align-center xl-4">
+					<div class="contact flex align-center xl-4 lg-6 sm-12">
 						<img src="img/phone-call.svg" alt="Телефон" title="Телефон">
 						<a href="tel:+7 (800) 444-55-77" class="link">+7 (800) 444-55-77</a>
 					</div>
-					<div class="contact flex align-center xl-8">
+					<div class="contact flex align-center xl-8 lg-6 sm-12">
 						<img src="img/email.svg" alt="Почта" title="Почта">
 						<a href="mailto:info@divanorosso.ru" class="link">info@divanorosso.ru</a>
 					</div>
-					<div class="contact flex align-center xl-4">
+					<div class="contact flex align-center xl-4 lg-6 sm-12">
 						<img src="img/instagram.svg" alt="Instagram" title="Instagram">
 						<a href="https://www.instagram.com/" class="link">Instagram</a>
 					</div>
 				</div>
 			</section>
 			<footer class="sect" id="footer">
-				<div class="footer-logo xl-3">
-					<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
-					<p class="logo-copyright">2018 (с) Все права защищены.</p>
+				<div class="footer-wrapper flex content-sb">
+					<div class="footer-logo">
+						<a href="/" class="logo">DIVANO<span class="text-a">ROSSO</span></a>
+						<p class="logo-copyright">2018 (с) Все права защищены.</p>
+					</div>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="">Покупателю</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Подбор мебели</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Доставка</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Оплата</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Гарантия</a>
+						</li>
+					</menu>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="">О компании</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Наши партнеры</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Мебель на заказ</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="">Дизайнерам</a>
+						</li>
+					</menu>
+					<menu>
+						<li class="screen-link h4">
+							<a class="link" href="/catalog.html">Каталог</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/catalog.html#mebel">Мебель</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/catalog.html#garniture">Гарнитуры</a>
+						</li>
+						<li class="screen-link">
+							<a class="link" href="/factories.html">Фабрики</a>
+						</li>
+					</menu>
 				</div>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="">Покупателю</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Подбор мебели</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Доставка</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Оплата</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Гарантия</a>
-					</li>
-				</menu>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="">О компании</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Наши партнеры</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Мебель на заказ</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="">Дизайнерам</a>
-					</li>
-				</menu>
-				<menu class="xl-3">
-					<li class="screen-link h4">
-						<a class="link" href="/catalog.html">Каталог</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="/catalog.html#mebel">Мебель</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="/catalog.html#garniture">Гарнитуры</a>
-					</li>
-					<li class="screen-link">
-						<a class="link" href="/factories.html">Фабрики</a>
-					</li>
-				</menu>
 			</footer>
 		</div>
 	</div>

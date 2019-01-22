@@ -1,5 +1,7 @@
 #services
 	padding: 160px 160px 10px 80px
+	p
+		font-size: 18px
 	.h3
 		color: $a
 		margin-bottom: 50px
@@ -15,13 +17,13 @@
 			cursor: pointer
 			font-weight: bold
 			transition: 0.5s
+			margin-bottom: 20px
+			margin-right: 20px
 			&:hover
 				color: $a
-				transform: scale(1.2)
 				text-shadow: 0px 10px 30px rgba(203, 0, 0, 0.5)
 		.active
 			color: $a
-			font-size: 36px
 			text-shadow: 0px 10px 30px rgba(203, 0, 0, 0.5)
 	.services-img
 		padding-left: 60px
@@ -36,3 +38,65 @@
 			margin-bottom: 25px
 	.service-item
 		margin-bottom: 150px
+@media only screen and (max-width : 1440px)
+	#services
+		padding-top: 120px
+		menu
+			margin-bottom: 50px
+		.service-item
+			margin-bottom: 100px
+		.services-img
+			padding-left: 40px
+		.services-description
+			padding-right: 40px
+@media only screen and (max-width : 1200px)
+	#services
+		padding-left: 40px
+		padding-right: 120px
+		menu
+			a
+				margin-right: 0
+		.services-img
+			padding-left: 20px
+		.services-description
+			padding-right: 20px
+@media only screen and (max-width : 992px)
+	#services
+		padding-top: 100px
+		padding-left: 40px
+		padding-right: 40px
+		.service-item
+			flex-direction: column
+			margin-bottom: 50px
+		.services-img
+			padding-left: 0
+		.services-description
+			padding-right: 0
+			margin-bottom: 30px
+@media only screen and (max-width : 768px)
+	#services
+		p
+			font-size: 14px
+@media only screen and (max-width : 560px)
+	#services
+		padding-left: 20px
+		padding-right: 20px
+		menu
+			align-items: flex-start
+			flex-direction: column
+			margin-bottom: 30px
+			a
+				width: auto
+				display: none
+			.active
+				display: block
+				position: relative
+				&::after
+					position: absolute
+					content: ''
+					border-top: solid $a 10px
+					border-left: solid transparent 10px
+					border-right: solid transparent 10px
+					border-bottom: solid transparent 10px
+					top: 9px
+					right: -35px

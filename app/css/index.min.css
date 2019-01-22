@@ -10866,6 +10866,8 @@ div.jGrowl > .ui-state-highligh {
 
 #services {
   padding: 160px 160px 10px 80px; }
+  #services p {
+    font-size: 18px; }
   #services .h3 {
     color: #CB0000;
     margin-bottom: 50px; }
@@ -10884,16 +10886,14 @@ div.jGrowl > .ui-state-highligh {
       font-weight: bold;
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
-      transition: 0.5s; }
+      transition: 0.5s;
+      margin-bottom: 20px;
+      margin-right: 20px; }
       #services menu a:hover {
         color: #CB0000;
-        -webkit-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-                transform: scale(1.2);
         text-shadow: 0px 10px 30px rgba(203, 0, 0, 0.5); }
     #services menu .active {
       color: #CB0000;
-      font-size: 36px;
       text-shadow: 0px 10px 30px rgba(203, 0, 0, 0.5); }
   #services .services-img {
     padding-left: 60px; }
@@ -10910,6 +10910,82 @@ div.jGrowl > .ui-state-highligh {
       margin-bottom: 25px; }
   #services .service-item {
     margin-bottom: 150px; }
+
+@media only screen and (max-width: 1440px) {
+  #services {
+    padding-top: 120px; }
+    #services menu {
+      margin-bottom: 50px; }
+    #services .service-item {
+      margin-bottom: 100px; }
+    #services .services-img {
+      padding-left: 40px; }
+    #services .services-description {
+      padding-right: 40px; } }
+
+@media only screen and (max-width: 1200px) {
+  #services {
+    padding-left: 40px;
+    padding-right: 120px; }
+    #services menu a {
+      margin-right: 0; }
+    #services .services-img {
+      padding-left: 20px; }
+    #services .services-description {
+      padding-right: 20px; } }
+
+@media only screen and (max-width: 992px) {
+  #services {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px; }
+    #services .service-item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 50px; }
+    #services .services-img {
+      padding-left: 0; }
+    #services .services-description {
+      padding-right: 0;
+      margin-bottom: 30px; } }
+
+@media only screen and (max-width: 768px) {
+  #services p {
+    font-size: 14px; } }
+
+@media only screen and (max-width: 560px) {
+  #services {
+    padding-left: 20px;
+    padding-right: 20px; }
+    #services menu {
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-bottom: 30px; }
+      #services menu a {
+        width: auto;
+        display: none; }
+      #services menu .active {
+        display: block;
+        position: relative; }
+        #services menu .active::after {
+          position: absolute;
+          content: '';
+          border-top: solid #CB0000 10px;
+          border-left: solid transparent 10px;
+          border-right: solid transparent 10px;
+          border-bottom: solid transparent 10px;
+          top: 9px;
+          right: -35px; } }
 
 #contacts {
   padding: 160px 400px 120px 320px; }

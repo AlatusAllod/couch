@@ -209,6 +209,17 @@ $(document).ready(function () {
 
 	$(".cost-min").val($(".cost-slider").sliderui("values", 0));
 	$(".cost-max").val($(".cost-slider").sliderui("values", 1));
+
+	$("#services menu .active").click(function (e) {
+		if ($(window).width() <= '560') {
+			if ($(this).siblings().css('display') == 'block') {
+				$("#services menu a").not(this).hide();
+			} else {
+				$("#services menu a").show();
+			}
+		}
+		e.preventDefault();
+	});
 });
 
 $(window).on('resize', function () {
@@ -218,6 +229,11 @@ $(window).on('resize', function () {
 	} else {
 		$('#work .tab').css('display', 'block');
 	};
+	if ($(window).width() > '560') {
+		$("#services menu a").show();
+	} else {
+		$("#services menu a").not(".active").hide();
+	}
 });
 
 $(window).on('load', function () {
