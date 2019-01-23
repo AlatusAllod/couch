@@ -1,9 +1,0 @@
-#about {
-  padding: 160px 160px 60px 80px; }
-  #about .about-img {
-    padding-left: 40px; }
-    #about .about-img img {
-      width: 100%;
-      height: auto;
-      -o-object-fit: cover;
-         object-fit: cover; }
