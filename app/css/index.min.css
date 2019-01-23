@@ -8424,7 +8424,7 @@ textarea {
     padding-left: 0; }
   .toolbar .menu {
     height: 100%;
-    padding-right: 35px; }
+    padding: 0 35px; }
     .toolbar .menu .link {
       margin-right: 35px; }
       .toolbar .menu .link::after, .toolbar .menu .link::before {
