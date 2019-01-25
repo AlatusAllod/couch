@@ -10788,6 +10788,8 @@ div.jGrowl > .ui-state-highligh {
     width: 62px;
     height: 62px;
     margin-bottom: 20px; }
+    .item-advances .item-plus__img img {
+      width: 100%; }
 
 #call-sect.item-call {
   padding-top: 0; }
