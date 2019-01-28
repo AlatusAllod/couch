@@ -172,7 +172,7 @@ $(document).ready(function () {
 		$(this).toggleClass('acc-active');
 	});
 
-	$('.mobile-filter .acc-body label').click(function () {
+	$('.mobile-filter .acc-body input').click(function () {
 		$(this).parent().toggleClass('checkbox-active');
 	});
 
