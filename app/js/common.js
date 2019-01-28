@@ -173,7 +173,7 @@ $(document).ready(function () {
 	});
 
 	$('.mobile-filter .acc-body label').click(function () {
-		$(this).toggleClass('checkbox-active');
+		$(this).parent().toggleClass('checkbox-active');
 	});
 
 	$(".cost-slider").sliderui({
