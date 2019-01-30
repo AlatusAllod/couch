@@ -8638,6 +8638,10 @@ textarea {
             -ms-flex-item-align: center;
                 align-self: center;
         font-size: 14px; }
+    #mob-mnu .mobile-filter fieldset {
+      margin: 0;
+      padding: 0;
+      border: none; }
     #mob-mnu .mobile-filter .cost-slider {
       position: relative;
       border: none;
@@ -8751,6 +8755,10 @@ textarea {
 .mob-mnu-active .blocker {
   z-index: 9998;
   opacity: 1; }
+
+#mse2_filters .mse2_number_slider {
+  border-color: transparent;
+  border-top-color: #CB0000; }
 
 @media only screen and (max-width: 992px) {
   #mob-mnu {
