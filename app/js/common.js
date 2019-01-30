@@ -176,6 +176,8 @@ $(document).ready(function () {
 		$(this).parent().toggleClass('checkbox-active');
 	});
 
+	$('.mobile-filter .acc-body input:checked').parent().addClass('checkbox-active');
+
 	$("#services menu .active").click(function (e) {
 		if ($(window).width() <= '560') {
 			if ($(this).siblings().css('display') == 'block') {
