@@ -11198,7 +11198,9 @@ div.jGrowl > .ui-state-highligh {
     height: 30px;
     position: relative;
     overflow: hidden;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 0;
+    border: none; }
     #cart-items .cart-item__remove::after, #cart-items .cart-item__remove::before {
       position: absolute;
       content: '';
