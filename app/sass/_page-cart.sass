@@ -1,0 +1,111 @@
+#cart-dots
+	padding-top: 150px
+	.cart-dot
+		width: 300px
+		margin: 0 20px
+		opacity: 0.4
+	.cart-dot__circle
+		width: 80px
+		height: 80px
+		border-radius: 50%
+		border: 1px solid $a
+		font-weight: 600
+		font-size: 36px
+		color: $a
+		margin-bottom: 15px
+	.cart-dot__text
+		font-size: 24px
+	.cart-dot_active
+		opacity: 1
+#cart-items
+	padding-bottom: 100px
+	padding-left: 80px 
+	padding-right: 160px
+	.cart-items__title
+		font-size: 30px
+		align-self: flex-start
+		margin-bottom: 20px
+	.cart-item
+		padding: 40px 0
+		border-top: 1px solid #bdbdbd
+		&:first-of-type
+			border-top: none
+	.cart-item__img
+		width: 200px
+		height: 200px
+		object-fit: cover
+		border-radius: $radius
+		margin-right: 60px
+	.cart-item__title
+		margin-bottom: 40px
+	.cart-item__accent
+		font-weight: 500
+	.cart-item__cost
+		align-self: center
+		color: $a
+	.cart-item__remove
+		align-self: center
+		width: 30px
+		height: 30px
+		position: relative
+		overflow: hidden
+		&::after,
+		&::before
+			position: absolute
+			content: ''
+			width: 45px
+			height: 45px
+			top: 8px
+		&::after
+			left: 8px
+			border-left: 2px solid $d
+			transform: rotate(45deg)
+		&::before
+			left: -22px
+			border-right: 2px solid $d
+			transform: rotate(-45deg)
+	.cart-item__property
+		width: 20%
+		padding-right: 20px
+		&:last-of-type
+			padding-right: 0
+	.cart-items__sum
+		align-self: flex-end
+		margin-bottom: 60px
+	.cart-items__nav
+		align-self: flex-end
+		.btn
+			font-size: 18px
+			padding: 10px 70px
+		.btn-l
+			margin-right: 20px
+			border-color: $a
+			color: $a
+#cart-checkout
+	padding: 60px 160px 100px 80px
+	.cart-checkout__title
+		font-size: 30px
+		margin-bottom: 40px
+	.cart-checkout__input 
+		margin: 20px 1%
+		width: 48%
+		&.btn-a
+			font-size: 18px
+#cart-confirmation
+	padding: 60px 80px 100px 80px
+	width: 950px
+	margin: 0 auto
+	align-items: flex-start
+	.cart-confirmation__title
+		font-size: 30px
+		text-align: left
+		margin-bottom: 50px
+	.h4
+		font-weight: 500
+		margin-bottom: 20px
+		&:last-of-type
+			margin-bottom: 40px
+			font-weight: normal
+	.btn-a
+		font-size: 18px
+		padding: 10px 90px
