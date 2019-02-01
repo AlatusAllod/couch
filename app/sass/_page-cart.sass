@@ -1,5 +1,6 @@
 #cart-dots
 	padding-top: 150px
+	align-items: flex-start
 	.cart-dot
 		width: 300px
 		margin: 0 20px
@@ -15,6 +16,7 @@
 		margin-bottom: 15px
 	.cart-dot__text
 		font-size: 24px
+		text-align: center
 	.cart-dot_active
 		opacity: 1
 #cart-items
@@ -40,6 +42,7 @@
 		margin-bottom: 40px
 	.cart-item__accent
 		font-weight: 500
+		word-break: keep-all
 	.cart-item__cost
 		align-self: center
 		color: $a
@@ -49,6 +52,7 @@
 		height: 30px
 		position: relative
 		overflow: hidden
+		cursor: pointer
 		&::after,
 		&::before
 			position: absolute
@@ -69,6 +73,8 @@
 		padding-right: 20px
 		&:last-of-type
 			padding-right: 0
+	.cart-item__prop
+		word-break: break-word
 	.cart-items__sum
 		align-self: flex-end
 		margin-bottom: 60px
@@ -81,8 +87,11 @@
 			margin-right: 20px
 			border-color: $a
 			color: $a
+			&:hover
+				background-color: $a
+				color: $l
 #cart-checkout
-	padding: 60px 160px 100px 80px
+	padding: 60px 80px 100px 80px
 	.cart-checkout__title
 		font-size: 30px
 		margin-bottom: 40px
@@ -109,3 +118,138 @@
 	.btn-a
 		font-size: 18px
 		padding: 10px 90px
+@media only screen and (max-width : 1440px)
+	#cart-items
+		padding-right: 80px
+		.h4
+			font-size: 20px
+		.cart-item__img
+			margin-right: 30px
+	#cart-dots
+		.cart-dot__text
+			font-size: 20px
+	#cart-checkout
+		padding-left: 40px
+		padding-right: 40px
+		.cart-checkout__title
+			font-size: 24px
+	#cart-confirmation
+		padding-left: 40px
+		padding-right: 40px
+		width: 100%
+		margin: 0
+		.cart-confirmation__title
+			font-size: 24px
+		.h4
+			font-size: 20px
+@media only screen and (max-width : 1200px)
+	#cart-items
+		padding-left: 40px
+		padding-right: 40px
+		.h4
+			font-size: 18px
+		.cart-item__img
+			width: 150px
+			height: 150px
+		.cart-item__title
+			margin-bottom: 20px
+		.cart-item__remove 
+			transform: scale(0.6)
+	#cart-dots
+		.cart-dot__text
+			font-size: 18px
+@media only screen and (max-width : 992px)
+	#cart-dots
+		padding-top: 100px
+@media only screen and (max-width : 768px)
+	#cart-dots
+		padding-top: 80px
+		padding-bottom: 20px
+		.cart-dot
+			margin: 0
+			padding: 0 10px
+			width: 33%
+		.cart-dot__circle 
+			width: 40px
+			height: 40px
+			font-size: 18px
+			margin-bottom: 10px
+		.cart-dot__text
+			font-size: 12px
+	#cart-items
+		.cart-items__title
+			font-size: 24px
+		.cart-item
+			flex-direction: column
+		.cart-item__img
+			width: 100%
+			height: auto
+			margin-bottom: 30px
+		.cart-item__title
+			font-size: 24px
+			margin-bottom: 30px
+		.cart-item__remove
+			margin-bottom: 20px
+			transform: none
+		.cart-item__description
+			flex-direction: column
+		.cart-item__property
+			display: flex
+			padding: 0
+			width: 100%
+		.cart-item__accent
+			margin-right: 5px
+			font-size: 18px
+		.cart-item__prop
+			font-size: 18px
+		.cart-item__cost
+			font-size: 24px
+			display: flex
+		.cart-items__sum
+			font-size: 24px
+			align-self: flex-start
+		.cart-items__nav
+			flex-direction: column-reverse
+			width: 100%
+			.btn
+				margin: 0
+				padding: 15px 50px
+				font-size: 14px
+			.btn-a
+				margin-bottom: 60px
+	#cart-checkout
+		.cart-checkout__input
+			margin-left: 0
+			margin-right: 0
+			width: 100%
+		.cart-checkout__title
+			font-size: 20px
+	#cart-confirmation
+		.cart-confirmation__title
+			font-size: 20px
+		.h4
+			font-size: 18px
+@media only screen and (max-width : 560px)
+	#cart-items
+		padding-right: 20px
+		padding-left: 20px
+	#cart-checkout
+		padding-right: 20px
+		padding-left: 20px
+		.cart-checkout__title
+			font-size: 18px
+			margin-bottom: 10px
+		.cart-checkout__input
+			&.btn-a
+				font-size: 14px
+	#cart-confirmation
+		padding-left: 20px
+		padding-right: 20px
+		.cart-confirmation__title
+			margin-bottom: 40px
+			font-size: 18px
+		.h4
+			font-size: 14px
+		.btn-a
+			font-size: 14px
+			width: 100%
