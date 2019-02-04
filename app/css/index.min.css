@@ -10273,8 +10273,7 @@ div.jGrowl > .ui-state-highligh {
 #collection .factory__form {
   -webkit-align-self: flex-start;
       -ms-flex-item-align: start;
-          align-self: flex-start;
-  padding-bottom: 20px; }
+          align-self: flex-start; }
 
 #collection .factory__select {
   padding: 15px 50px 15px 25px;
@@ -10287,7 +10286,8 @@ div.jGrowl > .ui-state-highligh {
 
 #collection .select-wrapper {
   position: relative;
-  margin-right: 20px; }
+  margin-right: 20px;
+  margin-bottom: 20px; }
   #collection .select-wrapper:last-child {
     margin-right: 0; }
   #collection .select-wrapper::before {
@@ -11115,6 +11115,15 @@ div.jGrowl > .ui-state-highligh {
     #search .search-total .search-icon {
       margin-right: 10px; }
 
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px; }
+  .pagination li {
+    margin: 10px; }
+
 @media only screen and (max-width: 1440px) {
   #search {
     padding-bottom: 0; } }
@@ -11132,7 +11141,15 @@ div.jGrowl > .ui-state-highligh {
     #search .search-total {
       font-size: 14px; }
     #search .search-form {
-      width: 100%; } }
+      width: 100%; }
+  .pagination {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 25px; }
+    .pagination li {
+      margin: 5px; } }
 
 #cart-dots {
   padding-top: 150px;
