@@ -10212,6 +10212,8 @@ div.jGrowl > .ui-state-highligh {
   line-height: 33px;
   font-size: 18px;
   margin-bottom: 40px; }
+  #collection .factory__description a {
+    color: #fff; }
   #collection .factory__description .link {
     color: #fff;
     font-weight: 600;
