@@ -11120,7 +11120,11 @@ div.jGrowl > .ui-state-highligh {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .pagination li {
     margin: 10px; }
 
