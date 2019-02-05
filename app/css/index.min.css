@@ -8947,6 +8947,8 @@ div.jGrowl > .ui-state-highligh {
       border: none;
       padding: 15px 70px;
       font-size: 18px; }
+      .main-sect .main-title .btn-l:hover, .main-sect .main-title .btn-l:active {
+        background-color: #CB0000; }
 
 #call-sect {
   padding-left: 80px;
@@ -9360,7 +9362,7 @@ div.jGrowl > .ui-state-highligh {
     padding: 10px 50px;
     font-size: 18px;
     margin-right: 20px; }
-    #work .slider-tab-sect .work__more:hover {
+    #work .slider-tab-sect .work__more:hover, #work .slider-tab-sect .work__more:active {
       color: #fff;
       background-color: #CB0000; }
   #work .slider-tab-sect .work__buttons {
