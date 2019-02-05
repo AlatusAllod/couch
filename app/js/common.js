@@ -188,6 +188,11 @@ $(document).ready(function () {
 		}
 		e.preventDefault();
 	});
+
+	if ($('#getOrder').length > 0) {
+		$('.cart-dot_active').removeClass('cart-dot_active');
+		$('.cart-dot').last().addClass('cart-dot_active');
+	}
 });
 
 $(window).on('resize', function () {
