@@ -8761,8 +8761,8 @@ textarea {
   border-top-color: #CB0000; }
 
 #mse2_mfilter .btn_more {
-  width: auto;
-  margin-bottom: 20px; }
+  width: auto !important;
+  margin-bottom: 20px !important; }
 
 @media only screen and (max-width: 992px) {
   #mob-mnu {
